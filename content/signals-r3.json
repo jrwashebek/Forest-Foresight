@@ -1,0 +1,1039 @@
+[
+ {
+  "id": "sig-mind-the-workforce-gap",
+  "title": "Mind the workforce gap",
+  "signal": "The Forest Service lost about 16% of its workforce in 2025 through layoffs, buyouts and early retirements, as it planned to move its headquarters and close regional offices, a plan a court has since paused.",
+  "horizon": "now",
+  "primary": {
+   "domain": "workforce",
+   "delta": -2,
+   "text": "Fewer experienced staff means slower projects, thinner field presence and lost institutional memory across programs."
+  },
+  "secondary": {
+   "type": "remove",
+   "text": "Remove 1 from another domain you think feels the lost staff first. Explain how.",
+   "amount": 1
+  },
+  "prompt": "Which work must we protect, and which can partners or states realistically absorb?",
+  "source": {
+   "title": "US Forest Service releases long-awaited restructuring plan",
+   "publisher": "KUOW / Northwest News Network",
+   "date": "2026-09-04",
+   "url": "https://www.kuow.org/governing/2026-09-04/us-forest-service-releases-long-awaited-restructuring-plan"
+  },
+  "tags": [
+   "federal",
+   "workforce",
+   "restructuring",
+   "2019-classic"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-think-locally-act-locally",
+  "title": "Think locally, act locally",
+  "signal": "USDA announced plans to move Forest Service headquarters to Salt Lake City, close all nine regional offices and reorganize around 15 state directors, citing local decision-making and savings; a court has since paused the plan.",
+  "horizon": "now",
+  "primary": {
+   "domain": "governance",
+   "delta": -1,
+   "text": "Relocations and new reporting lines unsettle authorities, budgets and relationships before any benefits arrive."
+  },
+  "secondary": {
+   "type": "move",
+   "text": "Move 1 between two other domains to show who gains and who loses under a state-based structure. Explain.",
+   "amount": 1
+  },
+  "prompt": "Which relationships, especially with Tribes, need deliberate care during a reorganization?",
+  "source": {
+   "title": "Forest Service to move HQ out of DC, shutter regional offices in sweeping overhaul",
+   "publisher": "Government Executive",
+   "date": "2026-04-01",
+   "url": "https://www.govexec.com/management/2026/04/forest-service-move-hq-out-dc-shutter-regional-offices-sweeping-overhaul/412566/"
+  },
+  "tags": [
+   "federal",
+   "restructuring",
+   "states",
+   "2019-classic"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-housing-the-public-on-public-lands",
+  "title": "Housing the public on public lands",
+  "signal": "A 2025 Senate plan requiring sales of BLM and Forest Service land for housing was dropped after backlash and a procedural ruling; a separate bill, the HOUSES Act, would let localities buy some BLM parcels at reduced prices.",
+  "horizon": "near",
+  "primary": {
+   "domain": "communities",
+   "delta": 1,
+   "text": "Fast-growing towns hemmed in by federal land could gain sites for homes near jobs and infrastructure."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Hunters, anglers and hikers fear lost access and a precedent for wider disposal."
+  },
+  "prompt": "If federal land is sold for housing, what safeguards would keep it affordable and access intact?",
+  "source": {
+   "title": "Mike Lee Pushed Public Land Sales for Housing. Then He Voted Against the Affordable Housing Bill",
+   "publisher": "GearJunkie",
+   "date": "2026-07-02",
+   "url": "https://gearjunkie.com/parks-and-public-lands/mike-lee-public-land-sales-affordable-housing-bill-vote"
+  },
+  "tags": [
+   "federal",
+   "public-lands",
+   "housing",
+   "legislation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-divided-and-conquered",
+  "title": "Divided and conquered",
+  "signal": "A late-2025 study of Southern family forest owners found an average age of 66; only 44% expect heirs to keep the land, and owners likely to sell were less likely to have estate plans.",
+  "horizon": "far",
+  "primary": {
+   "domain": "partners",
+   "delta": -1,
+   "text": "As land changes hands, more and smaller ownerships make landscape-scale cooperation harder to organize."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": 1,
+   "text": "Some land that changes hands becomes homes and tax base near growing towns."
+  },
+  "prompt": "How could estate-planning help and easements keep family forests intact through the coming transfer?",
+  "source": {
+   "title": "Planning for the future of forests: What drives landowners' estate planning decisions in the Southern United States?",
+   "publisher": "Journal of Environmental Management (via USDA Forest Service Southern Research Station)",
+   "date": "2025-12-20",
+   "url": "https://www.srs.fs.usda.gov/pubs/ja/2025/ja_2025_frey_007.pdf"
+  },
+  "tags": [
+   "family-forests",
+   "parcelization",
+   "private-land",
+   "south"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-wui-explosion",
+  "title": "WUI explosion",
+  "signal": "About 99 million Americans live in the wildland-urban interface; its share of U.S. housing rose from 29.5% in 1990 to 31.5% in 2020, roughly 14 million more homes.",
+  "horizon": "near",
+  "primary": {
+   "domain": "communities",
+   "delta": -1,
+   "text": "More homes at the forest edge raise the stakes, costs and complexity of every fire season."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "fire",
+   "delta": -1,
+   "text": "Suppression shifts toward structure protection, leaving less room for prescribed fire and managed wildfire."
+  },
+  "prompt": "Where should growth go, and who decides, when forests and housing demand collide?",
+  "source": {
+   "title": "Why 99 Million Americans Have to Live in a Climate Danger Zone — And How to Fix It",
+   "publisher": "Apartment Therapy",
+   "date": "2025-05-30",
+   "url": "https://www.apartmenttherapy.com/wildland-urban-interface-wildfires-los-angeles-37486978"
+  },
+  "tags": [
+   "wui",
+   "housing",
+   "wildfire",
+   "growth"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-no-snow-for-old-skiers",
+  "title": "No snow for old skiers",
+  "signal": "A 2026 PNAS study found warming made the West's low mid-March 2026 snowpack 4.4 times as likely; under higher emissions, such winters could come about every third year by midcentury.",
+  "horizon": "far",
+  "primary": {
+   "domain": "water",
+   "delta": -2,
+   "text": "Smaller, earlier snowmelt shrinks summer streamflow and strains reservoirs that downstream cities and farms rely on."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Ski areas, Nordic centers and winter towns lose reliable seasons and revenue."
+  },
+  "prompt": "What should winter-dependent communities and permit holders plan for if lean winters become normal?",
+  "source": {
+   "title": "The West's snow drought was bad. A warmer climate made it more likely",
+   "publisher": "KUNC / Mountain West News Bureau",
+   "date": "2026-07-24",
+   "url": "https://www.kunc.org/regional-news/2026-07-24/the-wests-snow-drought-was-bad-a-warmer-climate-made-it-more-likely"
+  },
+  "tags": [
+   "snowpack",
+   "climate",
+   "water",
+   "winter-recreation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-what-could-possibly-go-wrong",
+  "title": "What could possibly go wrong?",
+  "signal": "In late August 2026, inexperienced hikers who relied on an AI chatbot for route and packing advice were rescued from Mount Shasta by county searchers and Forest Service climbing rangers.",
+  "horizon": "now",
+  "primary": {
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Confident but wrong AI advice draws underprepared visitors into risky terrain and undercuts safe, informed visits."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "workforce",
+   "delta": -1,
+   "text": "Rescues and preventive outreach pull scarce rangers and volunteers from other duties."
+  },
+  "prompt": "How can we get accurate trail and safety information into the AI tools visitors actually use?",
+  "source": {
+   "title": "Hikers who used AI to plan mountain trip had to be rescued, authorities say",
+   "publisher": "WFSB (CNN Newsource)",
+   "date": "2026-09-03",
+   "url": "https://www.wfsb.com/2026/09/03/hikers-who-used-ai-plan-mountain-trip-had-be-rescued-authorities-say/"
+  },
+  "tags": [
+   "ai",
+   "safety",
+   "search-and-rescue",
+   "visitors"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-reality-bites",
+  "title": "Reality bites",
+  "signal": "A 2025 review of 24 experiments with university students found virtual-reality nature eased stress, anxiety and mood short-term but generally did no better than flat-screen nature; authors frame it as a supplement.",
+  "horizon": "far",
+  "primary": {
+   "domain": "recreation",
+   "delta": 1,
+   "text": "Virtual forests reach homebound, hospitalized and wary people, becoming a gateway to real visits."
+  },
+  "secondary": {
+   "type": "remove",
+   "text": "Remove 1 from another domain that suffers if screens replace site visits and the fees they bring. Explain how.",
+   "amount": 1
+  },
+  "prompt": "Could virtual forests build our constituency, or quietly shrink it?",
+  "source": {
+   "title": "A systematic literature review and meta-analysis of virtual reality nature effects on higher education students' mental health and wellbeing",
+   "publisher": "Applied Psychology: Health and Well-Being (via PubMed Central)",
+   "date": "2025-09-04",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12411694/"
+  },
+  "tags": [
+   "virtual-nature",
+   "technology",
+   "wellness",
+   "weak-signal"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-were-scientists-here-to-help",
+  "title": "We're scientists, here to help",
+  "signal": "Pew's January 2026 report found 77% of Americans have at least fair confidence in scientists, about the same as a year earlier but down from 87% in 2020, with a 25-point partisan gap.",
+  "horizon": "now",
+  "primary": {
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Science-based messages about fire, smoke and closures land unevenly, depending on who is listening."
+  },
+  "secondary": {
+   "type": "protect",
+   "text": "Protect another domain where trusted science is your best defense. Explain why."
+  },
+  "prompt": "Who are our most trusted messengers with skeptical audiences, and are we using them?",
+  "source": {
+   "title": "Americans' confidence in scientists",
+   "publisher": "Pew Research Center",
+   "date": "2026-01-15",
+   "url": "https://www.pewresearch.org/science/2026/01/15/americans-confidence-in-scientists/"
+  },
+  "tags": [
+   "public-trust",
+   "science",
+   "polarization",
+   "communication"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-take-two-trees",
+  "title": "Take two trees and call me",
+  "signal": "Manulife became the first life and health insurer to back Canada's national nature-prescription program, whose 18,000-plus registered providers have written over 1.5 million prescriptions for time in nature.",
+  "horizon": "near",
+  "primary": {
+   "domain": "recreation",
+   "delta": 1,
+   "text": "Health systems start treating forest visits as care, bringing new users and new funding partners."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": 1,
+   "text": "Nearby residents gain low-cost stress and heart-health benefits, especially where parks and trails are close."
+  },
+  "prompt": "Which U.S. health partners could co-fund trails or access if nature counted as care?",
+  "source": {
+   "title": "Manulife becomes first life and health insurer in the world to support national nature prescription program",
+   "publisher": "BC Parks Foundation (PaRx)",
+   "date": "2025-09-22",
+   "url": "https://www.parkprescriptions.ca/updates/manulife-becomes-first-life-and-health-insurer-in-the-world-to-support-national-nature-prescription-program"
+  },
+  "tags": [
+   "health",
+   "nature-prescriptions",
+   "insurers",
+   "wellness"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-public-land-good-for-business",
+  "title": "Public land is good for business",
+  "signal": "July 2026 proclamations shrank Bears Ears and Grand Staircase-Escalante national monuments by roughly 90%. The White House cites grazing, timber, resource development and motorized access; the Tribal coalition behind Bears Ears has long opposed such cuts.",
+  "horizon": "now",
+  "primary": {
+   "domain": "governance",
+   "delta": -1,
+   "text": "Boundaries that change with each administration leave managers and partners planning on shifting ground."
+  },
+  "secondary": {
+   "type": "move",
+   "text": "Move 1 from the other domain that loses most to the one that gains most. Explain your reasoning.",
+   "amount": 1
+  },
+  "prompt": "Which kind of business should these lands serve, and how durable is any answer?",
+  "source": {
+   "title": "Fact Sheet: President Donald J. Trump Modifies Two National Monuments, Restoring Sensible Land Management",
+   "publisher": "The White House",
+   "date": "2026-07-13",
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-modifies-two-national-monuments-restoring-sensible-land-management/"
+  },
+  "tags": [
+   "federal",
+   "public-lands",
+   "monuments",
+   "policy-swings"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "2019-updated"
+ },
+ {
+  "id": "sig-cow-creek-costewardship",
+  "title": "Co-stewards at landscape scale",
+  "signal": "In February 2026 the Cow Creek Band of Umpqua Tribe and the Forest Service signed a co-stewardship agreement for rolling, multi-year fuels and forest-health work across 155,000 acres of two Oregon national forests.",
+  "horizon": "now",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "Tribal priorities, crews and knowledge help set where and when restoration happens, not just how."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "health",
+   "delta": 1,
+   "text": "Thinning and cultural burning restore open, diverse stands across ownership lines."
+  },
+  "prompt": "What would it take to make co-stewardship the default rather than the exception?",
+  "source": {
+   "title": "Cow Creek Umpqua signs 155,000-acre forest co-stewardship agreement with U.S. Forest Service",
+   "publisher": "Tribal Business News",
+   "date": "2026-02-21",
+   "url": "https://tribalbusinessnews.com/sections/energy/15500-cow-creek-umpqua-signs-155-000-acre-forest-co-stewardship-agreement-with-u-s-forest-service"
+  },
+  "tags": [
+   "tribal",
+   "co-stewardship",
+   "fuels",
+   "oregon"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-good-neighbor-540",
+  "title": "Good neighbors, 540 strong",
+  "signal": "The Forest Service reported 540 Good Neighbor agreements in FY2025; partner-run sales moved about 258 million board feet in FY2024, roughly 9% of agency timber, a 2026 CRS report notes.",
+  "horizon": "now",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "States, counties and Tribes run more federal projects, keeping sale revenue for restoration and recreation through 2028."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Revenue-producing timber work can crowd trail and recreation projects off partner work lists."
+  },
+  "prompt": "Which projects are we best placed to run, and where would we lack capacity?",
+  "source": {
+   "title": "Good Neighbor Law Runs Into Legal Questions On Timber Program",
+   "publisher": "Legis1",
+   "date": "2026-10-09",
+   "url": "https://legis1.com/news/good-neighbor-authority-timber-program-raises"
+  },
+  "tags": [
+   "good-neighbor",
+   "states",
+   "timber",
+   "shared-stewardship"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-paperwork-stalls-partners",
+  "title": "Paperwork stalls the partners",
+  "signal": "A Wyoming friends group says state trail money was returned or stalled amid new federal agreement reviews; it privately raised $180,000 for a trail crew, while only about $100,000 of $500,000 in state funds was processed.",
+  "horizon": "now",
+  "primary": {
+   "domain": "partners",
+   "delta": -2,
+   "text": "Partners willing to help lose time, money and goodwill waiting on agreements they cannot control."
+  },
+  "secondary": {
+   "type": "add",
+   "text": "Add 1 to another domain where volunteers still step in. Explain how they keep it going.",
+   "amount": 1
+  },
+  "prompt": "Which agreement bottlenecks could we fix this year without new authority?",
+  "source": {
+   "title": "Volunteers Pick up Forest Service Slack in Wake of Federal Cuts",
+   "publisher": "Mountain Journal (Montana Free Press)",
+   "date": "2026-01-22",
+   "url": "https://montanafreepress.org/2026/01/22/volunteers-pick-up-forest-service-slack-in-wake-of-federal-cuts/"
+  },
+  "tags": [
+   "volunteers",
+   "agreements",
+   "friends-groups",
+   "capacity"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-states-take-the-keys",
+  "title": "Handing states the keys",
+  "signal": "Forest Service Chief Tom Schultz is shifting more management to states, signing 20-year shared stewardship agreements with six states and two Tribes and arguing the agency cannot manage 193 million acres alone.",
+  "horizon": "near",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "Long-term agreements give states and Tribes durable roles in setting priorities across ownership boundaries."
+  },
+  "secondary": {
+   "type": "remove",
+   "text": "Remove 1 from another domain that suffers if states take on work without matching funds. Explain.",
+   "amount": 1
+  },
+  "prompt": "What would our agency need, in people, money and authority, to carry a bigger federal share well?",
+  "source": {
+   "title": "Forest Service chief leans on states to tend troubled national forests",
+   "publisher": "E&E News by POLITICO",
+   "date": "2026-04-28",
+   "url": "https://www.eenews.net/articles/forest-service-chief-leans-on-states-to-tend-troubled-national-forests/"
+  },
+  "tags": [
+   "shared-stewardship",
+   "states",
+   "federal",
+   "tribal"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-forest-legacy-2026",
+  "title": "Easements keep forests working",
+  "signal": "The Forest Service put over $80 million from the Land and Water Conservation Fund into 15 Forest Legacy projects in 2026, conserving more than 34,000 acres of private working forest.",
+  "horizon": "near",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "Land trusts, states and owners keep forests intact and productive without public ownership."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "water",
+   "delta": 1,
+   "text": "Conserved forests protect drinking-water sources and stream habitat downstream."
+  },
+  "prompt": "Which at-risk forests in our state would we prioritize for easements, and why?",
+  "source": {
+   "title": "Forest Service Invests $80 Million in Forest Legacy Conservation",
+   "publisher": "T&D World",
+   "date": "2026-05-26",
+   "url": "https://www.tdworld.com/vegetation-management/news/55379783/forest-service-invests-80-million-in-forest-legacy-conservation"
+  },
+  "tags": [
+   "conservation-finance",
+   "easements",
+   "lwcf",
+   "private-land"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-grand-ronde-siuslaw",
+  "title": "Homeward to the Siuslaw",
+  "signal": "The Confederated Tribes of Grand Ronde are seeking congressional transfer of 18,628 acres of the Siuslaw National Forest, backed by three Oregon counties, and say they would manage it actively and keep it open to the public.",
+  "horizon": "far",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "Returned lands become Tribal working forests, setting precedents for land restoration elsewhere."
+  },
+  "secondary": {
+   "type": "protect",
+   "text": "Protect one other domain you expect Tribal management to steady. Explain why."
+  },
+  "prompt": "Where might land return serve both Tribal sovereignty and forest outcomes in our region?",
+  "source": {
+   "title": "Tribal delegation lobbies for land transfer, against off-reservation gaming, sea lion measure",
+   "publisher": "Smoke Signals",
+   "date": "2026-08-14",
+   "url": "https://www.smokesignals.org/articles/2026/08/14/tribal-delegation-lobbies-for-land-transfer-against-off-reservation-gaming-sea-lion-measure/"
+  },
+  "tags": [
+   "tribal",
+   "land-return",
+   "oregon",
+   "legislation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-family-forest-carbon",
+  "title": "Small woods, big ledger",
+  "signal": "The Family Forest Carbon Program reports over 180,000 acres and 1,300-plus landowners across 20 states, $45 million committed to owners, and its first verified credits issued in 2025.",
+  "horizon": "far",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "Carbon payments give small owners a reason to manage and keep woodlands rather than sell or subdivide."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "wood",
+   "delta": -1,
+   "text": "Enrolled owners defer or lighten harvests, so local mills see less wood for a while."
+  },
+  "prompt": "Should agencies help small owners into carbon markets, or stay neutral on credit quality?",
+  "source": {
+   "title": "Reflecting on 2025 and Looking Ahead",
+   "publisher": "American Forest Foundation",
+   "date": "2026-02-03",
+   "url": "https://www.forestfoundation.org/why-we-do-it/family-forest-blog/reflecting-on-2025-and-looking-ahead/"
+  },
+  "tags": [
+   "family-forests",
+   "carbon",
+   "markets",
+   "private-land"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-cultural-burn-agreements",
+  "title": "Fire on Tribal terms",
+  "signal": "Under California's SB 310, the state signed its first cultural burning agreement with the Karuk Tribe in 2025, recognizing Tribes can burn without state permits and giving practitioners access to a state claims fund.",
+  "horizon": "far",
+  "primary": {
+   "domain": "partners",
+   "delta": 1,
+   "text": "Cultural fire becomes a recognized, insured practice, renewing Indigenous stewardship roles across landscapes."
+  },
+  "secondary": {
+   "type": "add",
+   "text": "Add 1 to another domain that cultural fire strengthens over decades. Explain how.",
+   "amount": 1
+  },
+  "prompt": "What would our state need to change to support cultural burning at scale?",
+  "source": {
+   "title": "California Honors Tribal Sovereignty with New Cultural Burning Law & Landmark Agreement with the Karuk Tribe",
+   "publisher": "California Natural Resources Agency",
+   "date": "2025-02-27",
+   "url": "https://content.govdelivery.com/accounts/CNRA/bulletins/3d4593c"
+  },
+  "tags": [
+   "tribal",
+   "cultural-fire",
+   "indigenous-knowledge",
+   "california"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-fair-plan-swells",
+  "title": "Last resort becomes first call",
+  "signal": "California's FAIR Plan held about 697,000 policies in mid-2026, up 157% since 2022; insurers have committed to roughly 12,000 new policies under the state's new rate rules, by one watchdog's count.",
+  "horizon": "now",
+  "primary": {
+   "domain": "communities",
+   "delta": -2,
+   "text": "Costly, thin coverage pushes some residents out of fire country and stalls rebuilding and home sales."
+  },
+  "secondary": {
+   "type": "remove",
+   "text": "Remove 1 from another domain strained as insurers retreat from fire-prone places. Explain how.",
+   "amount": 1
+  },
+  "prompt": "How could our fuels and home-hardening work be counted by insurers?",
+  "source": {
+   "title": "Insurers say they're starting to write new California homeowner policies, but how many?",
+   "publisher": "CalMatters",
+   "date": "2026-09-23",
+   "url": "https://calmatters.org/economy/2026/09/insurance-new-policies-progress/"
+  },
+  "tags": [
+   "insurance",
+   "wui",
+   "california",
+   "housing"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-cwdg-strings",
+  "title": "Strings on the firebreak",
+  "signal": "New USDA grant terms issued at the end of 2025 stalled Community Wildfire Defense Grants, part of $200 million promised to 22 states and two Tribes; Washington says it cannot accept them, and 20 states and D.C. sued.",
+  "horizon": "now",
+  "primary": {
+   "domain": "communities",
+   "delta": -1,
+   "text": "Fire-prone towns wait on planned fuel breaks and home-hardening while the legal fight plays out."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "partners",
+   "delta": -1,
+   "text": "Federal–state trust frays as partners weigh grant conditions against their own laws."
+  },
+  "prompt": "If federal grants come with conditions we can't accept, what's our plan B?",
+  "source": {
+   "title": "New burn bans and Trump's battle with immigration and DEI are impacting forest fires",
+   "publisher": "NPR",
+   "date": "2026-05-17",
+   "url": "https://www.npr.org/2026/05/17/nx-s1-5777660/forest-service-wildfire-safety-prevention-trump-administration"
+  },
+  "tags": [
+   "federal",
+   "grants",
+   "wildfire",
+   "communities"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-srs-cliff-again",
+  "title": "Fiscal cliff, take two",
+  "signal": "Secure Rural Schools, which sent more than $230 million to over 700 counties in FY2025, expired again on September 30, 2026; a bipartisan Senate bill would extend it through FY2029.",
+  "horizon": "now",
+  "primary": {
+   "domain": "communities",
+   "delta": -1,
+   "text": "Forest counties face uncertain budgets for schools, roads and emergency services while Congress debates."
+  },
+  "secondary": {
+   "type": "protect",
+   "text": "Protect the other domain your county would cut last. Explain why it matters most."
+  },
+  "prompt": "How do forest-dependent counties plan when federal payments arrive one cliff at a time?",
+  "source": {
+   "title": "U.S. Senators introduce bipartisan bill to reauthorize the Secure Rural Schools program through 2029",
+   "publisher": "National Association of Counties (NACo)",
+   "date": "2026-10-01",
+   "url": "https://www.naco.org/news/us-senators-introduce-bipartisan-bill-reauthorize-secure-rural-schools-program-through-2029"
+  },
+  "tags": [
+   "rural-economy",
+   "counties",
+   "federal",
+   "legislation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-wv-trail-dividend",
+  "title": "Mountain State trail dividend",
+  "signal": "Federal data show West Virginia's outdoor recreation economy grew 4.5% in 2024 to about $2.3 billion, outpacing the national rate and supporting nearly 22,000 jobs.",
+  "horizon": "near",
+  "primary": {
+   "domain": "communities",
+   "delta": 1,
+   "text": "Recreation and tourism offer rural forest towns a steadier economic pillar where access is maintained."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "recreation",
+   "delta": 1,
+   "text": "Local investment in trails, river access and services improves visitor experiences."
+  },
+  "prompt": "Which of our communities are ready to grow a recreation economy, and which aren't?",
+  "source": {
+   "title": "New federal data shows outdoor recreation contributes $2.3 billion to WV's economy",
+   "publisher": "WVU Smith Outdoor Economic Development Collaborative",
+   "date": "2026-03-06",
+   "url": "https://oedc.wvu.edu/articles/new-federal-data-shows-outdoor-recreation-contributes-2-3-billion-to-wv-s-economy/"
+  },
+  "tags": [
+   "rural-economy",
+   "recreation-economy",
+   "west-virginia",
+   "bea"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-zone-zero",
+  "title": "Five feet of nothing",
+  "signal": "California's Board of Forestry adopted emergency Zone 0 rules in August 2026 requiring a five-foot ember-resistant zone around homes in fire-prone areas; as of September they awaited state review, and existing homes would phase in.",
+  "horizon": "near",
+  "primary": {
+   "domain": "communities",
+   "delta": 1,
+   "text": "Clearing combustibles next to walls helps more homes survive ember storms and supports insurability."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "workforce",
+   "delta": -1,
+   "text": "Inspections and enforcement fall to local fire agencies that are already short of staff."
+  },
+  "prompt": "Would a Zone 0 rule fit our state, and who would pay for compliance?",
+  "source": {
+   "title": "California Board of Forestry Adopts Emergency “Zone 0” Regulations Under AB 3074",
+   "publisher": "Best Best & Krieger LLP",
+   "date": "2026-09-09",
+   "url": "https://bbklaw.com/resources/la090926-california-board-of-forestry-adopts-emergency-zone-0-regulations-under-ab-3074"
+  },
+  "tags": [
+   "home-hardening",
+   "wui",
+   "california",
+   "regulation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-smoke-2050",
+  "title": "Breathing room runs out",
+  "signal": "A 2025 Nature study estimates U.S. wildfire-smoke deaths could exceed 71,000 a year by 2050 under high warming, about 73% above the 2011–2020 average, with smoke exposure rising two- to threefold.",
+  "horizon": "far",
+  "primary": {
+   "domain": "communities",
+   "delta": -2,
+   "text": "Smoke becomes a chronic public-health burden far from the flames, hitting outdoor workers and vulnerable residents."
+  },
+  "secondary": {
+   "type": "add",
+   "text": "Add 1 to another domain whose action could cut smoke exposure, such as planned burning or clean-air shelters. Explain how.",
+   "amount": 1
+  },
+  "prompt": "Should agencies accept some smoke now from prescribed fire to avoid more smoke later?",
+  "source": {
+   "title": "Study: Wildfire Smoke May Lead to Thousands More U.S. Deaths",
+   "publisher": "Stony Brook Medicine",
+   "date": "2025-09-22",
+   "url": "https://news.stonybrookmedicine.edu/news/study-wildfire-smoke-may-lead-to-thousands-more-u-s-deaths"
+  },
+  "tags": [
+   "smoke",
+   "public-health",
+   "wildfire",
+   "climate"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-climate-migration",
+  "title": "Moving away from the flames",
+  "signal": "A 2025 First Street report projects more than 5 million Americans will move away from climate risks in 2025 and nearly 15% of the population within 30 years, leaving fire-prone Western areas and coasts.",
+  "horizon": "far",
+  "primary": {
+   "domain": "communities",
+   "delta": -1,
+   "text": "Fire-exposed towns risk shrinking tax bases, while receiving regions scramble for housing and services."
+  },
+  "secondary": {
+   "type": "move",
+   "text": "Move 1 from another domain in a losing region to one in a receiving region. Explain the shift.",
+   "amount": 1
+  },
+  "prompt": "Is our state a likely sender or receiver of climate migrants, and are we ready?",
+  "source": {
+   "title": "Millions of Americans to flee climate dangers in 2025 — report",
+   "publisher": "E&E News by POLITICO",
+   "date": "2025-02-03",
+   "url": "https://www.eenews.net/articles/millions-of-americans-to-flee-climate-dangers-in-2025-report"
+  },
+  "tags": [
+   "climate-migration",
+   "demographics",
+   "wui",
+   "housing"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-overgrown-under-crewed",
+  "title": "Overgrown and under-crewed",
+  "signal": "An internal Forest Service analysis found trail miles maintained fell 22% in 2025 amid staffing cuts, with some ranger districts losing all trail staff and many AmeriCorps and youth corps programs unavailable.",
+  "horizon": "now",
+  "primary": {
+   "domain": "recreation",
+   "delta": -2,
+   "text": "Blocked, eroding trails and unsafe bridges cut access and frustrate visitors who notice the decline."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "health",
+   "delta": -1,
+   "text": "Unmaintained trails spread erosion, user-made routes and invasive weeds into surrounding forest."
+  },
+  "prompt": "Which trails do we keep open, and who decides when we can't maintain them all?",
+  "source": {
+   "title": "Report reveals Forest Service suffering from staffing cuts, trails at lowest maintenance levels in 15 years",
+   "publisher": "Washington Trails Association",
+   "date": "2026-01-06",
+   "url": "https://www.wta.org/news/signpost/report-forest-service-trails-suffer-lack-maintenance-15-years"
+  },
+  "tags": [
+   "trails",
+   "staffing",
+   "maintenance",
+   "federal"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-passport-premium",
+  "title": "Passport premium at the gate",
+  "signal": "Since January 2026, nonresidents pay a $100 surcharge at 11 of the most-visited national parks and $250 for an annual pass, versus $80 for U.S. residents; revenue goes to park upkeep.",
+  "horizon": "near",
+  "primary": {
+   "domain": "recreation",
+   "delta": 1,
+   "text": "Fee revenue funds maintenance and visitor services at heavily used sites."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": -1,
+   "text": "Gateway towns worry fewer international visitors will come and spend locally."
+  },
+  "prompt": "Should national forests adopt tiered fees, and how would we protect local access?",
+  "source": {
+   "title": "Department of the Interior Announces Modernized, More Affordable National Park Access",
+   "publisher": "U.S. Department of the Interior",
+   "date": "2025-11-25",
+   "url": "https://www.doi.gov/pressreleases/department-interior-announces-modernized-more-affordable-national-park-access"
+  },
+  "tags": [
+   "fees",
+   "national-parks",
+   "tourism",
+   "federal"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-repair-fund-ran-dry",
+  "title": "The repair fund ran dry",
+  "signal": "The Great American Outdoors Act's Legacy Restoration Fund expired in 2025; bipartisan bills to renew it cleared committees in 2026 as 200-plus outdoor companies urged action on a $35-billion-plus repair backlog.",
+  "horizon": "near",
+  "primary": {
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Without renewed funding, campgrounds, roads and visitor facilities keep aging and some close."
+  },
+  "secondary": {
+   "type": "protect",
+   "text": "Protect another domain a renewed fund would shield. Explain how repair money helps it."
+  },
+  "prompt": "If the fund returns, which repairs come first: safety, access, or revenue-generating sites?",
+  "source": {
+   "title": "Businesses urge Congress to pass outdoors bill now",
+   "publisher": "E&E News by POLITICO",
+   "date": "2026-07-21",
+   "url": "https://www.eenews.net/articles/businesses-urge-congress-to-pass-outdoors-bill-now/"
+  },
+  "tags": [
+   "infrastructure",
+   "deferred-maintenance",
+   "legislation",
+   "federal"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-rangers-still-poll-well",
+  "title": "Rangers still poll well",
+  "signal": "In an August 2025 Pew survey, 76% of Americans viewed the National Park Service favorably, with nearly identical ratings from Republicans (78%) and Democrats (79%), a rare bipartisan bright spot.",
+  "horizon": "near",
+  "primary": {
+   "domain": "recreation",
+   "delta": 1,
+   "text": "Public-land stewards keep cross-party goodwill that can anchor outreach, volunteering and support."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "governance",
+   "delta": 1,
+   "text": "Shared regard gives lawmakers common ground on public-land funding."
+  },
+  "prompt": "Does the Forest Service enjoy the same goodwill, and how would we know?",
+  "source": {
+   "title": "Republicans' views of Justice Department, FBI rebound as Democrats' views shift more negative",
+   "publisher": "Pew Research Center",
+   "date": "2025-08-27",
+   "url": "https://www.pewresearch.org/politics/2025/08/27/republicans-views-of-justice-department-fbi-rebound-as-democrats-views-shift-more-negative/"
+  },
+  "tags": [
+   "public-trust",
+   "polling",
+   "public-lands",
+   "bipartisan"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-sharing-the-sacred-summit",
+  "title": "Sharing the sacred summit",
+  "signal": "A 2026 agreement makes the Black Elk Wilderness, around South Dakota's highest peak, a co-stewardship site with Great Sioux Nation Tribes, covering recreation, cultural protection, habitat and Tribal hiring.",
+  "horizon": "near",
+  "primary": {
+   "domain": "recreation",
+   "delta": 1,
+   "text": "Visitors learn from Tribal interpreters and stewards at a sacred place, deepening understanding and respect."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "workforce",
+   "delta": 1,
+   "text": "Tribal hiring brings new rangers and interpreters with deep knowledge of the place."
+  },
+  "prompt": "Where do visitor experiences on our lands need Tribal voices to tell the story?",
+  "source": {
+   "title": "Caring for the heart of everything that is",
+   "publisher": "USDA Forest Service",
+   "date": "2026-06-16",
+   "url": "https://www.fs.usda.gov/about-agency/features/caring-heart-everything"
+  },
+  "tags": [
+   "tribal",
+   "co-stewardship",
+   "wilderness",
+   "interpretation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-silver-trail-boom",
+  "title": "The silver trail boom",
+  "signal": "A record 183.2 million Americans recreated outdoors in 2025, but less often; participation among those 65 and older climbed from 25.7% in 2016 to 41.6%, adding 12 million older participants in a decade.",
+  "horizon": "far",
+  "primary": {
+   "domain": "recreation",
+   "delta": 1,
+   "text": "An older, broader visitor base strengthens public connection and political support for public lands."
+  },
+  "secondary": {
+   "type": "add",
+   "text": "Add 1 to another domain that gains from older visitors and volunteers. Explain how.",
+   "amount": 1
+  },
+  "prompt": "Are our trails, facilities and safety messages designed for visitors in their seventies?",
+  "source": {
+   "title": "Outdoor Recreation Participation Hits Record 183.2 Million Americans in 2025, OIA Report Finds",
+   "publisher": "Modern Campground",
+   "date": "2026-06-22",
+   "url": "https://moderncampground.com/usa/outdoor-recreation-participation-hits-record-183-2-million-americans-in-2025-oia-report-finds/"
+  },
+  "tags": [
+   "participation",
+   "aging",
+   "demographics",
+   "accessibility"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ }
+]

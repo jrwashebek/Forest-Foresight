@@ -1,0 +1,918 @@
+[
+ {
+  "id": "sig-ten-am-rule-returns",
+  "title": "The 10 a.m. rule, take two",
+  "signal": "Interior ordered the new U.S. Wildland Fire Service to fully suppress every wildfire it manages, echoing the 1935 '10 a.m. rule'; the Forest Service also operates under a full-suppression policy.",
+  "horizon": "now",
+  "primary": {
+   "domain": "fire",
+   "delta": -1,
+   "text": "More starts are caught small, but fewer fires burn for benefit; fuels keep building and future fires get harder to stop."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": 1,
+   "text": "In the short run, fewer fires reach towns and managed-fire smoke days drop, even as fuels build."
+  },
+  "prompt": "When is putting every fire out the riskiest choice, and who should decide?",
+  "source": {
+   "title": "As wildfires worsen, Trump administration revives discredited policy to stomp out all fires quickly",
+   "publisher": "Associated Press (via KTAR News)",
+   "date": "2026-06-30",
+   "url": "https://ktar.com/national-news/as-wildfires-worsen-trump-administration-revives-discredited-policy-to-stomp-out-all-fires-quickly/5884780/"
+  },
+  "tags": [
+   "federal",
+   "suppression",
+   "USWFS",
+   "fire policy"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-fuels-work-drops-a-third",
+  "title": "Fuels work drops a third",
+  "signal": "An outside analysis found Forest Service fuel-treatment acres fell from over 4 million in 2024 to about 2.6 million in 2025, and prescribed burning roughly halved; the agency cites fire demands and hurricane debris, critics cite staff losses.",
+  "horizon": "now",
+  "primary": {
+   "domain": "fire",
+   "delta": -2,
+   "text": "Untreated acres pile up just as hot, dry seasons return; the odds of severe, fast-moving fire climb."
+  },
+  "secondary": {
+   "type": "remove",
+   "amount": 1,
+   "text": "Remove 1 point from a domain hurt most by the treatment backlog, and explain how the harm unfolds."
+  },
+  "prompt": "How do we rebuild treatment pace when the same people are pulled to fight fires?",
+  "source": {
+   "title": "Trump administration falls behind on wildfire prevention with risky fire season ahead",
+   "publisher": "NPR (via KPBS)",
+   "date": "2026-05-04",
+   "url": "https://www.kpbs.org/news/2026/05/04/trump-administration-falls-behind-on-wildfire-prevention-with-risky-fire-season-ahead"
+  },
+  "tags": [
+   "federal",
+   "fuels",
+   "prescribed fire",
+   "workforce"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-clearing-air-for-good-fire",
+  "title": "Clearing the air for good fire",
+  "signal": "The Senate unanimously passed a bill easing Clean Air Act penalties on states for prescribed burns and creating grants to protect schools and community buildings from smoke; it must be reconciled with a broader House bill.",
+  "horizon": "now",
+  "primary": {
+   "domain": "fire",
+   "delta": 1,
+   "text": "States schedule more prescribed burns without fear of air-quality violations, and scarce burn windows actually get used."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": 1,
+   "text": "Smoke-ready schools and shelters give residents cleaner air on the worst days."
+  },
+  "prompt": "How do we share smoke trade-offs with communities before the burn, not after?",
+  "source": {
+   "title": "Wildfire bill to ease path for controlled burns passes Senate",
+   "publisher": "Roll Call",
+   "date": "2026-09-29",
+   "url": "https://rollcall.com/2026/09/29/wildfire-bill-to-ease-path-for-controlled-burns-passes-senate/"
+  },
+  "tags": [
+   "legislation",
+   "prescribed fire",
+   "smoke",
+   "Clean Air Act"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-burn-boss-backstop",
+  "title": "A backstop for the burn boss",
+  "signal": "Texas A&M Forest Service launched a temporary, state-run self-insurance pool for certified prescribed burn managers, after commercial coverage for them grew scarce or vanished statewide.",
+  "horizon": "near",
+  "primary": {
+   "domain": "fire",
+   "delta": 1,
+   "text": "Public liability pools spread across states, and private burners put good fire back on millions of acres."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "governance",
+   "delta": -1,
+   "text": "The state now carries the claims risk, so one escaped burn could land on taxpayers and lawmakers."
+  },
+  "prompt": "Who should carry the risk when good fire goes bad?",
+  "source": {
+   "title": "Texas A&M Forest Service Launches Prescribed Burn Manager Insurance Program",
+   "publisher": "Insurance Journal",
+   "date": "2026-09-02",
+   "url": "https://www.insurancejournal.com/news/southcentral/2026/09/02/883715.htm"
+  },
+  "tags": [
+   "state",
+   "prescribed fire",
+   "insurance",
+   "liability",
+   "private land"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-smoke-alarms-in-orbit",
+  "title": "Smoke alarms in orbit",
+  "signal": "The first three operational FireSat satellites reached orbit in 2026, able to spot fires about 5 meters across through smoke and cloud; backers aim for hourly global revisits by 2029.",
+  "horizon": "near",
+  "primary": {
+   "domain": "fire",
+   "delta": 1,
+   "text": "Near-constant detection catches starts early; initial attack wins more often and fewer fires escape."
+  },
+  "secondary": {
+   "type": "add",
+   "amount": 1,
+   "text": "Add 1 point to a domain that gains from near-real-time fire data, and explain how."
+  },
+  "prompt": "If every start is seen within an hour, what changes in how we staff and decide?",
+  "source": {
+   "title": "Muon Space Deploys First Three Operational FireSat Satellites for Earth Fire Alliance",
+   "publisher": "Muon Space",
+   "date": "2026-07-07",
+   "url": "https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/"
+  },
+  "tags": [
+   "technology",
+   "remote sensing",
+   "detection",
+   "philanthropy"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-prairie-fire-xl",
+  "title": "Prairie fire, extra large",
+  "signal": "Nebraska's Morrill Fire burned about 642,000 acres in March 2026, the largest in state history; on some rural starts, NOAA's experimental AI satellite detections arrived before firefighters were dispatched.",
+  "horizon": "near",
+  "primary": {
+   "domain": "fire",
+   "delta": -1,
+   "text": "Megafires spread beyond the West; plains and eastern states face huge fires with thin crews and few plans."
+  },
+  "secondary": {
+   "type": "remove",
+   "amount": 1,
+   "text": "Remove 1 point from a domain a plains megafire would hit hardest, and explain."
+  },
+  "prompt": "Is our mutual-aid system ready for megafires where we rarely expect them?",
+  "source": {
+   "title": "NOAA's Wildfire Detection System a “Game Changer” for Nebraska's Record-Breaking Morrill Fire",
+   "publisher": "NOAA NESDIS",
+   "date": "2026-04-09",
+   "url": "https://www.nesdis.noaa.gov/news/noaas-wildfire-detection-system-game-changer-nebraskas-record-breaking-morrill-fire"
+  },
+  "tags": [
+   "grassland",
+   "Great Plains",
+   "detection",
+   "AI",
+   "megafire"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-smoke-gets-in-our-lungs",
+  "title": "Smoke gets in our lungs",
+  "signal": "A 2025 Nature study estimates wildfire smoke already contributes to about 40,000 U.S. deaths a year and could exceed 71,000 annually by 2050 under high emissions.",
+  "horizon": "far",
+  "primary": {
+   "domain": "fire",
+   "delta": -2,
+   "text": "Smoke, not flame, becomes wildfire's largest toll, pressing agencies to manage fire for air quality as well as acres."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "governance",
+   "delta": 1,
+   "text": "Mounting health costs give fire and air agencies a shared case for prescribed-fire and smoke-readiness funding."
+  },
+  "prompt": "Should smoke health outcomes become a core measure of fire program success?",
+  "source": {
+   "title": "Wildfire smoke could soon kill 71,000 Americans every year",
+   "publisher": "Grist (via Popular Science)",
+   "date": "2025-09-19",
+   "url": "https://www.popsci.com/health/wildfire-smoke-could-soon-kill-71000-americans-every-year"
+  },
+  "tags": [
+   "smoke",
+   "public health",
+   "climate",
+   "research"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-boreal-fire-math",
+  "title": "Alaska's fire math doubles",
+  "signal": "A 2026 study projects area burned in Alaska rising under every emissions scenario, more than doubling under high emissions, with up to eightfold increases in parts of Alaska's Arctic and west.",
+  "horizon": "far",
+  "primary": {
+   "domain": "fire",
+   "delta": -1,
+   "text": "Northern megafires lengthen the national season and pull crews and aircraft north when the West needs them."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "climate",
+   "delta": -1,
+   "text": "Burning boreal forest and peat release vast stores of carbon, accelerating warming."
+  },
+  "prompt": "How do we share scarce crews when the fire season never ends somewhere?",
+  "source": {
+   "title": "Study Outlines a Range of Possible Fire Futures for Alaska",
+   "publisher": "U.S. Geological Survey",
+   "date": "2026-09-29",
+   "url": "https://www.usgs.gov/programs/climate-adaptation-science-centers/news/study-outlines-a-range-possible-fire-futures"
+  },
+  "tags": [
+   "Alaska",
+   "boreal",
+   "climate",
+   "research",
+   "carbon"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-fires-that-never-grow-up",
+  "title": "Fires that never grow up",
+  "signal": "In XPRIZE Wildfire finals in Alaska, teams had to autonomously find and extinguish fires within 10 minutes of ignition across about 1,000 square kilometers; award winner Dryad plans pilots in 2027.",
+  "horizon": "far",
+  "primary": {
+   "domain": "fire",
+   "delta": 2,
+   "text": "Sensor-and-drone networks snuff most starts within minutes; escaped fires become rare near communities and critical watersheds."
+  },
+  "secondary": {
+   "type": "move",
+   "amount": 1,
+   "text": "Move 1 point between domains to show who gains and who loses when robots fight fire. Explain."
+  },
+  "prompt": "If machines catch every start, how do we keep beneficial fire on the land?",
+  "source": {
+   "title": "Dryad Networks Wins XPRIZE Wildfire Award for Drones, Sensor Networks",
+   "publisher": "DroneLife",
+   "date": "2026-10-02",
+   "url": "https://dronelife.com/2026/10/02/dryad-networks-wins-xprize-wildfire-award-for-drones-sensor-networks/"
+  },
+  "tags": [
+   "technology",
+   "drones",
+   "autonomy",
+   "suppression",
+   "XPRIZE"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-one-nepa-rulebook",
+  "title": "One rulebook, fewer comment periods",
+  "signal": "USDA's department-wide NEPA procedures took effect in April 2026, centralizing categorical exclusions and leaving public comment on most environmental assessments and exclusions to the responsible official's discretion.",
+  "horizon": "now",
+  "primary": {
+   "domain": "governance",
+   "delta": 1,
+   "text": "Projects clear review faster and small teams move more work, though thinner records raise litigation risk."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "recreation",
+   "delta": -1,
+   "text": "Some publics feel shut out of decisions; trust erodes where comment was once routine."
+  },
+  "prompt": "How do we keep people engaged when the law no longer requires it?",
+  "source": {
+   "title": "US Department of Agriculture Finalizes Updated NEPA Procedures",
+   "publisher": "WilmerHale",
+   "date": "2026-04-27",
+   "url": "https://www.wilmerhale.com/en/insights/client-alerts/20260427-us-department-of-agriculture-finalizes-updated-nepa-procedures"
+  },
+  "tags": [
+   "federal",
+   "NEPA",
+   "regulation",
+   "public engagement"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-appropriators-hold-line",
+  "title": "Appropriators hold the line, for now",
+  "signal": "The FY2027 request would cut the Forest Service line about 75%, largely by moving firefighting to Interior; House appropriators kept fire in the agency and raised its total about 2%. A stopgap runs through December 11.",
+  "horizon": "now",
+  "primary": {
+   "domain": "governance",
+   "delta": 1,
+   "text": "Bipartisan appropriators keep core programs funded, buying time, though stopgaps and shutdown threats still freeze planning."
+  },
+  "secondary": {
+   "type": "protect",
+   "text": "Protect one domain: name the line item appropriators shield this era and why it survives."
+  },
+  "prompt": "What would we cut first if a shutdown hit during fire season?",
+  "source": {
+   "title": "Interior, Environment, and Related Agencies: Overview of FY2027 Appropriations (R49292)",
+   "publisher": "Congressional Research Service (via EveryCRSReport)",
+   "date": "2026-10-21",
+   "url": "https://www.everycrsreport.com/files/2026-10-21_R49292_bfd3ba78b460c7241162661110ab1cc6e1fd19bc.html"
+  },
+  "tags": [
+   "federal",
+   "budget",
+   "appropriations",
+   "shutdown"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-fire-borrowing-comeback",
+  "title": "Fire borrowing's comeback tour",
+  "signal": "The 2018 wildfire funding fix, a disaster cap adjustment worth about $2.9 billion for the Forest Service and Interior in FY2026, expires after 2027, and Congress has not agreed how to extend it, reviving the risk of raiding non-fire accounts.",
+  "horizon": "now",
+  "primary": {
+   "domain": "governance",
+   "delta": -1,
+   "text": "Without an extension, big fire years again drain restoration, recreation and research budgets mid-season."
+  },
+  "secondary": {
+   "type": "remove",
+   "amount": 1,
+   "text": "Remove 1 point from the domain whose budget gets borrowed first, and explain the trade."
+  },
+  "prompt": "Which partner commitments would we break if fire borrowing returned next summer?",
+  "source": {
+   "title": "Forest Service nears a return to 'fire borrowing' unless Congress acts",
+   "publisher": "E&E News (POLITICO)",
+   "date": "2026-01-28",
+   "url": "https://www.eenews.net/articles/forest-service-nears-a-return-to-fire-borrowing-unless-congress-acts"
+  },
+  "tags": [
+   "federal",
+   "budget",
+   "suppression funding",
+   "Congress"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-roadless-rule-hits-road",
+  "title": "The roadless rule hits the road",
+  "signal": "USDA proposed rescinding the 2001 Roadless Rule across 44.7 million acres, about 30 percent of national forest land, keeping Idaho and Colorado's state rules; comments closed in October and lawsuits are expected once final.",
+  "horizon": "now",
+  "primary": {
+   "domain": "governance",
+   "delta": -1,
+   "text": "Years of litigation and shifting rules cloud planning in roadless areas, whichever way the courts rule."
+  },
+  "secondary": {
+   "type": "move",
+   "amount": 1,
+   "text": "Move 1 point between domains, say recreation to wood or the reverse, and explain who gains access and who loses."
+  },
+  "prompt": "Where would new roads reduce fire risk, and where would they add to it?",
+  "source": {
+   "title": "Trump Administration Proposes to Rescind Roadless Rule",
+   "publisher": "Harvard Law School Environmental & Energy Law Program",
+   "date": "2026-09-14",
+   "url": "https://eelp.law.harvard.edu/trump-administration-proposes-to-rescind-roadless-rule/"
+  },
+  "tags": [
+   "federal",
+   "regulation",
+   "roadless",
+   "litigation",
+   "timber"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-one-fire-flag",
+  "title": "One flag for wildland fire",
+  "signal": "Interior launched the U.S. Wildland Fire Service in January 2026, merging its bureaus' fire programs; Congress declined to fund folding in Forest Service firefighters and ordered a feasibility study first.",
+  "horizon": "near",
+  "primary": {
+   "domain": "governance",
+   "delta": 1,
+   "text": "A single federal fire agency, authorized with clear ties to land managers, simplifies command, budgets and accountability."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "workforce",
+   "delta": -1,
+   "text": "Years of transition churn, from new chains of command to new duty stations, push some veterans out."
+  },
+  "prompt": "What must stay connected between fire and land management if fire gets its own agency?",
+  "source": {
+   "title": "Trump administration stands up consolidated federal firefighting agency over bipartisan congressional reservations",
+   "publisher": "Government Executive",
+   "date": "2026-01-13",
+   "url": "https://www.govexec.com/management/2026/01/trump-administration-stands-consolidated-federal-firefighting-agency-over-bipartisan-congressional-reservations/410661"
+  },
+  "tags": [
+   "federal",
+   "USWFS",
+   "agency structure",
+   "Interior",
+   "Congress"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-fix-our-forests-parked",
+  "title": "Fix Our Forests, still parked",
+  "signal": "The Fix Our Forests Act passed the House 279-141 in January 2025 and cleared Senate Agriculture 18-5, but still awaits a floor vote; backers want it attached to the defense authorization bill.",
+  "horizon": "near",
+  "primary": {
+   "domain": "governance",
+   "delta": 1,
+   "text": "A version becomes law: faster reviews, a federal wildfire intelligence center and a new community wildfire risk-reduction program."
+  },
+  "secondary": {
+   "type": "add",
+   "amount": 1,
+   "text": "Add 1 point to a domain that gains when fireshed projects move faster, and explain how."
+  },
+  "prompt": "Which stalled projects would move first, and are we staffed to deliver them?",
+  "source": {
+   "title": "Wildfire bill stalls in Senate as insurance market keeps shrinking",
+   "publisher": "Insurance Business",
+   "date": "2026-08-10",
+   "url": "https://www.insurancebusinessmag.com/us/news/catastrophe/wildfire-bill-stalls-in-senate-as-insurance-market-keeps-shrinking-585530.aspx"
+  },
+  "tags": [
+   "legislation",
+   "Congress",
+   "fuels",
+   "insurance"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-utility-fire-shield",
+  "title": "Utilities seek a fire shield",
+  "signal": "About half of Western states have enacted some limit on utility wildfire liability, usually tied to approved mitigation plans; insurers warn the costs shift to homeowners, and some fire survivors oppose the limits.",
+  "horizon": "near",
+  "primary": {
+   "domain": "governance",
+   "delta": 1,
+   "text": "Clear liability rules keep utilities solvent and paying for line hardening, vegetation clearing and smarter shutoffs."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": -1,
+   "text": "Survivors recover less after utility-caused fires, and homeowner premiums rise to absorb the gap."
+  },
+  "prompt": "What should a utility owe if it followed its plan and still started a fire?",
+  "source": {
+   "title": "Electric companies are fighting across the West to limit their blame for wildfires",
+   "publisher": "KJZZ / Mountain West News Bureau (via KUNC)",
+   "date": "2025-08-31",
+   "url": "https://www.kunc.org/regional-news/2025-08-31/electric-companies-are-fighting-across-the-west-to-limit-their-blame-for-wildfires"
+  },
+  "tags": [
+   "state",
+   "utilities",
+   "liability",
+   "insurance"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-for-sale-public-land",
+  "title": "'For sale' signs on public land",
+  "signal": "A 2025 Senate budget-bill draft would have required selling 600,000 to 1.2 million acres of BLM land within a decade, partly for housing; it was withdrawn amid public backlash and Senate rules problems.",
+  "horizon": "far",
+  "primary": {
+   "domain": "governance",
+   "delta": -2,
+   "text": "Disposal returns in a future budget fight; scattered sales fragment management and access across the West."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "communities",
+   "delta": 1,
+   "text": "Sold parcels could open land for housing near crowded towns, the benefit sale backers point to."
+  },
+  "prompt": "Which parcels near our communities are most at risk, and who would defend them?",
+  "source": {
+   "title": "Federal land sale withdrawn from Senate's version of the Big Beautiful Bill",
+   "publisher": "Wyoming Public Radio / Mountain West News Bureau (via KUNC)",
+   "date": "2025-06-30",
+   "url": "https://www.kunc.org/regional-news/2025-06-30/federal-land-sale-withdrawn-from-senates-version-of-the-big-beautiful-bill"
+  },
+  "tags": [
+   "federal",
+   "public lands",
+   "wildcard",
+   "housing"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-states-take-the-wheel",
+  "title": "States take the wheel",
+  "signal": "The Forest Service held 540 Good Neighbor agreements in FY2025, 426 of them with 39 states plus others with counties and Tribes, and partners may keep timber revenue for restoration through FY2028.",
+  "horizon": "far",
+  "primary": {
+   "domain": "governance",
+   "delta": 1,
+   "text": "Cross-boundary agreements mature into shared management, with states and Tribes running much of the work on federal land."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "workforce",
+   "delta": -1,
+   "text": "State, county and Tribal staff stretch thin running work on land they do not own."
+  },
+  "prompt": "What capacity would our state need to run federal projects at scale?",
+  "source": {
+   "title": "The Good Neighbor Authority on Federal Lands: In Brief (R49480)",
+   "publisher": "Congressional Research Service (via EveryCRSReport)",
+   "date": "2026-10-07",
+   "url": "https://www.everycrsreport.com/reports/R49480.html"
+  },
+  "tags": [
+   "state",
+   "Good Neighbor Authority",
+   "shared stewardship",
+   "Tribal"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-states-first-fema-second",
+  "title": "States first, FEMA second",
+  "signal": "A Trump-appointed FEMA Review Council recommended raising the damage threshold for federal disaster aid by more than half and paying states lump sums, giving states more control and more of the burden.",
+  "horizon": "far",
+  "primary": {
+   "domain": "governance",
+   "delta": -1,
+   "text": "Federal aid covers only the biggest disasters; states and counties absorb mid-sized fires, floods and recovery costs."
+  },
+  "secondary": {
+   "type": "protect",
+   "text": "Protect one domain: name what your state would fund first when federal disaster aid shrinks."
+  },
+  "prompt": "If federal disaster aid shrank tomorrow, what would our state stop doing?",
+  "source": {
+   "title": "A Trump council recommends overhauling FEMA. Here are 3 key changes",
+   "publisher": "NPR (via Michigan Public)",
+   "date": "2026-05-07",
+   "url": "https://www.michiganpublic.org/2026-05-07/a-trump-council-recommends-overhauling-fema-here-are-3-key-changes"
+  },
+  "tags": [
+   "federal",
+   "disaster aid",
+   "FEMA",
+   "federal-state roles"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-bigger-targets-thinner-ranks",
+  "title": "Bigger targets, thinner ranks",
+  "signal": "GAO found the Forest Service workforce fell about 20 percent in 2025, with some forests missing 40 percent or more of timber staff, just as an executive order raised harvest targets.",
+  "horizon": "now",
+  "primary": {
+   "domain": "workforce",
+   "delta": -2,
+   "text": "Sale preparation, contracting and planning skills thin out; remaining staff juggle several jobs and burn out."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "wood",
+   "delta": -1,
+   "text": "Timber sales lag targets, leaving mills short of federal logs."
+  },
+  "prompt": "Which skills would take us longest to rebuild if they walked out the door?",
+  "source": {
+   "title": "Forest Service: Opportunities Exist to Improve Timber Sale Management (GAO-26-107993)",
+   "publisher": "U.S. Government Accountability Office",
+   "date": "2026-06-04",
+   "url": "https://files.gao.gov/reports/GAO-26-107993/index.html"
+  },
+  "tags": [
+   "federal",
+   "workforce",
+   "timber",
+   "GAO"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-raise-refilled-crews",
+  "title": "The raise that refilled the crews",
+  "signal": "The Forest Service reported about 11,550 seasonal fire staff trained or ready in June 2026, roughly 200 above its goal, crediting recent firefighter pay raises, even as it lost nearly 6,000 permanent staff.",
+  "horizon": "now",
+  "primary": {
+   "domain": "workforce",
+   "delta": 1,
+   "text": "Competitive pay keeps seasonal crews full and steadies recruitment, even as support ranks thin."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "governance",
+   "delta": -1,
+   "text": "Permanent raises add a recurring cost that squeezes other programs when budgets stay flat."
+  },
+  "prompt": "Pay fixed recruitment; what would fix retention of mid-career leaders?",
+  "source": {
+   "title": "As western fires erupt, Trump's Forest Service says it's now fully staffed",
+   "publisher": "NPR (via OPB)",
+   "date": "2026-06-18",
+   "url": "https://www.opb.org/article/2026/06/18/as-western-fires-erupt-trump-s-forest-service-says-it-s-now-fully-staffed/"
+  },
+  "tags": [
+   "federal",
+   "firefighters",
+   "pay",
+   "hiring"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-pack-the-lab-or-quit",
+  "title": "Pack the lab, or quit",
+  "signal": "USDA's plan to move Forest Service headquarters to Salt Lake City, replace regional offices with state offices and close about two dozen research stations was halted by a federal judge in October 2026; the ruling is under appeal.",
+  "horizon": "now",
+  "primary": {
+   "domain": "workforce",
+   "delta": -2,
+   "text": "Scientists and specialists unwilling to relocate leave; decades of local expertise and field relationships walk out."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "governance",
+   "delta": 1,
+   "text": "USDA projects lower overhead; if the savings hold, some dollars could shift toward field work."
+  },
+  "prompt": "How would our partnerships change if the nearest federal scientists moved 1,000 miles away?",
+  "source": {
+   "title": "Agriculture secretary says agency is “full-bore ahead” on Forest Service reorganization",
+   "publisher": "Associated Press (via KTAR News)",
+   "date": "2026-10-22",
+   "url": "https://ktar.com/national-news/agriculture-secretary-says-agency-is-full-bore-ahead-on-forest-service-reorganization"
+  },
+  "tags": [
+   "federal",
+   "reorganization",
+   "research",
+   "relocation",
+   "litigation"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-thin-bench-fireline",
+  "title": "Thin bench on the fireline",
+  "signal": "Federal officials warned of a 15 percent drop in available hotshot crews in 2026, and only 38 teams could handle the largest, fastest fires, down from 44 two years earlier.",
+  "horizon": "near",
+  "primary": {
+   "domain": "workforce",
+   "delta": -1,
+   "text": "Leadership gaps compound; too few crew bosses and incident commanders for longer, overlapping fire seasons."
+  },
+  "secondary": {
+   "type": "remove",
+   "amount": 1,
+   "text": "Remove 1 point from a domain that suffers when experienced fire leaders are scarce, and explain."
+  },
+  "prompt": "Who are our next incident commanders, and what are we doing to keep them?",
+  "source": {
+   "title": "Federal Job Cuts Are Making Wildfires Harder to Fight",
+   "publisher": "The New York Times (via GV Wire)",
+   "date": "2026-08-14",
+   "url": "https://gvwire.com/2026/08/14/federal-job-cuts-are-making-wildfires-harder-to-fight/"
+  },
+  "tags": [
+   "federal",
+   "firefighters",
+   "leadership",
+   "incident management"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-forestry-farm-team",
+  "title": "Forestry's new farm team",
+  "signal": "A Western forestry association launched a four-state initiative linking students, schools and employers, with about $450,000 in early industry pledges, citing a trend of two trades entrants for every five retirees.",
+  "horizon": "near",
+  "primary": {
+   "domain": "workforce",
+   "delta": 1,
+   "text": "Regional career pathways steady the supply of loggers, foresters and technicians for public and private lands."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "wood",
+   "delta": 1,
+   "text": "Contractors and mills find trained operators, keeping harvest and restoration capacity alive."
+  },
+  "prompt": "What would make our agency a young person's first-choice employer?",
+  "source": {
+   "title": "Regional Forestry Workforce Initiative Gains Momentum Across the Northwest",
+   "publisher": "Western Forestry & Conservation Association",
+   "date": "2026-08-31",
+   "url": "https://www.westernforestry.org/news/regional-forestry-workforce-initiative-press-release/"
+  },
+  "tags": [
+   "workforce",
+   "training",
+   "industry",
+   "pipeline"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-drone-pilots-join-engine",
+  "title": "Drone pilots join the engine",
+  "signal": "Aspen's fire district won an FAA waiver in October 2026 to fly AI-assisted firefighting drones once training ends, aiming to be the first department to operate them independently; they remain untested on real wildfires.",
+  "horizon": "near",
+  "primary": {
+   "domain": "workforce",
+   "delta": 1,
+   "text": "Crews add drone pilots and data roles, extending reach at night and over terrain too risky for people."
+  },
+  "secondary": {
+   "type": "add",
+   "amount": 1,
+   "text": "Add 1 point to a domain that benefits when crews can fly drones, and explain how."
+  },
+  "prompt": "Which skills should our next hires bring that our current crews lack?",
+  "source": {
+   "title": "Testing the new generation of AI-enabled fire-extinguishing drones",
+   "publisher": "NPR (via KPBS)",
+   "date": "2026-11-10",
+   "url": "https://www.kpbs.org/news/science-technology/2026/11/10/testing-the-new-generation-of-ai-enabled-fire-extinguishing-drones"
+  },
+  "tags": [
+   "local",
+   "technology",
+   "drones",
+   "skills"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-firefighting-by-contract",
+  "title": "Firefighting, by contract",
+  "signal": "USDA's 2026 wildfire readiness memo counted more than 22,000 contracted resources from about 2,500 vendors alongside 28,000-plus mobilizable responders, underscoring reliance on private engines, crews and aircraft.",
+  "horizon": "near",
+  "primary": {
+   "domain": "workforce",
+   "delta": 1,
+   "text": "Contractors supply surge capacity on demand, filling gaps left by a smaller federal workforce."
+  },
+  "secondary": {
+   "type": "fixed",
+   "domain": "governance",
+   "delta": -1,
+   "text": "Contract costs climb, and thin agency staff struggle to oversee quality, safety and accountability."
+  },
+  "prompt": "What should never be contracted out, and why?",
+  "source": {
+   "title": "USDA increases wildfire firefighting capacity for the 2026 fire season",
+   "publisher": "Fire & Safety Journal Americas",
+   "date": "2026-05-01",
+   "url": "https://fireandsafetyjournalamericas.com/usda-wildfire-readiness/"
+  },
+  "tags": [
+   "federal",
+   "contractors",
+   "suppression",
+   "capacity"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-robots-thinning-crew",
+  "title": "Robots join the thinning crew",
+  "signal": "European researchers field-tested a supervised autonomous harvester that navigates forests and grasps trees for selective thinning, with a human approving each cut; it still needed human help about 9 percent of the time.",
+  "horizon": "far",
+  "primary": {
+   "domain": "workforce",
+   "delta": 1,
+   "text": "Supervised machines take over the most dangerous cutting work, with fewer injuries and more thinning per operator."
+  },
+  "secondary": {
+   "type": "add",
+   "amount": 1,
+   "text": "Add 1 point to a domain that gains when thinning gets cheaper and safer, and explain how."
+  },
+  "prompt": "If one operator runs three machines, what new jobs do we need to create?",
+  "source": {
+   "title": "SAHA: Supervised Autonomous HArvester for selective forest thinning",
+   "publisher": "arXiv (ETH Zurich, University of Bonn, Prefor)",
+   "date": "2026-01-03",
+   "url": "https://arxiv.org/abs/2601.01282"
+  },
+  "tags": [
+   "technology",
+   "robotics",
+   "safety",
+   "research"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ },
+ {
+  "id": "sig-planners-new-copilot",
+  "title": "The planner's new co-pilot",
+  "signal": "Pacific Northwest National Laboratory and OpenAI built a benchmark testing whether AI agents can draft cited environmental impact statement sections, drawn from 19 agencies' reviews; researchers stress human oversight remains essential.",
+  "horizon": "far",
+  "primary": {
+   "domain": "workforce",
+   "delta": 1,
+   "text": "AI handles first drafts and record searches; specialists spend their time on judgment, field checks and people."
+  },
+  "secondary": {
+   "type": "move",
+   "amount": 1,
+   "text": "Move 1 point between domains to show who wins and who loses when AI speeds decisions. Explain."
+  },
+  "prompt": "Which decisions must always carry a human name?",
+  "source": {
+   "title": "PermitAI public-private partnership speeds environmental review drafting tasks",
+   "publisher": "Pacific Northwest National Laboratory",
+   "date": "2026-06-29",
+   "url": "https://www.pnnl.gov/news-media/permitai-public-private-partnership-speeds-environmental-review-drafting-tasks"
+  },
+  "tags": [
+   "technology",
+   "AI",
+   "NEPA",
+   "planning"
+  ],
+  "status": "active",
+  "reviewed": "2026-11-14",
+  "origin": "new"
+ }
+]

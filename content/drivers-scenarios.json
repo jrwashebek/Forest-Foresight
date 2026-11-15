@@ -1,0 +1,1569 @@
+{
+ "drivers": [
+  {
+   "id": "drv-one-fire-service",
+   "title": "Fire gets its own agency",
+   "text": "Interior launched the U.S. Wildland Fire Service in early 2026, merging its bureaus' fire programs. Budgets propose folding Forest Service fire in too, but Congress has funded the two separately and wants a feasibility study first.",
+   "horizon": "now",
+   "effects": [
+    {
+     "domain": "workforce",
+     "delta": -1
+    },
+    {
+     "domain": "partners",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Congress asks for your view: should Forest Service wildland fire move into Interior's new fire service?",
+    "options": [
+     {
+      "label": "Back one fire service",
+      "text": "Support a full merger: one command, one budget, and firefighters led by firefighters across federal lands.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Keep fire with forests",
+      "text": "Keep fire inside the Forest Service so fuels, timber and fire planning stay integrated on the same ground.",
+      "effects": [
+       {
+        "domain": "health",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Joint command, no merger",
+      "text": "Create a shared USDA–Interior fire command with pooled dispatch and aviation, but keep separate agencies and budgets.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "As potentially significant season kicks off, the US Wildland Fire Service's first chief shares priorities",
+    "publisher": "OPB",
+    "date": "2026-05-02",
+    "url": "https://www.opb.org/article/2026/05/02/us-wildland-fire-service-first-chief/"
+   },
+   "tags": [
+    "federal",
+    "fire",
+    "structure",
+    "interior"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-regions-to-states",
+   "title": "Goodbye regions, hello governors",
+   "text": "USDA plans to close all nine Forest Service regional offices, move headquarters to Salt Lake City and create 15 state directors to work with governors. A federal judge paused the plan in October, a ruling now under appeal.",
+   "horizon": "now",
+   "effects": [
+    {
+     "domain": "workforce",
+     "delta": -2
+    },
+    {
+     "domain": "partners",
+     "delta": 1
+    },
+    {
+     "domain": "governance",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Your new state director asks how closely federal forest priorities should track the governor's agenda.",
+    "options": [
+     {
+      "label": "One shared state plan",
+      "text": "Write a joint state–federal forest plan with the governor's office, pooling staff, budgets and priorities.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "National rules first",
+      "text": "Coordinate closely, but keep national standards and federal law as the anchor for every decision.",
+      "effects": [
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "partners",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Delegate via Good Neighbor",
+      "text": "Shift more project work to state crews through Good Neighbor agreements, including timber sale preparation.",
+      "effects": [
+       {
+        "domain": "workforce",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Forest Service to move HQ out of DC, shutter regional offices in sweeping overhaul",
+    "publisher": "Government Executive",
+    "date": "2026-04-01",
+    "url": "https://www.govexec.com/management/2026/04/forest-service-move-hq-out-dc-shutter-regional-offices-sweeping-overhaul/412566/"
+   },
+   "tags": [
+    "federal",
+    "structure",
+    "states",
+    "reorganization"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-lean-years",
+   "title": "The incredible shrinking budget",
+   "text": "After losing thousands of staff in 2025, the Forest Service faces a 2027 budget request that cuts National Forest System funds about 24% and zeroes out its research and State, Private and Tribal Forestry lines.",
+   "horizon": "now",
+   "effects": [
+    {
+     "domain": "governance",
+     "delta": -2
+    },
+    {
+     "domain": "workforce",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Money is down again. As a leadership team, what do you protect first?",
+    "options": [
+     {
+      "label": "Fire readiness first",
+      "text": "Protect crews, engines and aviation; defer trail work, research and partner grants.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "recreation",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Keep partners whole",
+      "text": "Protect state, Tribal and nonprofit agreements that bring outside money, even if federal crews shrink.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Fees up, sites down",
+      "text": "Raise recreation fees and close low-use sites to keep a funded core workforce.",
+      "effects": [
+       {
+        "domain": "workforce",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "recreation",
+        "delta": -2
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Chief Tom Schultz details, defends largest Forest Service reorganization in a century",
+    "publisher": "Daily Montanan",
+    "date": "2026-07-06",
+    "url": "https://dailymontanan.com/2026/07/06/chief-tom-schultz-details-defends-largest-forest-service-reorganization-in-a-century/"
+   },
+   "tags": [
+    "federal",
+    "budget",
+    "workforce"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-record-fire-year",
+   "title": "A decade-high fire year",
+   "text": "By September 5, 2026, more than 8.3 million acres had burned nationwide, the most for that date in a decade, with Oregon and Washington hit hardest. Nearly 18,000 personnel were on the lines.",
+   "horizon": "now",
+   "effects": [
+    {
+     "domain": "fire",
+     "delta": -1
+    },
+    {
+     "domain": "communities",
+     "delta": -1
+    },
+    {
+     "domain": "workforce",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "After a record fire year, do you keep a full-suppression posture or reopen room for prescribed and managed fire?",
+    "options": [
+     {
+      "label": "Suppress every start",
+      "text": "Put out every fire fast to protect homes, crews and air quality; defer burning.",
+      "effects": [
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Reopen the burn window",
+      "text": "Expand prescribed and managed fire with states and Tribes, accepting smoke and escape risk.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 2
+       },
+       {
+        "domain": "communities",
+        "delta": -1
+       },
+       {
+        "domain": "recreation",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Thin, don't burn",
+      "text": "Lean on mechanical thinning and fuel breaks near towns, with little burning.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "US Wildfire Acreage Hits 10-Year High as Fires Rage Across West",
+    "publisher": "Newsweek",
+    "date": "2026-09-05",
+    "url": "https://www.newsweek.com/us-wildfires-hit-highest-acreage-burned-in-a-decade-12409322"
+   },
+   "tags": [
+    "fire",
+    "climate",
+    "suppression"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-timber-push",
+   "title": "Get the cut out",
+   "text": "A 2025 executive order seeks 25% more national forest timber. Analysts find willing mills sit near only about a third of priority fire landscapes, and fire-risk gains depend on how sales are designed.",
+   "horizon": "now",
+   "effects": [
+    {
+     "domain": "wood",
+     "delta": 2
+    },
+    {
+     "domain": "workforce",
+     "delta": -1
+    },
+    {
+     "domain": "health",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Your timber target just rose again. How do you design this year's program?",
+    "options": [
+     {
+      "label": "Chase volume near mills",
+      "text": "Concentrate sales where mills exist and logs pay, to hit the target and keep mills running.",
+      "effects": [
+       {
+        "domain": "wood",
+        "delta": 1
+       },
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Fuels-first sale design",
+      "text": "Design sales around fire risk and small trees, even if volume falls short and some draw no bids.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": 1
+       },
+       {
+        "domain": "wood",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Stewardship bundles",
+      "text": "Bundle timber with restoration in long stewardship contracts run with local partners.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Will Increased Timber Harvesting on Federal Lands Reduce Growing Wildfire Hazards?",
+    "publisher": "Resources for the Future",
+    "date": "2025-07-21",
+    "url": "https://www.rff.org/publications/reports/will-increased-timber-harvesting-on-federal-lands-reduce-growing-wildfire-hazards/"
+   },
+   "tags": [
+    "federal",
+    "wood",
+    "timber",
+    "fire"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-firesheds-fast-lane",
+   "title": "A fast lane for firesheds",
+   "text": "The Fix Our Forests Act passed the House and awaits a Senate vote. If enacted, it would speed fuels and restoration work in high-risk firesheds and let larger projects skip full environmental review.",
+   "horizon": "now",
+   "effects": [
+    {
+     "domain": "fire",
+     "delta": 1
+    },
+    {
+     "domain": "governance",
+     "delta": 1
+    },
+    {
+     "domain": "partners",
+     "delta": -2
+    }
+   ],
+   "dilemma": {
+    "prompt": "New authority lets you skip parts of environmental review on big fireshed projects. How hard do you lean on it?",
+    "options": [
+     {
+      "label": "Use it to the max",
+      "text": "Apply every new exemption to move large projects in months, not years.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 2
+       },
+       {
+        "domain": "partners",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Speed with consent",
+      "text": "Use exemptions only where collaboratives, Tribes and counties already agree on the project.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Pilot and monitor",
+      "text": "Test the authority on a few firesheds with independent monitoring before scaling up.",
+      "effects": [
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "\"Fire seasons are becoming fire years\": Will Congress act?",
+    "publisher": "Deseret News",
+    "date": "2026-11-13",
+    "url": "https://deseret.com/environment/2026/11/13/fire-seasons-are-becoming-fire-years-will-congress-act"
+   },
+   "tags": [
+    "federal",
+    "legislation",
+    "fire",
+    "nepa"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-policy-pendulum",
+   "title": "The pendulum swings back",
+   "text": "Federal priorities keep swinging with elections. In the 2030s, new majorities revisit recent changes: some budgets return, while reorganizations and rules reopen. Agencies face a second overhaul within a decade, and partners wonder what will stick.",
+   "horizon": "near",
+   "effects": [
+    {
+     "domain": "governance",
+     "delta": 1
+    },
+    {
+     "domain": "workforce",
+     "delta": -1
+    },
+    {
+     "domain": "partners",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "A new majority offers to restore the old structure and budgets. What do you ask for?",
+    "options": [
+     {
+      "label": "Restore what was lost",
+      "text": "Rebuild regional offices, research stations and staffing toward pre-2025 levels.",
+      "effects": [
+       {
+        "domain": "workforce",
+        "delta": 2
+       },
+       {
+        "domain": "governance",
+        "delta": -1
+       },
+       {
+        "domain": "partners",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Keep what works, fund it",
+      "text": "Keep state offices and streamlined authorities, but ask for stable multi-year funding.",
+      "effects": [
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Lock it into law",
+      "text": "Spend political capital writing durable statutes so the next swing cannot easily undo them.",
+      "effects": [
+       {
+        "domain": "governance",
+        "delta": 2
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Trying to Reason with A Midterm Election Earthquake",
+    "publisher": "farmdoc daily (University of Illinois)",
+    "date": "2026-11-05",
+    "url": "https://farmdocdaily.illinois.edu/2026/11/trying-to-reason-with-a-midterm-election-earthquake.html"
+   },
+   "tags": [
+    "federal",
+    "politics",
+    "budget",
+    "structure"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-insurance-retreat",
+   "title": "Uninsurable Main Street",
+   "text": "Insurers are pulling back from fire-prone towns: Utah's 2025 nonrenewal rate led the nation and pricier surplus-lines policies keep spreading. By the 2030s, whole WUI communities struggle to find coverage or mortgages.",
+   "horizon": "near",
+   "effects": [
+    {
+     "domain": "communities",
+     "delta": -2
+    },
+    {
+     "domain": "governance",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Insurers will return only if communities prove lower risk. Where do you put scarce mitigation dollars?",
+    "options": [
+     {
+      "label": "Harden homes, certify towns",
+      "text": "Fund home hardening and community certification so insurers can price risk down.",
+      "effects": [
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Treat the landscape",
+      "text": "Put the money into fuel breaks and landscape treatments around towns.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Limit risky building",
+      "text": "Back state limits on new construction in the highest-risk zones.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "communities",
+        "delta": -2
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Advocates urge regulation of surplus line insurance as traditional coverage gets harder to keep",
+    "publisher": "KUNC / Mountain West News Bureau",
+    "date": "2026-09-24",
+    "url": "https://www.kunc.org/2026-09-24/surplus-lines-homeowners-insurance-utah-wildfire-climate-change"
+   },
+   "tags": [
+    "communities",
+    "insurance",
+    "wui"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-mass-timber-surge",
+   "title": "Wood goes vertical",
+   "text": "Mass timber has grown about 20% a year since 2015, with more than 2,500 projects built or underway by the end of 2025. By the 2030s, builders want steady supplies of the small and mid-size logs restoration produces.",
+   "horizon": "near",
+   "effects": [
+    {
+     "domain": "wood",
+     "delta": 2
+    },
+    {
+     "domain": "climate",
+     "delta": 1
+    },
+    {
+     "domain": "workforce",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "A mass-timber plant will locate in your state if public forests guarantee 20 years of log supply. Do you commit?",
+    "options": [
+     {
+      "label": "Guarantee the supply",
+      "text": "Sign long-term supply agreements from public forests to land the plant and its jobs.",
+      "effects": [
+       {
+        "domain": "wood",
+        "delta": 1
+       },
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Restoration wood only",
+      "text": "Offer only fuels and restoration material; the plant may build smaller or go elsewhere.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": 1
+       },
+       {
+        "domain": "wood",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Let private lands supply",
+      "text": "Leave supply to private and family forests, with state incentives for certified wood.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "2025 Was a 'Pivotal' Year for Mass Timber Construction",
+    "publisher": "IWF Atlanta",
+    "date": "2026-02-11",
+    "url": "https://www.iwfatlanta.com/industry-trends/2025-was-a-pivotal-year-for-mass-timber-construction"
+   },
+   "tags": [
+    "wood",
+    "markets",
+    "mass-timber"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-carbon-boom",
+   "title": "Carbon money comes knocking",
+   "text": "California extended its carbon market to 2045 and raised the offset limit, requiring at least half from in-state projects. By the 2030s, carbon buyers court every forest owner, public and private, with long contracts.",
+   "horizon": "near",
+   "effects": [
+    {
+     "domain": "climate",
+     "delta": 2
+    },
+    {
+     "domain": "partners",
+     "delta": 1
+    },
+    {
+     "domain": "wood",
+     "delta": -2
+    }
+   ],
+   "dilemma": {
+    "prompt": "Carbon buyers offer long-term payments to defer harvest on state and partner forests. Do you sign?",
+    "options": [
+     {
+      "label": "Sign the long contracts",
+      "text": "Enroll forests in decades-long carbon contracts that pay well but lock in deferred harvest.",
+      "effects": [
+       {
+        "domain": "climate",
+        "delta": 2
+       },
+       {
+        "domain": "wood",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Credit active care only",
+      "text": "Sell credits only from fuels reduction, reforestation and fire-resilient stands.",
+      "effects": [
+       {
+        "domain": "climate",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Keep forests flexible",
+      "text": "Decline long contracts to keep options open for timber, fuels work and future climate shifts.",
+      "effects": [
+       {
+        "domain": "wood",
+        "delta": 1
+       },
+       {
+        "domain": "climate",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "California extends cap-and-trade to 2045, renames program cap-and-invest",
+    "publisher": "International Carbon Action Partnership (ICAP)",
+    "date": "2025-09-29",
+    "url": "https://icapcarbonaction.com/en/news/california-extends-cap-and-trade-2045-renames-program-cap-and-invest"
+   },
+   "tags": [
+    "climate",
+    "carbon",
+    "markets",
+    "states"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-river-runs-short",
+   "title": "The river runs short",
+   "text": "Western water keeps tightening: in 2026 Lake Powell and Lake Mead held their least combined water since 1963 after record-low snowpack, forcing Lower Basin cuts. In the 2030s, cities look upstream to forests.",
+   "horizon": "near",
+   "effects": [
+    {
+     "domain": "water",
+     "delta": -2
+    },
+    {
+     "domain": "communities",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Downstream cities offer to fund thinning in their source watersheds, if those forests get top priority. Do you accept?",
+    "options": [
+     {
+      "label": "Follow the water money",
+      "text": "Prioritize utility-funded watersheds; other high-risk forests wait their turn.",
+      "effects": [
+       {
+        "domain": "water",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Pool it, treat by risk",
+      "text": "Take the money into a shared fund and treat wherever fire risk is highest.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "partners",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Manage for snow, flow",
+      "text": "Thin stands and restore meadows to hold snow and boost late-season flows, as a monitored pilot.",
+      "effects": [
+       {
+        "domain": "water",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Interior Department Finalizes Plans for 2027-2028 Colorado River Operations",
+    "publisher": "U.S. Department of the Interior",
+    "date": "2026-08-21",
+    "url": "https://www.doi.gov/pressreleases/interior-department-finalizes-plans-2027-2028-colorado-river-operations"
+   },
+   "tags": [
+    "water",
+    "drought",
+    "west",
+    "partners"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-fire-years",
+   "title": "Fire years, not fire seasons",
+   "text": "A UN assessment projects extreme wildfires rising about 30% by 2050. By the 2040s, U.S. fire activity spans most of the year, and staffing built around summer seasonal crews no longer fits.",
+   "horizon": "far",
+   "effects": [
+    {
+     "domain": "fire",
+     "delta": -2
+    },
+    {
+     "domain": "workforce",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Fire never really stops now. How do you staff for a year-round threat?",
+    "options": [
+     {
+      "label": "Year-round federal force",
+      "text": "Convert seasonal crews into a permanent fire service that fights fire and does fuels work all year.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Community fire networks",
+      "text": "Train and fund local, volunteer, Tribal and private crews to share response and burning.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Let remote fires work",
+      "text": "Manage remote fires for ecological benefit and defend only communities and critical infrastructure.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": 1
+       },
+       {
+        "domain": "recreation",
+        "delta": -2
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "UN warns that number of extreme wildfires will increase 30% by 2050, 50% by end of century",
+    "publisher": "KTNV / Scripps News (on UNEP report \"Spreading like Wildfire\")",
+    "date": "2022-02-23",
+    "url": "https://www.ktnv.com/news/national/un-warns-that-number-of-extreme-wildfires-will-increase-30-by-2050-50-by-end-of-century"
+   },
+   "tags": [
+    "fire",
+    "climate",
+    "workforce",
+    "research"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-pathogen-arrives",
+   "title": "The next chestnut blight",
+   "text": "The nursery trade keeps moving tree pathogens; sudden oak death was recently found for the first time in a Minnesota nursery. By the 2040s, an incurable pathogen establishes across a major U.S. forest type.",
+   "horizon": "far",
+   "effects": [
+    {
+     "domain": "health",
+     "delta": -2
+    },
+    {
+     "domain": "wood",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "A deadly pathogen is racing through a keystone tree species. What is your strategy?",
+    "options": [
+     {
+      "label": "Contain at all costs",
+      "text": "Quarantine, cut buffer zones and restrict nursery and firewood movement across state lines.",
+      "effects": [
+       {
+        "domain": "health",
+        "delta": 2
+       },
+       {
+        "domain": "wood",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Breed resistant trees",
+      "text": "Invest in resistant and gene-edited trees with Tribes and universities, accepting public debate.",
+      "effects": [
+       {
+        "domain": "health",
+        "delta": 1
+       },
+       {
+        "domain": "partners",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Salvage and diversify",
+      "text": "Salvage dying stands fast and replant mixed species suited to the future climate.",
+      "effects": [
+       {
+        "domain": "wood",
+        "delta": 1
+       },
+       {
+        "domain": "climate",
+        "delta": 1
+       },
+       {
+        "domain": "health",
+        "delta": -2
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Biosurveillance project flags first sudden oak death detection in Minnesota",
+    "publisher": "Minnesota Invasive Terrestrial Plants and Pests Center, University of Minnesota",
+    "date": "2026-01-15",
+    "url": "https://mitppc.umn.edu/news/biosurveillance-project-flags-first-sudden-oak-death-detection-minnesota"
+   },
+   "tags": [
+    "health",
+    "invasives",
+    "pathogen",
+    "research"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-algorithmic-forest",
+   "title": "Algorithms on the fireline",
+   "text": "The first operational FireSat satellites launched in 2026, aiming for hourly global coverage by 2029. By the 2040s, AI spots nearly every ignition within minutes and recommends where to thin, burn and dispatch.",
+   "horizon": "far",
+   "effects": [
+    {
+     "domain": "fire",
+     "delta": 1
+    },
+    {
+     "domain": "workforce",
+     "delta": 1
+    },
+    {
+     "domain": "governance",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "AI can now triage initial attack and rank treatments faster than any team. How much decision power do you give it?",
+    "options": [
+     {
+      "label": "Let the model dispatch",
+      "text": "Automate initial attack and treatment ranking; people audit the decisions afterward.",
+      "effects": [
+       {
+        "domain": "fire",
+        "delta": 2
+       },
+       {
+        "domain": "partners",
+        "delta": -1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Humans make the call",
+      "text": "Use AI as an advisor; trained people make and explain every decision.",
+      "effects": [
+       {
+        "domain": "workforce",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Open the data commons",
+      "text": "Share models and data openly with Tribes, states, landowners and insurers.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": -2
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Muon Space Deploys First Three Operational FireSat Satellites for Earth Fire Alliance",
+    "publisher": "Muon Space",
+    "date": "2026-07-07",
+    "url": "https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/"
+   },
+   "tags": [
+    "technology",
+    "ai",
+    "fire",
+    "workforce"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-tribal-co-management",
+   "title": "Co-management goes mainstream",
+   "text": "Co-stewardship keeps spreading across administrations, like the Cow Creek Umpqua Tribe's 155,000-acre agreement on two Oregon national forests. By the 2040s, Tribes co-manage large areas of national forest, with cultural fire built in.",
+   "horizon": "far",
+   "effects": [
+    {
+     "domain": "partners",
+     "delta": 2
+    },
+    {
+     "domain": "fire",
+     "delta": 1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Tribal nations propose taking the lead in managing several national forest units. How do you respond?",
+    "options": [
+     {
+      "label": "Transfer lead authority",
+      "text": "Support Tribes as lead managers, with federal funding and treaty-based standards.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 2
+       },
+       {
+        "domain": "governance",
+        "delta": -1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Joint boards, shared budgets",
+      "text": "Create co-management boards where federal and Tribal leaders decide together.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -2
+       }
+      ]
+     },
+     {
+      "label": "Grow agreements gradually",
+      "text": "Keep the federal lead but widen co-stewardship agreements unit by unit.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "fire",
+        "delta": -1
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Cow Creek Umpqua signs 155,000-acre forest co-stewardship agreement with U.S. Forest Service",
+    "publisher": "Tribal Business News",
+    "date": "2026-02-21",
+    "url": "https://tribalbusinessnews.com/sections/energy/15500-cow-creek-umpqua-signs-155-000-acre-forest-co-stewardship-agreement-with-u-s-forest-service"
+   },
+   "tags": [
+    "tribal",
+    "partners",
+    "co-stewardship",
+    "fire"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "drv-hand-it-to-states",
+   "title": "Hand the keys to the states",
+   "text": "Proposals to sell or transfer federal lands keep resurfacing; a 2025 Senate plan was dropped after bipartisan pushback. By the 2040s, Congress lets willing states take over management of some national forests.",
+   "horizon": "far",
+   "effects": [
+    {
+     "domain": "governance",
+     "delta": -2
+    },
+    {
+     "domain": "partners",
+     "delta": 1
+    },
+    {
+     "domain": "recreation",
+     "delta": -1
+    }
+   ],
+   "dilemma": {
+    "prompt": "Congress offers your state management of the national forests within its borders. Do you take it?",
+    "options": [
+     {
+      "label": "Accept, with federal funding",
+      "text": "Take over management only with guaranteed federal funding and current public access.",
+      "effects": [
+       {
+        "domain": "partners",
+        "delta": 1
+       },
+       {
+        "domain": "workforce",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Decline, stay a partner",
+      "text": "Stay a partner, not the owner; keep national rules and federal funding.",
+      "effects": [
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "partners",
+        "delta": -1
+       }
+      ]
+     },
+     {
+      "label": "Accept, allow some sales",
+      "text": "Take over and allow limited land sales for housing and state revenue.",
+      "effects": [
+       {
+        "domain": "communities",
+        "delta": 1
+       },
+       {
+        "domain": "governance",
+        "delta": 1
+       },
+       {
+        "domain": "recreation",
+        "delta": -2
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "title": "Sen. Mike Lee removes public lands provision from Trump's \"big, beautiful bill\"",
+    "publisher": "CBS News (Associated Press)",
+    "date": "2025-06-30",
+    "url": "https://www.cbsnews.com/news/sen-mike-lee-removes-public-lands-provision-from-trumps-big-beautiful-bill"
+   },
+   "tags": [
+    "federal",
+    "states",
+    "public-lands",
+    "devolution"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "scn-todays-trajectory",
+   "name": "Today's Trajectory",
+   "summary": "Starts from conditions in late 2026: a decade-high fire year, a Forest Service about one-sixth smaller after 2025 departures, a court-paused reorganization, a new Interior fire service, stopgap budgets, rising timber targets, Colorado River shortages and a newly elected Congress. Drivers extend current trends without assuming which political direction wins.",
+   "start": {
+    "fire": 3,
+    "health": 4,
+    "water": 4,
+    "climate": 4,
+    "wood": 5,
+    "communities": 4,
+    "recreation": 4,
+    "workforce": 3,
+    "governance": 4,
+    "partners": 5
+   },
+   "drivers": {
+    "now": [
+     "drv-one-fire-service",
+     "drv-regions-to-states",
+     "drv-lean-years",
+     "drv-record-fire-year"
+    ],
+    "near": [
+     "drv-policy-pendulum",
+     "drv-insurance-retreat",
+     "drv-river-runs-short",
+     "drv-mass-timber-surge"
+    ],
+    "far": [
+     "drv-fire-years",
+     "drv-pathogen-arrives",
+     "drv-algorithmic-forest",
+     "drv-tribal-co-management"
+    ]
+   },
+   "tags": [
+    "baseline",
+    "evidence-based",
+    "realistic"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "scn-lean-federal",
+   "name": "Lean Federal Era",
+   "summary": "Washington keeps shrinking its footprint: leaner budgets, consolidated fire, fewer staff and faster approvals. Supporters see efficiency, more timber and local control; critics see lost capacity, science and public services. Markets, states and private owners fill gaps unevenly. Can partners do more with less federal help?",
+   "start": {
+    "fire": 4,
+    "health": 4,
+    "water": 4,
+    "climate": 3,
+    "wood": 7,
+    "communities": 5,
+    "recreation": 4,
+    "workforce": 3,
+    "governance": 4,
+    "partners": 5
+   },
+   "drivers": {
+    "now": [
+     "drv-lean-years",
+     "drv-one-fire-service",
+     "drv-timber-push",
+     "drv-firesheds-fast-lane"
+    ],
+    "near": [
+     "drv-insurance-retreat",
+     "drv-carbon-boom",
+     "drv-river-runs-short"
+    ],
+    "far": [
+     "drv-hand-it-to-states",
+     "drv-algorithmic-forest",
+     "drv-pathogen-arrives"
+    ]
+   },
+   "tags": [
+    "federal",
+    "contraction",
+    "markets"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "scn-states-tribes-lead",
+   "name": "States & Tribes Lead",
+   "summary": "Authority shifts toward governors and Tribal nations. State offices replace regions, Good Neighbor and co-stewardship agreements carry most project work, and Tribes lead cultural fire on more ground. Federal funding is uncertain and rules differ state to state. Partnerships are strong; consistency and national standards are tested.",
+   "start": {
+    "fire": 4,
+    "health": 5,
+    "water": 4,
+    "climate": 4,
+    "wood": 5,
+    "communities": 5,
+    "recreation": 4,
+    "workforce": 4,
+    "governance": 3,
+    "partners": 7
+   },
+   "drivers": {
+    "now": [
+     "drv-regions-to-states",
+     "drv-firesheds-fast-lane",
+     "drv-lean-years"
+    ],
+    "near": [
+     "drv-carbon-boom",
+     "drv-policy-pendulum",
+     "drv-river-runs-short"
+    ],
+    "far": [
+     "drv-tribal-co-management",
+     "drv-hand-it-to-states",
+     "drv-fire-years"
+    ]
+   },
+   "tags": [
+    "devolution",
+    "states",
+    "tribal",
+    "partners"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "scn-restoration-economy",
+   "name": "Restoration Economy",
+   "summary": "Money and demand line up behind active restoration: streamlined fireshed projects, a mass-timber building boom, carbon payments and steadier multi-year funding. Mills reopen and crews grow. The risks are overpromised log supply, carbon-contract lock-in and boom-bust cycles if markets or politics turn.",
+   "start": {
+    "fire": 3,
+    "health": 4,
+    "water": 4,
+    "climate": 4,
+    "wood": 6,
+    "communities": 4,
+    "recreation": 5,
+    "workforce": 4,
+    "governance": 4,
+    "partners": 6
+   },
+   "drivers": {
+    "now": [
+     "drv-firesheds-fast-lane",
+     "drv-timber-push",
+     "drv-one-fire-service"
+    ],
+    "near": [
+     "drv-mass-timber-surge",
+     "drv-carbon-boom",
+     "drv-policy-pendulum"
+    ],
+    "far": [
+     "drv-algorithmic-forest",
+     "drv-tribal-co-management",
+     "drv-fire-years"
+    ]
+   },
+   "tags": [
+    "intro",
+    "investment",
+    "markets",
+    "restoration"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  },
+  {
+   "id": "scn-climate-whiplash",
+   "name": "Climate Whiplash",
+   "summary": "Nature sets the agenda. With a record-strength El Niño, 2026 runs above 1.5°C of warming, and drought, deluge and fire alternate faster than plans adapt. Water shortages, pests and insurance retreat stack up. Institutions are intact but stretched. Can leaders adapt fast enough to keep the system from unraveling?",
+   "start": {
+    "fire": 3,
+    "health": 4,
+    "water": 3,
+    "climate": 3,
+    "wood": 5,
+    "communities": 4,
+    "recreation": 5,
+    "workforce": 4,
+    "governance": 5,
+    "partners": 5
+   },
+   "drivers": {
+    "now": [
+     "drv-record-fire-year",
+     "drv-one-fire-service",
+     "drv-lean-years"
+    ],
+    "near": [
+     "drv-river-runs-short",
+     "drv-insurance-retreat",
+     "drv-mass-timber-surge"
+    ],
+    "far": [
+     "drv-fire-years",
+     "drv-pathogen-arrives",
+     "drv-algorithmic-forest"
+    ]
+   },
+   "tags": [
+    "climate",
+    "stress-test",
+    "hard"
+   ],
+   "status": "active",
+   "reviewed": "2026-11-14"
+  }
+ ],
+ "baselineJustification": {
+  "fire": "3 Strained: 8.3M+ acres burned by Sept 5, 2026 (decade high), while fuels treatment fell from 4M+ acres (2024) to ~2.6M (2025) and prescribed fire roughly halved (Newsweek; NPR).",
+  "health": "4 Strained: pests keep spreading (emerald ash borer at its southernmost U.S. point in Texas; first sudden oak death detection in Minnesota) while research and FIA sites face closure (Fox 4; UMN; Vermont FPR).",
+  "water": "4 Strained: Powell and Mead at lowest combined storage since 1963 after record-low snowpack, with 1.25M acre-feet/yr Lower Basin cuts; set at 4, not 3, because the acute stress is regional (DOI).",
+  "climate": "4 Strained: 2026 virtually certain to exceed 1.5°C amid a record El Niño; federal climate programs pulled back, partly offset by California's carbon market extension to 2045 (Copernicus; ICAP).",
+  "wood": "5 Stable but uneven: pulpwood weak and mills closing in the South and Northeast, yet sawtimber steady, new sawmills opening, ~45% duties on Canadian softwood and federal timber targets up 25% (F&W; CFJC; RFF).",
+  "communities": "4 Strained: insurer retreat spreading inland (Utah's 4.5% 2025 nonrenewal rate led the U.S.; surplus-lines growth) and 2026 fires destroyed hundreds of structures (KUNC; Newsweek).",
+  "recreation": "4 Strained: trail miles maintained fell 22% and only 19% of trails met standard, the lowest accomplishment in 15 years; seasonal recreation hiring partly rebounded in 2026 (WyoFile; Daily Montanan).",
+  "workforce": "3 Strained, near Crisis: about 16–20% of Forest Service staff left in 2025; some forests report 40%+ timber vacancies and relocations are pending; firefighter hiring (~9,700 by March 2026) is the bright spot (GAO; NPR).",
+  "governance": "4 Strained: FY2027 request proposes deep non-fire cuts and a fire transfer, but Congress has largely held funding (House bill ~level); stopgap to Dec 11, grant-terms litigation, and a new Congress in 2027 (CRS).",
+  "partners": "5 Stable: co-stewardship keeps expanding (Cow Creek Umpqua, 155,000 acres; Black Elk Wilderness MOU) and governors gain a formal voice, but disputed grant terms froze some state funds and 20 states sued (Tribal Business News; NPR)."
+ }
+}

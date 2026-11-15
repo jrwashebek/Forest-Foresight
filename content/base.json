@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Forest Futures",
+    "subtitle": "A strategic foresight game for forest leaders",
+    "edition": "2026.11",
+    "updated": "2026-11-14",
+    "credits": "Evolved from “IMPACT: a foresight game – forestry edition” (2019) by the Strategic Foresight Group — David N. Bengston and Lynne M. Westphal (USDA Forest Service, Northern Research Station) and Michael J. Dockry and Jason S. Crabtree (University of Minnesota) — itself an adaptation of IMPACT, designed by Idea Couture in collaboration with Policy Horizons Canada.",
+    "notice": "Signals are drawn from real-world sources; their effects in the game are speculative and meant to provoke discussion, not to predict. This is an independent tool, not an official product of USDA or any agency."
+  },
+  "domains": [
+    { "id": "fire", "name": "Fire & Fuels", "short": "Fire", "icon": "fire",
+      "description": "Wildfire risk and behavior, fuels, prescribed and cultural fire, suppression capacity, smoke.",
+      "examples": "Fuels treatments, fire seasons, burn windows, suppression costs" },
+    { "id": "health", "name": "Forest Health", "short": "Health", "icon": "health",
+      "description": "Biodiversity, insects and disease, invasive species, drought stress, reforestation and adaptation.",
+      "examples": "Bark beetles, seed supply, mortality, restoration" },
+    { "id": "water", "name": "Water & Watersheds", "short": "Water", "icon": "water",
+      "description": "Source water, snowpack, streams, floods, post-fire watersheds and aquatic habitat.",
+      "examples": "Municipal supply, snow drought, debris flows, dam removal" },
+    { "id": "climate", "name": "Climate & Carbon", "short": "Carbon", "icon": "climate",
+      "description": "Forest carbon storage, carbon markets, emissions, bioenergy and climate policy.",
+      "examples": "Offsets, sequestration, biochar, climate targets" },
+    { "id": "wood", "name": "Wood Economy", "short": "Wood", "icon": "wood",
+      "description": "Timber, mills, mass timber, biomass, non-timber forest products and trade.",
+      "examples": "Mill capacity, lumber prices, tariffs, new wood materials" },
+    { "id": "communities", "name": "Communities & the WUI", "short": "Communities", "icon": "communities",
+      "description": "Rural economies, growth in the wildland–urban interface, housing, insurance, equity and community health.",
+      "examples": "Home hardening, insurance retreat, rural jobs, smoke exposure" },
+    { "id": "recreation", "name": "Recreation & Public Connection", "short": "Recreation", "icon": "recreation",
+      "description": "Outdoor recreation, access, visitation, wellness and public trust in land managers.",
+      "examples": "Visitor services, trail backlog, fees, nature and health" },
+    { "id": "workforce", "name": "Workforce & Capacity", "short": "Workforce", "icon": "workforce",
+      "description": "Agency and partner workforce, fire crews, contractors, skills, and science, data and technology capacity.",
+      "examples": "Staffing, hiring, retention, training, research capacity, AI tools" },
+    { "id": "governance", "name": "Policy & Funding", "short": "Policy", "icon": "governance",
+      "description": "Budgets, authorities, legislation, litigation, agency structure and federal–state roles.",
+      "examples": "Appropriations, reorganization, NEPA, executive actions" },
+    { "id": "partners", "name": "Partnerships & Co-Stewardship", "short": "Partners", "icon": "partners",
+      "description": "Tribal co-stewardship, shared stewardship with states, Good Neighbor agreements, NGOs, and private and family forest owners.",
+      "examples": "Co-management agreements, cross-boundary projects, landowner programs" }
+  ],
+  "bands": [
+    { "min": 0, "max": 2, "label": "Crisis" },
+    { "min": 3, "max": 4, "label": "Strained" },
+    { "min": 5, "max": 6, "label": "Stable" },
+    { "min": 7, "max": 8, "label": "Thriving" },
+    { "min": 9, "max": 10, "label": "Transformed" }
+  ],
+  "eras": [
+    { "id": "now", "name": "Now", "years": "2026–2030",
+      "description": "Trends already in motion and decisions already made. High certainty, little time.",
+      "weights": { "now": 0.7, "near": 0.25, "far": 0.05 } },
+    { "id": "near", "name": "Near", "years": "2031–2038",
+      "description": "Emerging changes that are plausible within a planning cycle or two.",
+      "weights": { "now": 0.25, "near": 0.55, "far": 0.2 } },
+    { "id": "far", "name": "Far", "years": "2039–2050",
+      "description": "Weak signals and wildcards. Low certainty, high consequence.",
+      "weights": { "now": 0.05, "near": 0.35, "far": 0.6 } }
+  ]
+}

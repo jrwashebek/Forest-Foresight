@@ -1,0 +1,101 @@
+/* Forest Futures — design tokens.
+   "Field journal meets situation room": field-book paper, conifer ink, agency green for action,
+   flagging-tape pink for focus and "you are here". Domain hues live in content. */
+
+:root,
+[data-theme="projector"] {
+  --paper: #ebe5d1;
+  --paper-2: #e2dac2;
+  --paper-3: #d6cdb1;
+  --card: #f8f4e8;
+  --card-2: #f1ecdc;
+  --card-edge: #cbbf9f;
+  --ink: #1b251f;
+  --ink-2: #48523f;
+  --ink-3: #59614f;
+  --rule: #cbbf9f;
+  --rule-2: #a99d7b;
+  --forest: #1f4a33;
+  --forest-2: #2b6145;
+  --forest-ink: #f8f4e8;
+  --flag: #c2185b;
+  --flag-soft: #f6d3e0;
+  --flag-ink: #8a0f40;
+  --up: #1b6a38;
+  --down: #a3262a;
+  --bark: #5b4434;
+  --bark-2: #3c2c21;
+  --wood: #ead9b2;
+  --wood-2: #e2cd9f;
+  --wood-line: rgba(92, 58, 24, 0.16);
+  --heart-shade: #5a3a1a;
+  --scar: #2b1d16;
+  --scar-edge: #c2461e;
+  --driver-bg: #1d2a22;
+  --driver-ink: #f3edd9;
+  --driver-2: #c9c3ad;
+  --driver-accent: #ef8a5c;
+  --tier-resilient: #1f6b3a;
+  --tier-holding: #8a5a00;
+  --tier-unraveling: #a3262a;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.65) inset, 0 1px 2px rgba(48, 34, 10, 0.14), 0 10px 22px -14px rgba(48, 34, 10, 0.45);
+  --shadow-lift: 0 1px 0 rgba(255, 255, 255, 0.65) inset, 0 4px 8px rgba(48, 34, 10, 0.14), 0 22px 36px -18px rgba(48, 34, 10, 0.55);
+  --shadow-pop: 0 18px 50px -12px rgba(30, 22, 8, 0.45);
+  --grain-op: 0.5;
+  --scrim: rgba(27, 37, 31, 0.55);
+  color-scheme: light;
+}
+
+[data-theme="screen"] {
+  --paper: #0e1914;
+  --paper-2: #13221a;
+  --paper-3: #1a2c22;
+  --card: #18291f;
+  --card-2: #1d3126;
+  --card-edge: #2d4537;
+  --ink: #ede7d4;
+  --ink-2: #b4bea9;
+  --ink-3: #a3ad98;
+  --rule: #2b3e32;
+  --rule-2: #42594a;
+  --forest: #b6dcae;
+  --forest-2: #cfe9c6;
+  --forest-ink: #0e1914;
+  --flag: #ff76a8;
+  --flag-soft: #4a1f31;
+  --flag-ink: #ffc2d8;
+  --up: #93dca6;
+  --down: #ffa196;
+  --bark: #3b2d22;
+  --bark-2: #241a13;
+  --wood: #3a3326;
+  --wood-2: #332c20;
+  --wood-line: rgba(255, 236, 200, 0.07);
+  --heart-shade: #000000;
+  --scar: #120c09;
+  --scar-edge: #ff8a5c;
+  --driver-bg: #2a1a13;
+  --driver-ink: #f7ead9;
+  --driver-2: #d6c3b0;
+  --driver-accent: #ff9a6a;
+  --tier-resilient: #93dca6;
+  --tier-holding: #f2c46b;
+  --tier-unraveling: #ffa196;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 1px 2px rgba(0, 0, 0, 0.5), 0 12px 26px -14px rgba(0, 0, 0, 0.8);
+  --shadow-lift: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 6px 12px rgba(0, 0, 0, 0.45), 0 24px 40px -18px rgba(0, 0, 0, 0.9);
+  --shadow-pop: 0 18px 50px -12px rgba(0, 0, 0, 0.8);
+  --grain-op: 0.25;
+  --scrim: rgba(0, 0, 0, 0.66);
+  color-scheme: dark;
+}
+
+:root {
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r-sm: 4px;
+  --r-md: 7px;
+  --r-card: 11px;
+  --focus-ring: 0 0 0 3px var(--paper), 0 0 0 6px var(--flag);
+  /* paper fibre texture (inline SVG noise) */
+  --fibre: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .15 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+}

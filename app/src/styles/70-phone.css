@@ -1,0 +1,81 @@
+/* ---------- Phone companion ---------- */
+.phone { max-width: 34rem; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; padding: 0 1rem calc(5.4rem + env(safe-area-inset-bottom)); font-size: 1.05rem; }
+.phone-head { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 0; background: var(--paper); border-bottom: 1px solid var(--rule); margin-bottom: 1rem; }
+.phone-head .back-link { margin-right: auto; }
+.phone-id { display: flex; flex-direction: column; line-height: 1.15; margin-right: auto; }
+.phone-code { font-weight: 850; letter-spacing: 0.12em; font-size: 1.15rem; }
+.sync-pill { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.6rem; border-radius: 999px; font-size: max(0.8rem, 14px); font-weight: 750; border: 1px solid var(--rule-2); }
+.sync-pill.is-live { color: var(--up); border-color: #2f9a55; }
+[data-theme="screen"] .sync-pill.is-live { color: #93dca6; }
+.sync-pill.is-wait { color: #7a5600; border-color: #d9a52b; }
+[data-theme="screen"] .sync-pill.is-wait { color: #f2c46b; }
+.phone-title { font-family: var(--serif); font-size: 2.4rem; font-weight: 700; letter-spacing: -0.02em; }
+.join { display: flex; flex-direction: column; gap: 1.1rem; }
+.input--code { font-size: 2rem; font-weight: 850; letter-spacing: 0.3em; text-transform: uppercase; text-align: center; font-variant-numeric: tabular-nums; }
+.edition-note { font-size: max(0.82rem, 14px); color: var(--ink-2); text-align: center; }
+.phone-body { display: flex; flex-direction: column; gap: 1rem; flex: 1; }
+.phone-tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; display: flex; justify-content: center; gap: 0.2rem; padding: 0.4rem 0.6rem calc(0.4rem + env(safe-area-inset-bottom)); background: var(--card); border-top: 1px solid var(--card-edge); box-shadow: 0 -8px 20px -14px rgba(0,0,0,.4); }
+.phone-tab { flex: 1; max-width: 8rem; display: flex; flex-direction: column; align-items: center; gap: 0.15rem; padding: 0.4rem 0.2rem; border: 0; border-radius: var(--r-md); background: transparent; color: var(--ink-2); font-size: max(0.78rem, 14px); font-weight: 700; }
+.phone-tab.is-on { color: var(--ink); background: var(--paper-2); }
+.phone-tab.is-on .icon { color: var(--flag); }
+.mandate-tab { display: flex; flex-direction: column; gap: 1rem; }
+.secret { display: flex; flex-direction: column; gap: 0.7rem; padding: 1rem; border-radius: var(--r-card); background: var(--card) var(--fibre); border: 1.5px dashed var(--ink-2); }
+.secret.is-shown { border-style: solid; border-color: var(--flag); }
+.secret-title { display: flex; align-items: center; gap: 0.4rem; font-family: var(--serif); font-size: 1.35rem; }
+.secret-cover { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 2.2rem 1rem; border-radius: var(--r-md); border: 0; background: repeating-linear-gradient(-45deg, var(--paper-2) 0 10px, var(--paper-3) 10px 20px); font-weight: 700; color: var(--ink); }
+.secret-progress { font-size: 1rem; }
+.table-tab { display: flex; flex-direction: column; gap: 0.8rem; }
+.table-wait { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.8rem; padding: 3rem 1rem; color: var(--ink-2); }
+.phone-era { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; font-weight: 700; font-size: max(0.88rem, 14px); color: var(--ink-2); }
+.phone-era .lead-tag { margin-left: 0; }
+.phone-timer { display: inline-flex; align-items: center; gap: 0.25rem; margin-left: auto; padding: 0.15rem 0.5rem; border-radius: 999px; border: 1.5px solid var(--rule-2); font-variant-numeric: tabular-nums; color: var(--ink); }
+.phone-h { font-family: var(--serif); font-size: 1.75rem; font-weight: 650; line-height: 1.1; }
+.phone-p { line-height: 1.5; }
+.phone-options { display: flex; flex-direction: column; gap: 0.6rem; }
+.phone-option { display: grid; grid-template-columns: auto 1fr; gap: 0.7rem; align-items: start; padding: 0.8rem; text-align: left; border-radius: var(--r-card); border: 1.5px solid var(--card-edge); background: var(--card); }
+.phone-option > span:last-child { display: flex; flex-direction: column; gap: 0.3rem; }
+.phone-option strong { font-family: var(--serif); font-size: 1.2rem; }
+.phone-option-text { font-size: max(0.92rem, 14px); color: var(--ink-2); line-height: 1.4; }
+.phone-option.is-on { border-color: var(--flag); box-shadow: 0 0 0 2px var(--flag); }
+.phone-option.is-on .option-letter { background: var(--flag); color: #fff; }
+.phone-hand { display: flex; flex-direction: column; gap: 0.9rem; }
+.phone-card-wrap { display: flex; flex-direction: column; gap: 0.5rem; }
+.phone-market { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.phone-strat { display: flex; flex-direction: column; gap: 0.55rem; padding: 0.7rem 0.8rem; border-radius: var(--r-card); background: var(--card); border: 1px solid var(--card-edge); }
+.ps-info { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+.ps-title { font-family: var(--serif); font-size: 1.1rem; overflow-wrap: anywhere; }
+.ps-info .effects { max-width: 100%; }
+.ps-info .effect { white-space: normal; }
+.ps-pledge { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 0.8rem; padding-top: 0.5rem; border-top: 1px dashed var(--rule-2); }
+.ps-pledge-k { font-weight: 700; font-size: max(0.9rem, 14px); color: var(--ink-2); }
+.ps-pledge .stepper { flex: none; margin-left: auto; }
+.phone .stepper-btn { width: 2.75rem; height: 2.75rem; }
+.phone .stepper-val { min-width: 2.2rem; font-size: 1.15rem; }
+.phone-headline { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; }
+.sent { font-size: max(0.9rem, 14px); font-weight: 650; color: var(--ink-2); display: flex; align-items: center; gap: 0.3rem; }
+.sent.is-ok { color: var(--up); }
+.phone-cond { border-top: 1px solid var(--rule); padding-top: 0.6rem; }
+.phone-cond summary { cursor: pointer; font-weight: 700; padding: 0.3rem 0; }
+.phone-cond ul { list-style: none; display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.4rem; }
+.phone-cond li { display: grid; grid-template-columns: auto 1fr auto auto; gap: 0.5rem; align-items: center; font-size: max(0.95rem, 14px); }
+.notes-tab { display: flex; flex-direction: column; gap: 0.5rem; }
+.phone-rules { padding-bottom: 1rem; }
+.phone .notice { font-size: max(0.95rem, 14px); }
+html.phone-mode .toasts { bottom: calc(5.6rem + env(safe-area-inset-bottom)); }
+.phone-front { font-family: var(--serif); font-weight: 800; font-size: 2rem; line-height: 1.05; letter-spacing: -0.02em; padding: 0.8rem 0; border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink); text-wrap: balance; }
+.phone-checks { display: flex; flex-direction: column; gap: 0.2rem; font-size: max(0.9rem, 14px); padding: 0 0.2rem; }
+.phone-checks strong { letter-spacing: 0.06em; }
+/* reflow at 200% zoom / very narrow widths (WCAG 1.4.10) */
+@media (max-width: 300px) {
+  .phone { padding: 0 0.5rem 5.4rem; }
+  .phone-head { flex-wrap: wrap; }
+  .phone-id { flex-basis: 100%; }
+  .mandate-row { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "dot name" "dot min" "dot now"; }
+  .mandate-min { white-space: normal; }
+  /* only reached at 200%+ zoom, where 0.7rem renders at 22px+: the four labels must still fit side by side */
+  .phone-tabs { gap: 0; padding-inline: 0.2rem; }
+  .phone-tab { padding-inline: 0; min-width: 0; }
+  .phone-tab span { font-size: 0.7rem; letter-spacing: -0.01em; }
+  .input--code { font-size: 1.4rem; letter-spacing: 0.15em; }
+  .card-top { flex-wrap: wrap; }
+}

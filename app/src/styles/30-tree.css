@@ -1,0 +1,80 @@
+/* ---------- Tree cross-section ---------- */
+.tree { width: 100%; height: 100%; overflow: visible; font-family: var(--sans); }
+.tree-bark { fill: var(--bark); }
+.tree-fissures { stroke: var(--bark-2); stroke-width: 2.2; stroke-linecap: round; fill: none; opacity: 0.85; }
+.tree-wood { fill: var(--wood); }
+.tree-fill { transition: fill 0.4s; }
+.tree-shade { pointer-events: none; }
+.tree-grain { fill: none; stroke: var(--wood-line); stroke-width: 1.4; pointer-events: none; }
+.tree-band { fill: none; stroke: var(--ink); stroke-opacity: 0.22; stroke-width: 1.3; stroke-dasharray: 2 7; stroke-linecap: round; pointer-events: none; }
+[data-theme="screen"] .tree-band { stroke-opacity: 0.3; }
+.tree-front { fill: none; stroke-width: 4; stroke-linecap: round; pointer-events: none; }
+.tree-ray { stroke: var(--wood); stroke-width: 3.5; pointer-events: none; }
+.tree-ring { fill: none; stroke: var(--ink); stroke-width: 2.2; stroke-linejoin: round; pointer-events: none; opacity: 0.7; }
+.tree-ring--0 { stroke-dasharray: 1.5 5; stroke-linecap: round; stroke-width: 3; }
+.tree-ring--1 { stroke-dasharray: 9 5; opacity: 0.8; }
+.tree-ring--2 { opacity: 0.9; }
+.tree--compact .tree-ring { stroke-dasharray: none; stroke-width: 2.6; opacity: 0.55; }
+[data-theme="screen"] .tree-ring { stroke: #f4ead0; }
+.tree-ring-label { font-size: 19px; font-weight: 750; fill: var(--ink); paint-order: stroke; stroke: var(--wood); stroke-width: 5px; stroke-linejoin: round; pointer-events: none; }
+[data-theme="screen"] .tree-ring-label { fill: #f4ead0; }
+.tree-scar-notch { fill: var(--scar-bg, var(--paper)); }
+.tree-scar-body { fill: var(--scar); }
+.tree-scar-edge { fill: none; stroke: var(--scar-edge); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; opacity: 0.9; }
+.tree-protect { fill: none; stroke: var(--ink); stroke-width: 3; stroke-dasharray: 9 7; stroke-linecap: round; pointer-events: none; }
+[data-theme="screen"] .tree-protect { stroke: #f4ead0; }
+.tree-pith { fill: var(--bark); }
+.tree-pith-dot { fill: var(--wood); }
+
+.tree-label .tree-val { font-size: 46px; font-weight: 800; fill: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.tree-label .tree-name { font-size: 22px; font-weight: 700; fill: var(--ink); }
+.tree-label .tree-band-label { font-size: 19px; font-weight: 600; fill: var(--ink-2); }
+.tree-label.is-crisis .tree-band-label { fill: var(--down); font-weight: 800; }
+.tree-prot-label { font-size: 19px; font-weight: 800; fill: var(--flag-ink); }
+[data-theme="screen"] .tree-prot-label { fill: var(--flag); }
+.tl-prot { display: inline-block; vertical-align: -0.1em; margin-left: 0.25rem; color: var(--flag); }
+.tree-label.is-selected .tree-name { fill: var(--flag); }
+
+.tree-float { font-size: 34px; font-weight: 850; paint-order: stroke; stroke: var(--paper); stroke-width: 6px; stroke-linejoin: round; animation: float-up 2.6s cubic-bezier(.2,.7,.2,1) forwards; }
+.tree-float.is-up { fill: var(--up); }
+.tree-float.is-down { fill: var(--down); }
+@keyframes float-up {
+  0% { opacity: 0; transform: translateY(14px); }
+  12% { opacity: 1; transform: translateY(0); }
+  70% { opacity: 1; transform: translateY(-16px); }
+  100% { opacity: 0; transform: translateY(-30px); }
+}
+@media (prefers-reduced-motion: reduce) { .tree-float { animation-name: none !important; } }
+
+/* pick mode */
+.tree--pick .tree-hit { fill: transparent; stroke: transparent; stroke-width: 4; cursor: pointer; transition: fill 0.12s, stroke 0.12s; }
+.tree--pick .tree-hit:hover { fill: color-mix(in srgb, var(--flag) 10%, transparent); stroke: var(--flag); }
+.tree--pick .tree-hit:focus-visible { outline: none; fill: color-mix(in srgb, var(--flag) 14%, transparent); stroke: var(--flag); stroke-width: 6; }
+.tree--pick .tree-hit.is-selected { fill: color-mix(in srgb, var(--flag) 18%, transparent); stroke: var(--flag); stroke-width: 6; }
+.tree--pick .tree-hit.is-disabled { cursor: not-allowed; fill: color-mix(in srgb, var(--paper) 55%, transparent); }
+
+.tree--compact .tree-front { stroke-width: 5; }
+.tree--compact .tree-ray { stroke-width: 5; }
+
+/* data table alternative */
+.tree-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--card); border-radius: var(--r-card); overflow: hidden; box-shadow: var(--shadow-card); }
+.tree-table th, .tree-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--rule); text-align: left; }
+.tree-table thead th { font-size: max(0.85rem, 14px); color: var(--ink-2); background: var(--paper-2); }
+.tree-table td { font-variant-numeric: tabular-nums; }
+.tree-table .num-strong { font-weight: 800; font-size: 1.1rem; }
+.tree-table tbody th { font-weight: 650; white-space: nowrap; }
+
+/* compact ring (board, when outside labels would render below 14px) */
+.tree-badge rect { fill: var(--card); stroke: var(--de); stroke-width: 3; }
+.tree-badge-val { font-size: 38px; font-weight: 850; fill: var(--ink); font-variant-numeric: tabular-nums; }
+.tree-badge.is-crisis rect { stroke: var(--down); stroke-width: 4; fill: color-mix(in srgb, var(--down) 12%, var(--card)); }
+.tree-badge.is-crisis .tree-badge-val { fill: var(--down); }
+.tree-badge.is-protected rect { stroke-dasharray: 7 5; }
+.tree-badge.is-selected rect { stroke: var(--flag); stroke-width: 5; }
+.tree-legend { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(var(--rows, 5), auto); grid-auto-flow: column; gap: 0.15rem 1.1rem; padding: 0.35rem 0.2rem 0.5rem; font-size: max(1rem, 14px); }
+.tl-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto 5.6em; align-items: baseline; gap: 0.4rem; line-height: 1.25; }
+.tl-dot { width: 0.8em; height: 0.8em; border-radius: 50%; align-self: center; border: 1px solid rgba(0,0,0,.25); }
+.tl-name { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tl-val { font-weight: 850; font-variant-numeric: tabular-nums; }
+.tl-band { color: var(--ink-2); font-weight: 600; }
+.tl-row.is-crisis .tl-band, .tl-row.is-crisis .tl-val { color: var(--down); }

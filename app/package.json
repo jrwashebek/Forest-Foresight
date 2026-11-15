@@ -1,0 +1,19 @@
+{
+  "name": "forest-futures",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs --content ../content/content.json --out dist/forest-futures.html",
+    "build:sample": "node build.mjs --content sample-content.json --out dist/forest-futures-sample.html",
+    "e2e": "node e2e/play.mjs && node e2e/play.mjs --mock && node e2e/phones.mjs && node e2e/screens.mjs --mock && node e2e/fixes.mjs && node e2e/layout.mjs && node e2e/qa-fixes.mjs && node e2e/a11y.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "@fontsource-variable/public-sans": "^5.3.0",
+    "axe-core": "^4.14.0",
+    "esbuild": "^0.28.2",
+    "preact": "^11.2.0"
+  }
+}

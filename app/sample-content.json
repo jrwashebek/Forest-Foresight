@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "title": "Forest Futures",
+    "subtitle": "A strategic-foresight game for forest leaders",
+    "edition": "2026.11-sample",
+    "updated": "2026-11-14",
+    "credits": "Evolved from IMPACT: a foresight game – forestry edition (USDA Forest Service Strategic Foresight Group, Northern Research Station & University of Minnesota, 2019 — Bengston, Westphal, Dockry, Crabtree), itself adapted from IMPACT by Idea Couture with Policy Horizons Canada.",
+    "notice": "Sample content for development. The published edition replaces this deck."
+  },
+  "domains": [
+    { "id": "fire", "name": "Fire & Fuels", "short": "Fire", "color": "#C2461E", "icon": "fire", "description": "Wildfire risk and behavior, fuels, prescribed and cultural fire, suppression, smoke.", "examples": "Fuel treatments, burn windows, smoke days, fire crews" },
+    { "id": "health", "name": "Forest Health", "short": "Health", "color": "#5E7D2E", "icon": "health", "description": "Biodiversity, insects and disease, invasives, drought stress, reforestation, adaptation.", "examples": "Bark beetles, seedlings, assisted migration" },
+    { "id": "water", "name": "Water & Watersheds", "short": "Water", "color": "#2B6CA3", "icon": "water", "description": "Source water, snowpack, streams, floods, post-fire watersheds, aquatic habitat.", "examples": "Snow drought, utilities, debris flows" },
+    { "id": "climate", "name": "Climate & Carbon", "short": "Carbon", "color": "#2E7F7A", "icon": "climate", "description": "Carbon storage, carbon markets, emissions, bioenergy, climate policy.", "examples": "Offsets, carbon accounting, biochar" },
+    { "id": "wood", "name": "Wood Economy", "short": "Wood", "color": "#94643A", "icon": "wood", "description": "Timber, mills, mass timber, biomass, non-timber products, trade.", "examples": "Mills, CLT plants, tariffs, biomass" },
+    { "id": "communities", "name": "Communities & the WUI", "short": "WUI", "color": "#A2504F", "icon": "communities", "description": "Rural economies, wildland–urban interface growth, housing, insurance, equity, community health.", "examples": "Insurance, evacuation, rural jobs" },
+    { "id": "recreation", "name": "Recreation & Public Connection", "short": "Recreation", "color": "#3B8DBF", "icon": "recreation", "description": "Outdoor recreation, access, visitation, wellness, public trust.", "examples": "Trails, permits, crowding, trust" },
+    { "id": "workforce", "name": "Workforce & Capacity", "short": "Workforce", "color": "#B98A1E", "icon": "workforce", "description": "Agency and partner workforce, fire crews, contractors, skills, science, data and tech capacity.", "examples": "Hiring, retention, contractors, data" },
+    { "id": "governance", "name": "Policy & Funding", "short": "Policy", "color": "#6B4C83", "icon": "governance", "description": "Budgets, authorities, legislation, litigation, agency structure, federal–state roles.", "examples": "Appropriations, reorganization, NEPA" },
+    { "id": "partners", "name": "Partnerships & Co-Stewardship", "short": "Partners", "color": "#6F9468", "icon": "partners", "description": "Tribal co-stewardship, shared stewardship with states, Good Neighbor, NGOs, private and family forest owners.", "examples": "GNA, co-stewardship, landowner programs" }
+  ],
+  "bands": [
+    { "min": 0, "max": 2, "label": "Crisis" },
+    { "min": 3, "max": 4, "label": "Strained" },
+    { "min": 5, "max": 6, "label": "Stable" },
+    { "min": 7, "max": 8, "label": "Thriving" },
+    { "min": 9, "max": 10, "label": "Transformed" }
+  ],
+  "eras": [
+    { "id": "now", "name": "Now", "years": "2026–2030", "description": "Today's pressures come to a head: budgets, reorganization, a hotter fire season.", "weights": { "now": 0.7, "near": 0.25, "far": 0.05 } },
+    { "id": "near", "name": "Near", "years": "2031–2038", "description": "New institutions settle in. Technology and markets catch up with the landscape.", "weights": { "now": 0.25, "near": 0.55, "far": 0.2 } },
+    { "id": "far", "name": "Far", "years": "2039–2050", "description": "A different climate, a different workforce, a different social contract with forests.", "weights": { "now": 0.05, "near": 0.35, "far": 0.6 } }
+  ],
+  "signals": [
+    {
+      "id": "sig-one-flag-for-fire", "title": "One flag for wildland fire",
+      "signal": "Interior announced a single U.S. Wildland Fire Service, folding federal wildland fire programs into one agency.",
+      "horizon": "now",
+      "primary": { "domain": "fire", "delta": 1, "text": "One chain of command speeds initial attack across federal lands." },
+      "secondary": { "type": "fixed", "domain": "workforce", "delta": -1, "text": "Transition churn strains crews, dispatch and support staff." },
+      "prompt": "What does your agency keep, hand over or renegotiate?",
+      "source": { "title": "DOI announces creation of new U.S. Wildland Fire Service", "publisher": "National Association of Counties", "date": "2025-09-01", "url": "https://www.naco.org/news/doi-announces-creation-new-us-wildland-fire-service" },
+      "tags": ["federal", "fire", "reorganization"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-fewer-hands", "title": "Fewer hands in the woods",
+      "signal": "Layoffs and deferred resignations cut roughly a tenth of the Forest Service workforce in 2025.",
+      "horizon": "now",
+      "primary": { "domain": "workforce", "delta": -2, "text": "Vacancies pile up in planning, fuels and recreation programs." },
+      "secondary": { "type": "add", "amount": 1, "text": "Which partner steps in to fill a gap — and where does that show up?" },
+      "prompt": "What work stops first, and who decides?",
+      "source": { "title": "Forest Service layoffs cut 10% of agency's workforce", "publisher": "Environmental Health News", "date": "2025-04-01", "url": "https://www.ehn.org/forest-service-layoffs-cut-10-of-agencys-workforce-2671163309.html" },
+      "tags": ["federal", "workforce"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-fuel-work-slips", "title": "Fuel work falls behind",
+      "signal": "Reporting in 2026 found federal hazardous-fuels and prevention work running behind targets as staffing shrank.",
+      "horizon": "now",
+      "primary": { "domain": "fire", "delta": -2, "text": "Untreated acres accumulate faster than crews can reach them." },
+      "secondary": { "type": "fixed", "domain": "communities", "delta": -1, "text": "Towns near the forest edge face longer high-risk seasons." },
+      "prompt": "Which acres matter most if you can only treat half?",
+      "source": { "title": "Trump administration falls behind on wildfire prevention with risky fire season ahead", "publisher": "OPB", "date": "2026-05-04", "url": "https://www.opb.org/article/2026/05/04/wildfire-prevention-work-declines-under-trump-administration/" },
+      "tags": ["federal", "fire", "fuels"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-eyes-in-orbit", "title": "Eyes in orbit",
+      "signal": "The first operational FireSat satellites reached orbit, built to spot small fires from space within minutes.",
+      "horizon": "near",
+      "primary": { "domain": "fire", "delta": 2, "text": "Early detection lets crews catch more fires while they are small." },
+      "secondary": { "type": "add", "amount": 1, "text": "Where else does near-real-time detection pay off? Name the domain and why." },
+      "prompt": "Who owns the data — and who acts on an alert at 2 a.m.?",
+      "source": { "title": "Muon Space deploys first three operational FireSat satellites for Earth Fire Alliance", "publisher": "Muon Space", "date": "2026-03-01", "url": "https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/" },
+      "tags": ["tech", "fire", "data"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-insurers-exit", "title": "Insurers head for the exits",
+      "signal": "Insurers in the West kept canceling homeowner policies over wildfire risk, even where owners had done mitigation work.",
+      "horizon": "now",
+      "primary": { "domain": "communities", "delta": -2, "text": "Forest-edge homes become hard to insure, sell or finance." },
+      "secondary": { "type": "move", "amount": 1, "text": "Pressure shifts somewhere: move 1 from one domain to another and explain the link." },
+      "prompt": "Is insurability now a forest-management outcome?",
+      "source": { "title": "Insurance companies are canceling homeowner coverages because of wildfire risk despite mitigation efforts", "publisher": "This Is Reno", "date": "2024-07-01", "url": "https://thisisreno.com/2024/07/insurance-companies-are-canceling-homeowner-coverages-because-of-wildfire-risk-despite-mitigation-efforts" },
+      "tags": ["wui", "insurance"], "status": "active", "reviewed": "2024-09-01", "origin": "new"
+    },
+    {
+      "id": "sig-taller-timber", "title": "Taller wood, taller hopes",
+      "signal": "British Columbia changed its building code so mass-timber buildings can rise to 18 storeys.",
+      "horizon": "near",
+      "primary": { "domain": "wood", "delta": 2, "text": "New demand for engineered wood revives mill investment." },
+      "secondary": { "type": "fixed", "domain": "climate", "delta": 1, "text": "Wood buildings store carbon and displace concrete and steel." },
+      "prompt": "Can small-diameter wood from fuel work feed this market?",
+      "source": { "title": "B.C. builders can now use mass timber in taller buildings", "publisher": "Government of British Columbia", "date": "2024-04-15", "url": "https://news.gov.bc.ca/releases/2024HOUS0055-000522" },
+      "tags": ["wood", "markets"], "status": "active", "reviewed": "2026-11-14", "origin": "2019-updated"
+    },
+    {
+      "id": "sig-seedling-squeeze", "title": "Not enough baby trees",
+      "signal": "A study found U.S. nurseries would need to roughly double output to meet national reforestation goals.",
+      "horizon": "now",
+      "primary": { "domain": "health", "delta": -1, "text": "Burned and beetle-killed stands wait years for replanting." },
+      "secondary": { "type": "remove", "amount": 1, "text": "Where else does the seedling bottleneck bite? Remove 1 and explain." },
+      "prompt": "Who should grow the seedlings — agencies, Tribes, or private nurseries?",
+      "source": { "title": "U.S. Forest Service plan to plant more than a billion trees limited by lack of seedlings, study finds", "publisher": "EcoWatch", "date": "2023-07-20", "url": "https://ecowatch.com/forest-service-planting-trees-seedlings-shortage.html" },
+      "tags": ["reforestation", "health"], "status": "active", "reviewed": "2024-03-10", "origin": "2019-updated"
+    },
+    {
+      "id": "sig-good-neighbors", "title": "Good neighbors, more acres",
+      "signal": "Western state foresters' annual synthesis reports Good Neighbor Authority projects growing across states and national forests.",
+      "horizon": "now",
+      "primary": { "domain": "partners", "delta": 2, "text": "States and the Forest Service plan and treat landscapes together." },
+      "secondary": { "type": "fixed", "domain": "fire", "delta": 1, "text": "Shared crews and contracts put more fuel treatments on the ground." },
+      "prompt": "What would make your state a better neighbor — or a better host?",
+      "source": { "title": "2024 Good Neighbor Authority Synthesis", "publisher": "Council of Western State Foresters", "date": "2024-11-01", "url": "https://westernforesters.org/sites/default/files/2024-11/2024GNASynthesis.pdf" },
+      "tags": ["state", "partners", "gna"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-co-stewardship-scale", "title": "Co-stewardship at landscape scale",
+      "signal": "The Cow Creek Umpqua Tribe signed a co-stewardship agreement with the Forest Service covering about 155,000 acres.",
+      "horizon": "now",
+      "primary": { "domain": "partners", "delta": 2, "text": "Tribal knowledge and authority shape how a whole landscape is managed." },
+      "secondary": { "type": "protect", "text": "Which domain does this agreement shield for the rest of the era? Say how." },
+      "prompt": "What would genuine shared decision-making change in your unit?",
+      "source": { "title": "Cow Creek Umpqua signs 155,000-acre forest co-stewardship agreement with U.S. Forest Service", "publisher": "Tribal Business News", "date": "2024-01-01", "url": "https://tribalbusinessnews.com/sections/energy/15500-cow-creek-umpqua-signs-155-000-acre-forest-co-stewardship-agreement-with-u-s-forest-service" },
+      "tags": ["tribal", "partners"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-drones-light-burn", "title": "Drones light the burn",
+      "signal": "Researchers documented drone-dropped ignition spheres helping crews run prescribed burns across Texas and Louisiana ecoregions.",
+      "horizon": "near",
+      "primary": { "domain": "fire", "delta": 1, "text": "Burn bosses ignite more acres per window with fewer people at risk." },
+      "secondary": { "type": "fixed", "domain": "workforce", "delta": 1, "text": "Drone pilots become a new, sought-after fire skill set." },
+      "prompt": "What should never be automated in prescribed fire?",
+      "source": { "title": "The impact of UAS aerial ignition on prescribed fire: a case study in multiple ecoregions of Texas and Louisiana", "publisher": "Fire Ecology", "date": "2023-01-01", "url": "https://link.springer.com/doi/10.1186/s42408-023-00170-x" },
+      "tags": ["tech", "fire", "prescribed-fire"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-snow-that-wasnt", "title": "The snow that wasn't",
+      "signal": "NASA imagery showed western mountain snowpack melting fast and early, shrinking the natural reservoir towns depend on.",
+      "horizon": "near",
+      "primary": { "domain": "water", "delta": -2, "text": "Streams peak early and run low when demand is highest." },
+      "secondary": { "type": "remove", "amount": 1, "text": "Which other system feels a low-snow summer first? Remove 1 and explain." },
+      "prompt": "Who pays to protect source water in a drier West?",
+      "source": { "title": "Western mountain snow melts fast and early", "publisher": "NASA Earth Observatory", "date": "2025-06-01", "url": "https://earthobservatory.nasa.gov/images/154484/western-mountain-snow-melts-fast-and-early" },
+      "tags": ["water", "climate"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-outdoor-economy", "title": "A trillion-dollar trailhead",
+      "signal": "Federal statistics put the outdoor recreation economy at a record of roughly $1.3 trillion in output for 2024.",
+      "horizon": "now",
+      "primary": { "domain": "recreation", "delta": 2, "text": "Visitors and spending support gateway towns and public support for forests." },
+      "secondary": { "type": "fixed", "domain": "communities", "delta": 1, "text": "Rural economies diversify around trails, rivers and guiding." },
+      "prompt": "How do you turn visitors into stewards rather than pressure?",
+      "source": { "title": "Outdoor Recreation Satellite Account statistics for 2024", "publisher": "U.S. Bureau of Economic Analysis", "date": "2026-06-01", "url": "https://apps.bea.gov/scb/issues/2026/06-june/0626-outdoor-recreation.htm" },
+      "tags": ["recreation", "economy"], "status": "active", "reviewed": "2026-11-14", "origin": "2019-updated"
+    },
+    {
+      "id": "sig-burn-swarm", "title": "Prescribed fire by swarm",
+      "signal": "A USDA-funded small business is developing heavy-lift drones to run prescribed fire across very large landscapes.",
+      "horizon": "far",
+      "primary": { "domain": "fire", "delta": 2, "text": "Landscape-scale burning becomes affordable where crews are scarce." },
+      "secondary": { "type": "move", "amount": 1, "text": "Automation shifts effort: move 1 between domains and say who gains or loses." },
+      "prompt": "Who gets a say in where the swarm burns?",
+      "source": { "title": "Reducing wildfire risk with large-scale prescribed fire drones", "publisher": "USDA NIFA (CRIS project record)", "date": "2021-01-01", "url": "https://portal.nifa.usda.gov/web/crisprojectpages/1022879-reducing-wildfire-risk-with-large-scale-prescribed-fire-drones.html" },
+      "tags": ["tech", "fire", "prescribed-fire"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-shrinking-snowpack-north", "title": "Snowpack shrinks up north too",
+      "signal": "A study linked warming temperatures to shrinking snowpack in key Canadian watersheds that also feed U.S. rivers.",
+      "horizon": "far",
+      "primary": { "domain": "water", "delta": -1, "text": "Even cold headwaters lose their reliable spring melt." },
+      "secondary": { "type": "fixed", "domain": "health", "delta": -1, "text": "Drought-stressed stands become easier targets for insects." },
+      "prompt": "Which of your plans still assume yesterday's snow?",
+      "source": { "title": "Warming temperatures are shrinking snowpack in key Canadian watersheds: study", "publisher": "The Weather Network", "date": "2025-01-01", "url": "https://www.theweathernetwork.com/en/news/climate/impacts/warming-temperatures-are-shrinking-snowpack-in-key-canadian-watersheds-study" },
+      "tags": ["water", "climate"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-high-rise-wood", "title": "High-rise wood goes west",
+      "signal": "California building codes now allow high-rise mass-timber buildings, opening the largest U.S. housing market to tall wood.",
+      "horizon": "far",
+      "primary": { "domain": "wood", "delta": 2, "text": "Sustained demand justifies new mills near overstocked forests." },
+      "secondary": { "type": "add", "amount": 1, "text": "Which other domain benefits from tall-wood demand? Add 1 and explain." },
+      "prompt": "What would it take for restoration wood to be the preferred supply?",
+      "source": { "title": "California building codes now allow high-rise mass timber buildings", "publisher": "Building Design + Construction", "date": "2023-01-01", "url": "https://drupal.bdcnetwork.com/california-building-codes-now-allow-high-rise-mass-timber-buildings" },
+      "tags": ["wood", "markets"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    },
+    {
+      "id": "sig-shared-stewardship-fuels", "title": "A handshake that thins forests",
+      "signal": "A Forest Service shared stewardship agreement with a state partner is speeding up joint wildfire risk-reduction work.",
+      "horizon": "now",
+      "primary": { "domain": "fire", "delta": 1, "text": "Joint priorities send crews to the same high-risk firesheds." },
+      "secondary": { "type": "protect", "text": "Which domain does the agreement protect this era? Protect it and explain." },
+      "prompt": "What would you put in a 20-year agreement today?",
+      "source": { "title": "Shared stewardship agreement fuels wildfire risk reduction", "publisher": "USDA Forest Service", "date": "2024-01-01", "url": "https://www.fs.usda.gov/inside-fs/delivering-mission/excel/shared-stewardship-agreement-fuels-wildfire-risk-reduction" },
+      "tags": ["state", "partners", "fire"], "status": "active", "reviewed": "2026-11-14", "origin": "new"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "drv-fire-agency-merger", "title": "Fire leaves the Forest Service",
+      "text": "A presidential directive told the Forest Service and Interior to merge wildland fire programs. Crews, budgets and authorities move to a new federal fire agency on a fast timeline.",
+      "horizon": "now",
+      "effects": [ { "domain": "governance", "delta": -1 }, { "domain": "workforce", "delta": -1 } ],
+      "dilemma": {
+        "prompt": "The new agency asks states and partners how to engage during the transition. What does your table recommend?",
+        "options": [
+          { "label": "Embed state liaisons", "text": "Second state staff into the new agency so local knowledge travels with the crews.", "effects": [ { "domain": "partners", "delta": 1 }, { "domain": "fire", "delta": 1 } ] },
+          { "label": "Guard local control", "text": "Push for written guarantees on state and Tribal authority before signing anything.", "effects": [ { "domain": "governance", "delta": 1 }, { "domain": "partners", "delta": -1 } ] },
+          { "label": "Build our own capacity", "text": "Invest in state and county crews so you depend less on federal resources.", "effects": [ { "domain": "workforce", "delta": 1 }, { "domain": "governance", "delta": -1 } ] }
+        ]
+      },
+      "source": { "title": "Trump tells Forest Service, Interior to merge wildfire management programs", "publisher": "Federal News Network", "date": "2025-06-13", "url": "https://federalnewsnetwork.com/management/2025/06/trump-tells-forest-service-interior-to-merge-wildfire-management-programs/" },
+      "tags": ["federal", "fire", "reorganization"], "status": "active", "reviewed": "2026-11-14"
+    },
+    {
+      "id": "drv-budget-squeeze", "title": "The budget squeeze",
+      "text": "Proposed federal budgets call for sharp cuts to Forest Service programs. Non-fire work — recreation, research, state assistance — takes the deepest hit.",
+      "horizon": "now",
+      "effects": [ { "domain": "governance", "delta": -2 }, { "domain": "recreation", "delta": -1 } ],
+      "dilemma": {
+        "prompt": "Scarce dollars must be prioritized this year. Where does your coalition put them first?",
+        "options": [
+          { "label": "Protect fire readiness", "text": "Hold fire staffing whole and let other programs absorb the cut.", "effects": [ { "domain": "fire", "delta": 1 }, { "domain": "recreation", "delta": -1 } ] },
+          { "label": "Keep the forests open", "text": "Fund trails, campgrounds and visitor services to keep public support.", "effects": [ { "domain": "recreation", "delta": 1 }, { "domain": "fire", "delta": -1 } ] },
+          { "label": "Hand work to partners", "text": "Shift delivery to states, Tribes and NGOs through agreements.", "effects": [ { "domain": "partners", "delta": 1 }, { "domain": "workforce", "delta": -1 } ] }
+        ]
+      },
+      "source": { "title": "Trump administration plans sharp cuts at Forest Service", "publisher": "E&E News", "date": "2025-05-01", "url": "https://www.eenews.net/articles/trump-administration-plans-sharp-cuts-at-forest-service/" },
+      "tags": ["federal", "budget"], "status": "active", "reviewed": "2026-11-14"
+    },
+    {
+      "id": "drv-insurance-retreat", "title": "The great insurance retreat",
+      "text": "Homeowners in high-risk states are dropped by insurers at the nation's highest rates. Lenders follow. Whole forest-edge towns become uninsurable.",
+      "horizon": "near",
+      "effects": [ { "domain": "communities", "delta": -2 }, { "domain": "governance", "delta": -1 } ],
+      "dilemma": {
+        "prompt": "How do you keep forest communities insurable?",
+        "options": [
+          { "label": "Certify safer neighborhoods", "text": "Tie insurance discounts to verified, community-wide fuel and home-hardening work.", "effects": [ { "domain": "communities", "delta": 1 }, { "domain": "fire", "delta": 1 } ] },
+          { "label": "Back a public backstop", "text": "Support a state reinsurance pool that keeps premiums affordable for now.", "effects": [ { "domain": "communities", "delta": 2 }, { "domain": "governance", "delta": -1 } ] }
+        ]
+      },
+      "source": { "title": "Homeowners in Florida and California dropped by their insurance companies at highest rate in nation", "publisher": "Weiss Ratings", "date": "2025-01-01", "url": "https://weissratings.com/en/weiss-news/homeowners-in-florida-and-california-dropped-by-their-insurance-companies-at-highest-rate-in-nation" },
+      "tags": ["wui", "insurance"], "status": "active", "reviewed": "2026-11-14"
+    },
+    {
+      "id": "drv-snow-loss-megadrought", "title": "Snow loss, megadrought",
+      "text": "Declining snowpack drives a multi-decade drought across the West. Forests that regrew after fire for centuries begin converting to shrubland.",
+      "horizon": "far",
+      "effects": [ { "domain": "water", "delta": -2 }, { "domain": "health", "delta": -1 } ],
+      "dilemma": {
+        "prompt": "What do you plant — and protect — for a drier century?",
+        "options": [
+          { "label": "Assist migration", "text": "Plant species and seed sources suited to the climate of 2080, not 1980.", "effects": [ { "domain": "health", "delta": 2 }, { "domain": "partners", "delta": -1 } ] },
+          { "label": "Defend the refugia", "text": "Concentrate effort on cool, wet places most likely to stay forested.", "effects": [ { "domain": "water", "delta": 1 }, { "domain": "health", "delta": 1 }, { "domain": "wood", "delta": -1 } ] }
+        ]
+      },
+      "source": { "title": "Snow loss is fueling the West's megadrought", "publisher": "Grist", "date": "2023-01-01", "url": "https://grist.org/drought/snow-loss-is-fueling-the-wests-megadrought" },
+      "tags": ["water", "climate", "drought"], "status": "active", "reviewed": "2026-11-14"
+    }
+  ],
+  "strategies": [
+    { "id": "str-year-round-crews", "title": "Year-round fire crews", "text": "Convert seasonal firefighters to permanent, year-round positions that do fuels work in the off-season.", "cost": 6, "effects": [ { "domain": "fire", "delta": 2 }, { "domain": "workforce", "delta": 1 } ], "delayed": [], "kind": "no-regret", "tags": ["fire", "workforce"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-shared-stewardship-compact", "title": "Shared stewardship compact", "text": "A multi-agency agreement that sets joint priorities and pools crews across ownerships.", "cost": 4, "effects": [ { "domain": "partners", "delta": 2 } ], "delayed": [ { "domain": "fire", "delta": 1 } ], "kind": "no-regret", "tags": ["partners", "state"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-cultural-burning", "title": "Cultural burning partnership", "text": "Fund Tribal fire practitioners to lead burns on shared landscapes, with liability covered.", "cost": 3, "effects": [ { "domain": "partners", "delta": 1 }, { "domain": "fire", "delta": 1 } ], "delayed": [], "kind": "no-regret", "tags": ["partners", "tribal", "fire"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-seed-network", "title": "Climate-ready seed network", "text": "Collect, store and grow seed suited to future climates across a regional nursery network.", "cost": 5, "effects": [ { "domain": "health", "delta": 1 } ], "delayed": [ { "domain": "health", "delta": 2 } ], "kind": "hedge", "tags": ["health", "reforestation"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-mass-timber-hub", "title": "Regional mass-timber hub", "text": "Co-invest in a cross-laminated timber plant that buys small-diameter wood from restoration.", "cost": 7, "effects": [ { "domain": "wood", "delta": 2 }, { "domain": "communities", "delta": 1 } ], "delayed": [ { "domain": "climate", "delta": 1 } ], "kind": "big-bet", "tags": ["wood", "markets"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-source-water-fund", "title": "Source-water fund", "text": "Downstream utilities pay for upstream forest restoration through a water fund.", "cost": 5, "effects": [ { "domain": "water", "delta": 2 }, { "domain": "partners", "delta": 1 } ], "delayed": [], "kind": "no-regret", "tags": ["water", "partners"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-rec-fee-reinvest", "title": "Recreation fees stay local", "text": "Raise day-use fees and keep every dollar on the forest where it was collected.", "cost": 3, "effects": [ { "domain": "recreation", "delta": 2 }, { "domain": "communities", "delta": -1 } ], "delayed": [], "kind": "trade-off", "tags": ["recreation"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-risk-data-commons", "title": "Fire-risk data commons", "text": "One open platform for fuels, risk and treatment data shared by every agency and partner.", "cost": 4, "effects": [ { "domain": "workforce", "delta": 1 } ], "delayed": [ { "domain": "fire", "delta": 1 }, { "domain": "governance", "delta": 1 } ], "kind": "hedge", "tags": ["tech", "data", "partners"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-carbon-credit-pilot", "title": "Forest carbon credit pilot", "text": "Sell verified carbon credits from deferred harvest on state and partner lands.", "cost": 6, "effects": [ { "domain": "climate", "delta": 2 }, { "domain": "wood", "delta": -1 } ], "delayed": [], "kind": "trade-off", "tags": ["climate", "markets"], "status": "active", "reviewed": "2026-11-14" },
+    { "id": "str-joint-academy", "title": "Joint workforce academy", "text": "Federal, state, Tribal and contractor staff train together and share a career ladder.", "cost": 5, "effects": [ { "domain": "workforce", "delta": 2 } ], "delayed": [ { "domain": "partners", "delta": 1 } ], "kind": "hedge", "tags": ["workforce", "partners"], "status": "active", "reviewed": "2026-11-14" }
+  ],
+  "roles": [
+    {
+      "id": "role-state-forester", "title": "State Forester", "org": "State forestry agency", "sector": "state",
+      "bio": "Leads the state's forestry agency: fire protection on state and private land, landowner assistance, and shared stewardship with federal partners.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "partners", "min": 7 }, { "domain": "fire", "min": 6 }, { "domain": "wood", "min": 5 } ], "guardrail": { "domain": "communities", "min": 4 }, "why": "Make shared stewardship the way work gets done across ownerships." },
+        { "id": "B", "targets": [ { "domain": "workforce", "min": 6 }, { "domain": "fire", "min": 6 }, { "domain": "communities", "min": 6 } ], "guardrail": { "domain": "governance", "min": 4 }, "why": "Build a state fire and forestry workforce that does not depend on federal swings." }
+      ],
+      "ability": { "name": "Governor's call", "text": "Once per game: +1 to Partnerships or Fire & Fuels.", "effect": { "type": "boost", "delta": 1, "choices": ["partners", "fire"] } },
+      "future": { "resilient": "Chief Landscape Steward", "holding": "Interagency Fire Broker", "unraveling": "Disaster Recovery Director" },
+      "status": "active"
+    },
+    {
+      "id": "role-forest-supervisor", "title": "Forest Supervisor", "org": "USDA Forest Service, National Forest", "sector": "federal",
+      "bio": "Line officer for a national forest: balances fire, recreation, timber and watersheds under shrinking staff and changing authorities.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "recreation", "min": 7 }, { "domain": "water", "min": 6 }, { "domain": "health", "min": 6 } ], "guardrail": { "domain": "workforce", "min": 4 }, "why": "Keep the forest open, healthy and trusted by the public." },
+        { "id": "B", "targets": [ { "domain": "health", "min": 7 }, { "domain": "fire", "min": 6 }, { "domain": "partners", "min": 6 } ], "guardrail": { "domain": "recreation", "min": 4 }, "why": "Restore resilient landscapes with whatever partners you can find." }
+      ],
+      "ability": { "name": "Closure order", "text": "Once per game: protect Recreation, Water or Forest Health until the end of the era.", "effect": { "type": "protect", "choices": ["recreation", "water", "health"] } },
+      "future": { "resilient": "Landscape Recovery Chief", "holding": "Multiple-Use Mediator", "unraveling": "Caretaker of Closed Lands" },
+      "status": "active"
+    },
+    {
+      "id": "role-tribal-director", "title": "Tribal Natural Resources Director", "org": "Tribal Nation", "sector": "tribal",
+      "bio": "Directs a Tribal Nation's forestry, fisheries and cultural-resource programs and negotiates co-stewardship of ancestral lands.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "partners", "min": 8 }, { "domain": "health", "min": 6 }, { "domain": "water", "min": 6 } ], "guardrail": { "domain": "fire", "min": 4 }, "why": "Restore Tribal authority and reciprocity on ancestral landscapes." },
+        { "id": "B", "targets": [ { "domain": "fire", "min": 7 }, { "domain": "health", "min": 6 }, { "domain": "communities", "min": 5 } ], "guardrail": { "domain": "partners", "min": 5 }, "why": "Bring good fire back to the land at the scale it needs." }
+      ],
+      "ability": { "name": "Seventh-generation view", "text": "Once per game: cancel one negative effect of the system response (cascades) as it happens.", "effect": { "type": "cancel", "scope": "cascade" } },
+      "future": { "resilient": "Co-Steward of the Watershed", "holding": "Treaty Rights Negotiator", "unraveling": "Keeper of Seeds and Stories" },
+      "status": "active"
+    },
+    {
+      "id": "role-county-commissioner", "title": "County Commissioner", "org": "Rural county government", "sector": "local",
+      "bio": "Elected leader of a forested county: budgets, roads, evacuation, zoning in the wildland–urban interface, and a tax base tied to the forest.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "communities", "min": 7 }, { "domain": "wood", "min": 6 }, { "domain": "recreation", "min": 6 } ], "guardrail": { "domain": "fire", "min": 4 }, "why": "Keep the county livable, insurable and employed." },
+        { "id": "B", "targets": [ { "domain": "communities", "min": 7 }, { "domain": "fire", "min": 6 }, { "domain": "governance", "min": 5 } ], "guardrail": { "domain": "water", "min": 4 }, "why": "Make the county fire-adapted before the next big one." }
+      ],
+      "ability": { "name": "Emergency declaration", "text": "Once per game, in the Council: gain +2 Capacity this era.", "effect": { "type": "capacity", "amount": 2 } },
+      "future": { "resilient": "Fire-Adapted Town Planner", "holding": "Rural Resilience Broker", "unraveling": "Managed Retreat Coordinator" },
+      "status": "active"
+    },
+    {
+      "id": "role-mill-owner", "title": "Mill Owner", "org": "Family-owned sawmill & mass-timber startup", "sector": "private",
+      "bio": "Runs the last mill in the valley and is betting on engineered wood. Needs steady supply, a workforce, and buyers.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "wood", "min": 8 }, { "domain": "workforce", "min": 5 }, { "domain": "communities", "min": 5 } ], "guardrail": { "domain": "health", "min": 4 }, "why": "Keep the mill running on restoration wood." },
+        { "id": "B", "targets": [ { "domain": "wood", "min": 7 }, { "domain": "climate", "min": 6 }, { "domain": "fire", "min": 5 } ], "guardrail": { "domain": "partners", "min": 4 }, "why": "Turn fuel reduction into a carbon-smart product line." }
+      ],
+      "ability": { "name": "Market maker", "text": "Once per game, in the Council: one wood-tagged strategy costs 2 less.", "effect": { "type": "discount", "amount": 2, "tag": "wood" } },
+      "future": { "resilient": "Mass-Timber Plant Manager", "holding": "Biomass Logistics Lead", "unraveling": "Salvage Logger" },
+      "status": "active"
+    },
+    {
+      "id": "role-ngo-director", "title": "Conservation NGO Director", "org": "Regional land trust", "sector": "ngo",
+      "bio": "Leads a land trust that buys easements, convenes partners and raises private money for forest projects.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "health", "min": 7 }, { "domain": "climate", "min": 6 }, { "domain": "partners", "min": 6 } ], "guardrail": { "domain": "water", "min": 4 }, "why": "Protect intact, connected forests for the long haul." },
+        { "id": "B", "targets": [ { "domain": "water", "min": 7 }, { "domain": "partners", "min": 7 }, { "domain": "recreation", "min": 5 } ], "guardrail": { "domain": "communities", "min": 4 }, "why": "Make downstream beneficiaries pay for upstream forests." }
+      ],
+      "ability": { "name": "Philanthropic bridge", "text": "Once per game, in the Council: replace up to 2 strategies in the market.", "effect": { "type": "refresh-market", "count": 2 } },
+      "future": { "resilient": "Landscape Finance Architect", "holding": "Easement Portfolio Manager", "unraveling": "Ark Builder" },
+      "status": "active"
+    },
+    {
+      "id": "role-fire-scientist", "title": "Fire Research Scientist", "org": "Research station / university", "sector": "science",
+      "bio": "Studies fire behavior and fuels; translates science into decision tools for managers, often on short-term grants.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "workforce", "min": 6 }, { "domain": "fire", "min": 6 }, { "domain": "climate", "min": 5 } ], "guardrail": { "domain": "governance", "min": 3 }, "why": "Make science and data a core capacity, not an afterthought." },
+        { "id": "B", "targets": [ { "domain": "health", "min": 6 }, { "domain": "water", "min": 6 }, { "domain": "fire", "min": 5 } ], "guardrail": { "domain": "workforce", "min": 4 }, "why": "Show which treatments actually work, and scale them." }
+      ],
+      "ability": { "name": "Horizon scan", "text": "Once per game: discard your hand and draw 3 Far-horizon signals.", "effect": { "type": "redraw", "horizon": "far" } },
+      "future": { "resilient": "Pyro-Ecology Forecaster", "holding": "Fire Model Auditor", "unraveling": "Smoke Epidemiologist" },
+      "status": "active"
+    },
+    {
+      "id": "role-regional-forester", "title": "Regional Forester", "org": "USDA Forest Service, Region", "sector": "federal",
+      "bio": "Oversees national forests across several states; manages budgets, reorganizations and relationships with governors and Tribes.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "governance", "min": 6 }, { "domain": "workforce", "min": 6 }, { "domain": "fire", "min": 5 } ], "guardrail": { "domain": "recreation", "min": 4 }, "why": "Steady the agency through restructuring with its mission intact." },
+        { "id": "B", "targets": [ { "domain": "partners", "min": 7 }, { "domain": "health", "min": 6 }, { "domain": "governance", "min": 5 } ], "guardrail": { "domain": "workforce", "min": 3 }, "why": "Deliver the mission through partners when the agency can't alone." }
+      ],
+      "ability": { "name": "Line officer's call", "text": "Once per game: decide a Dilemma outright, overriding the vote.", "effect": { "type": "decide" } },
+      "future": { "resilient": "Director of Shared Landscapes", "holding": "Reorganization Navigator", "unraveling": "Federal Asset Liquidator" },
+      "status": "active"
+    },
+    {
+      "id": "role-water-utility", "title": "Water Utility Manager", "org": "Municipal water utility", "sector": "local",
+      "bio": "Runs a city's water system; the source watershed is a national forest that burned ten years ago.",
+      "mandates": [
+        { "id": "A", "targets": [ { "domain": "water", "min": 8 }, { "domain": "health", "min": 6 }, { "domain": "partners", "min": 5 } ], "guardrail": { "domain": "fire", "min": 4 }, "why": "Keep the source watershed clean, forested and funded." },
+        { "id": "B", "targets": [ { "domain": "water", "min": 7 }, { "domain": "communities", "min": 6 }, { "domain": "governance", "min": 5 } ], "guardrail": { "domain": "health", "min": 4 }, "why": "Make the case that forests are water infrastructure." }
+      ],
+      "ability": { "name": "Water fund transfer", "text": "Once per game: move up to 2 points from one domain to another.", "effect": { "type": "move", "amount": 2 } },
+      "future": { "resilient": "Watershed Investment Officer", "holding": "Debris-Flow Engineer", "unraveling": "Water Rationing Chief" },
+      "status": "active"
+    }
+  ],
+  "cascades": [
+    { "id": "cas-fire-crisis", "when": { "domain": "fire", "lte": 2 }, "effects": [ { "domain": "water", "delta": -1 }, { "domain": "communities", "delta": -1 } ], "text": "Megafires scorch watersheds and force evacuations." },
+    { "id": "cas-workforce-crisis", "when": { "domain": "workforce", "lte": 2 }, "effects": [ { "domain": "fire", "delta": -1 }, { "domain": "recreation", "delta": -1 } ], "text": "Too few people to do the work: fuels and facilities go untended." },
+    { "id": "cas-governance-crisis", "when": { "domain": "governance", "lte": 2 }, "effects": [ { "domain": "workforce", "delta": -1 }, { "domain": "partners", "delta": -1 } ], "text": "Funding gaps and legal limbo stall hiring and agreements." },
+    { "id": "cas-health-crisis", "when": { "domain": "health", "lte": 2 }, "effects": [ { "domain": "wood", "delta": -1 }, { "domain": "climate", "delta": -1 } ], "text": "Dying forests release carbon and lose commercial value." },
+    { "id": "cas-water-crisis", "when": { "domain": "water", "lte": 2 }, "effects": [ { "domain": "communities", "delta": -1 }, { "domain": "health", "delta": -1 } ], "text": "Drought and debris flows hit towns and stress forests." },
+    { "id": "cas-partners-thriving", "when": { "domain": "partners", "gte": 8 }, "effects": [ { "domain": "governance", "delta": 1 } ], "text": "Strong coalitions attract durable funding and authorities." }
+  ],
+  "scenarios": [
+    {
+      "id": "scn-thin-margins", "name": "Thin margins",
+      "summary": "Budgets and staff are down, fire seasons are long, and partners are stepping up unevenly. Little slack anywhere in the system.",
+      "start": { "fire": 3, "health": 4, "water": 5, "climate": 5, "wood": 5, "communities": 4, "recreation": 6, "workforce": 3, "governance": 4, "partners": 5 },
+      "drivers": { "now": ["drv-fire-agency-merger", "drv-budget-squeeze"], "near": ["drv-insurance-retreat"], "far": ["drv-snow-loss-megadrought"] },
+      "tags": ["baseline"], "status": "active"
+    },
+    {
+      "id": "scn-rebuild-together", "name": "Rebuild together",
+      "summary": "A shock has passed and partners have momentum. Capacity is middling, but co-stewardship and state leadership are on the rise.",
+      "start": { "fire": 4, "health": 5, "water": 6, "climate": 5, "wood": 4, "communities": 5, "recreation": 6, "workforce": 4, "governance": 5, "partners": 6 },
+      "drivers": { "now": ["drv-budget-squeeze"], "near": ["drv-insurance-retreat"], "far": ["drv-snow-loss-megadrought"] },
+      "tags": ["optimistic"], "status": "active"
+    }
+  ],
+  "rules": { "handSize": 3, "capacityBase": 3, "councilSeconds": 300, "headlineSeconds": 120, "collapseCrisisCount": 3, "outcome": { "resilient": 6.0, "holding": 4.5 }, "headlineInfluence": 2, "marketSize": 5 },
+  "prompts": {
+    "debrief": [
+      "Which signal on the table today is already showing up in your work?",
+      "Where did the table cooperate — and where did mandates pull it apart?",
+      "Which dilemma felt most like a real decision you face?",
+      "What did the system response teach you about interdependence?"
+    ],
+    "monday": [
+      "Name one signal to track and who will watch it.",
+      "Name one partner to call this month, and why.",
+      "Name one assumption in your current plan that this game challenged."
+    ]
+  }
+}

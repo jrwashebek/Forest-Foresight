@@ -1,0 +1,1225 @@
+[
+  {
+    "id": "sig-beech-leaf-disease",
+    "title": "Stripes are not a good look",
+    "signal": "Beech leaf disease, tied to an invasive nematode, now reaches 15 states and Ontario. Fluopyram and trunk injections can save individual trees, but no forest-scale treatment exists yet.",
+    "horizon": "now",
+    "primary": {
+      "domain": "health",
+      "delta": -2,
+      "text": "Beech-dominated stands thin and saplings die, an ash-borer-scale loss met only with tree-by-tree tools."
+    },
+    "secondary": {
+      "type": "remove",
+      "amount": 1,
+      "text": "Remove 1 from a domain hurt as beech canopies thin. Explain the link: wildlife, recreation, streams or timber."
+    },
+    "prompt": "Which beech stands are worth treating, and who pays?",
+    "source": {
+      "title": "Disease threatens beech trees in all Chesapeake Bay states",
+      "publisher": "Maryland Matters",
+      "date": "2025-09-22",
+      "url": "https://marylandmatters.org/2025/09/22/disease-threatens-beech-trees-in-all-chesapeake-bay-states/"
+    },
+    "tags": [
+      "invasives",
+      "disease",
+      "northeast",
+      "beech"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-nm-tree-deaths-tripled",
+    "title": "Drought sets the beetle buffet",
+    "signal": "New Mexico's 2025 aerial survey found tree deaths tripled statewide and beetle-killed conifer acres rose 211%, mostly on national forests, as drought, heat and warm winters stressed overly dense stands.",
+    "horizon": "now",
+    "primary": {
+      "domain": "health",
+      "delta": -2,
+      "text": "Drought-weakened, overstocked stands fall to bark beetles faster than crews can thin or replant."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "wood",
+      "delta": 1,
+      "text": "Salvage and biomass buyers get a pulse of dead timber where mills are close enough."
+    },
+    "prompt": "Where should thinning go first: beetle-threatened stands or fire-prone ones?",
+    "source": {
+      "title": "Tree deaths tripled across New Mexico in 2025 amid drought, heat",
+      "publisher": "Grant County Beat (NM Forestry Division release)",
+      "date": "2026-06-12",
+      "url": "https://grantcountybeat.com/nm-news/non-local-news-releases/tree-deaths-tripled-across-new-mexico-in-2025-amid-drought-heat"
+    },
+    "tags": [
+      "drought",
+      "bark-beetles",
+      "mortality",
+      "southwest"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-chestnut-deregulated",
+    "title": "Chestnuts roasting on a permit",
+    "signal": "In August 2026 USDA APHIS deregulated Darling 54, SUNY-ESF's American chestnut engineered for blight tolerance, finding it unlikely to pose more plant pest risk than unmodified chestnut, and published responses to public comments.",
+    "horizon": "now",
+    "primary": {
+      "domain": "health",
+      "delta": 2,
+      "text": "A blight-tolerant chestnut can be propagated and planted more widely, testing biotech as a restoration tool."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to a domain that gains if the chestnut returns. Explain how: wildlife, mast, wood, Tribal foods or trust."
+    },
+    "prompt": "What evidence and consent would you need before planting biotech trees on your lands?",
+    "source": {
+      "title": "USDA Deregulates American Chestnut Engineered for Enhanced Blight Tolerance",
+      "publisher": "USDA APHIS",
+      "date": "2026-08-27",
+      "url": "https://www.aphis.usda.gov/news/program-update/usda-deregulates-american-chestnut-engineered-enhanced-blight-tolerance"
+    },
+    "tags": [
+      "biotech",
+      "genetics",
+      "restoration",
+      "federal"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-nm-reforestation-center",
+    "title": "Boot camp for baby pines",
+    "signal": "New Mexico broke ground in April 2026 on a Mora County reforestation center aiming for 5 million seedlings a year, grown from drought- and fire-surviving trees and hardened with drought and heat.",
+    "horizon": "near",
+    "primary": {
+      "domain": "health",
+      "delta": 2,
+      "text": "Regional nurseries supply hardier seedlings at scale, improving burn-scar survival that now averages about 25%."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "governance",
+      "delta": -1,
+      "text": "Hardened, climate-matched seedlings cost more, so planting budgets cover fewer acres each year."
+    },
+    "prompt": "Should every region own its seedling pipeline, or share a few big ones?",
+    "source": {
+      "title": "A 'Reforestation Pipeline' in New Mexico Trains Seedlings to Survive in Burn Scars",
+      "publisher": "Inside Climate News",
+      "date": "2026-06-05",
+      "url": "https://insideclimatenews.org/news/05062026/new-mexico-pine-tree-reforestation/"
+    },
+    "tags": [
+      "reforestation",
+      "nursery",
+      "state",
+      "southwest"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-pest-edna-traps",
+    "title": "Pest DNA caught on the breeze",
+    "signal": "Ohio's Holden Forests & Gardens is testing simple traps that catch airborne eDNA from forest pests; an early sample flagged the beech leaf disease nematode, narrowing where crews should search.",
+    "horizon": "near",
+    "primary": {
+      "domain": "health",
+      "delta": 1,
+      "text": "Networked eDNA sampling spots invaders early, while eradication or slow-the-spread is still possible."
+    },
+    "secondary": {
+      "type": "protect",
+      "text": "Protect a domain that early detection shields from surprise losses. Explain what you are guarding."
+    },
+    "prompt": "Who would maintain thousands of eDNA traps, and act on what they find?",
+    "source": {
+      "title": "What's that thing on the Emergent Tower? Holden tests new forest pest monitoring tool",
+      "publisher": "Holden Forests & Gardens",
+      "date": "2025-11-11",
+      "url": "https://holdenfg.org/blog/whats-that-thing-on-the-emergent-tower-holden-tests-new-forest-pest-monitoring-tool/"
+    },
+    "tags": [
+      "edna",
+      "early-detection",
+      "technology",
+      "invasives"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-california-seed-gap",
+    "title": "Cones short, backlog long",
+    "signal": "California has replanted about 16% of forest lost to high-severity fire in 2020-24. Hitting its 2030 goal needs roughly 35% more planting each year, while seed and nursery capacity lag far behind.",
+    "horizon": "near",
+    "primary": {
+      "domain": "health",
+      "delta": -1,
+      "text": "Burned conifer land sits unplanted for years as cones, nursery space and planting crews run short."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "climate",
+      "delta": -1,
+      "text": "Unplanted burn scars stop storing carbon and risk converting to shrubland."
+    },
+    "prompt": "What would it take to triple seed collection in your state?",
+    "source": {
+      "title": "California can't replant its forests fast enough to keep up with wildfires",
+      "publisher": "CapRadio (CalMatters)",
+      "date": "2026-07-27",
+      "url": "https://www.capradio.org/articles/2026/07/27/california-cant-replant-its-forests-fast-enough-to-keep-up-with-wildfires/"
+    },
+    "tags": [
+      "reforestation",
+      "seed",
+      "fire-recovery",
+      "california"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-southern-pine-beetle-north",
+    "title": "Southern beetle, Yankee pines",
+    "signal": "Warming winters let southern pine beetle spread from New Jersey and Long Island into Massachusetts, where it killed trees on Martha's Vineyard and Nantucket; over 100,000 acres there remain at risk.",
+    "horizon": "far",
+    "primary": {
+      "domain": "health",
+      "delta": -1,
+      "text": "Southern-style beetle outbreaks reach northern pine forests with little experience managing them."
+    },
+    "secondary": {
+      "type": "move",
+      "amount": 1,
+      "text": "Move 1 between domains to show who bears outbreak costs and who gains from thinning and burning. Explain."
+    },
+    "prompt": "Which southern pest playbooks should northern agencies borrow now?",
+    "source": {
+      "title": "A tiny beetle, a big wake-up call for Massachusetts forests",
+      "publisher": "Mass.gov (MassWildlife)",
+      "date": "2026-01-08",
+      "url": "https://www.mass.gov/news/a-tiny-beetle-a-big-wake-up-call-for-massachusetts-forests"
+    },
+    "tags": [
+      "bark-beetles",
+      "range-shift",
+      "northeast",
+      "climate"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-shrubland-conversion",
+    "title": "From pine forest to poison oak",
+    "signal": "Scientists report severe fires turning Western ponderosa forests into shrubland where seedlings no longer return; studies estimate up to 40% of Western conifer forests could become shrubland by 2100.",
+    "horizon": "far",
+    "primary": {
+      "domain": "health",
+      "delta": -2,
+      "text": "Large burned areas lose conifer cover for good, shrinking habitat and seed sources across the West."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "water",
+      "delta": 1,
+      "text": "With fewer trees drawing water, burned basins can yield more runoff for a time, though it arrives earlier."
+    },
+    "prompt": "Where would you accept a new ecosystem instead of replanting the old one?",
+    "source": {
+      "title": "Bigger, hotter fires are slowly erasing America's great forests",
+      "publisher": "The Boston Globe (from The New York Times)",
+      "date": "2026-08-23",
+      "url": "https://www.bostonglobe.com/2026/08/23/nation/bigger-hotter-fires-are-slowly-erasing-americas-great-forests/"
+    },
+    "tags": [
+      "type-conversion",
+      "fire",
+      "west",
+      "adaptation"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-assisted-migration",
+    "title": "Trees with relocation packages",
+    "signal": "Sweden's ANAFOR project is testing eight broadleaf species at 10 sites from south to north to study assisted migration, including whether trees that look healthy early fail in later droughts or frosts.",
+    "horizon": "far",
+    "primary": {
+      "domain": "health",
+      "delta": 2,
+      "text": "Climate-matched seed moves north and upslope, so planted forests fit the climate they will grow into."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to a domain that benefits when planted forests survive the climate ahead. Explain."
+    },
+    "prompt": "Who decides which non-local trees are welcome on public lands?",
+    "source": {
+      "title": "Can assisted migration help Swedish forests?",
+      "publisher": "Swedish University of Agricultural Sciences (SLU)",
+      "date": "2026-08-10",
+      "url": "https://www.slu.se/en/news/2026/08/can-assisted-migration-help-swedish-forests/"
+    },
+    "tags": [
+      "assisted-migration",
+      "adaptation",
+      "reforestation",
+      "international"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-record-snow-drought",
+    "title": "The winter that forgot to snow",
+    "signal": "On April 1, 2026, 65% of 1,575 western snow measurements set or tied record lows after a warm, late-starting winter, NRCS reported, with streamflow forecast near or below historical minimums.",
+    "horizon": "now",
+    "primary": {
+      "domain": "water",
+      "delta": -2,
+      "text": "Reservoirs, rivers and irrigators face shortages as melt comes early and small."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "recreation",
+      "delta": -1,
+      "text": "Short ski and river seasons squeeze mountain towns and outdoor businesses."
+    },
+    "prompt": "If this winter repeats, which water commitments break first?",
+    "source": {
+      "title": "Record Low April 1 Snowpack across Western U.S. Means Impending Water Shortages",
+      "publisher": "USDA Natural Resources Conservation Service",
+      "date": "2026-04-21",
+      "url": "https://www.nrcs.usda.gov/state-offices/colorado/news/record-low-april-1-snowpack-across-western-us-means-impending-water"
+    },
+    "tags": [
+      "snow-drought",
+      "water-supply",
+      "west"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-colorado-river-framework",
+    "title": "No deal on the Colorado",
+    "signal": "With basin states unable to agree, Reclamation's July 2026 final plan sets a 2027-2036 Colorado River framework with two-year rules. Lower Basin cuts total 1.25 million acre-feet yearly for 2027-28.",
+    "horizon": "now",
+    "primary": {
+      "domain": "water",
+      "delta": -1,
+      "text": "Deeper cuts and year-to-year uncertainty strain cities, farms and Tribes that depend on the river."
+    },
+    "secondary": {
+      "type": "move",
+      "amount": 1,
+      "text": "Move 1 between domains to show who gains and who loses as water is reallocated. Explain."
+    },
+    "prompt": "How can headwater forest management earn a seat at basin negotiations?",
+    "source": {
+      "title": "New federal framework charts the Colorado River's next decade",
+      "publisher": "DLA Piper",
+      "date": "2026-08-05",
+      "url": "https://www.dlapiper.com/en-us/insights/publications/2026/08/new-federal-framework-charts-the-colorado-rivers-next-decade"
+    },
+    "tags": [
+      "colorado-river",
+      "federal",
+      "water-supply",
+      "west"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-klamath-salmon-return",
+    "title": "Dams out, salmon in",
+    "signal": "Two years after four Klamath River dams came out, researchers count over 20,000 chinook migrating upriver into nearly 90% of their former range, though 2026 drought, heat and disease hit juveniles.",
+    "horizon": "now",
+    "primary": {
+      "domain": "water",
+      "delta": 2,
+      "text": "Reconnected rivers rebuild fish runs and aquatic habitat faster than many expected."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "climate",
+      "delta": -1,
+      "text": "Removing the dams also ended a source of carbon-free hydropower for the region."
+    },
+    "prompt": "Which aging dams in your watersheds cost more than they deliver?",
+    "source": {
+      "title": "20,000 Salmon Return to the Klamath—but Challenging Conditions for Recovery Remain",
+      "publisher": "Inside Climate News",
+      "date": "2026-08-27",
+      "url": "https://insideclimatenews.org/news/27082026/salmon-return-to-klamath-river-after-dam-removals/"
+    },
+    "tags": [
+      "dam-removal",
+      "salmon",
+      "tribal",
+      "restoration"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-forests-to-faucets",
+    "title": "Utilities buy fire insurance upstream",
+    "signal": "Denver Water and partners have committed $96 million to headwater forest restoration since 2010, after the utility spent over $27 million recovering from the Buffalo Creek and Hayman fires.",
+    "horizon": "now",
+    "primary": {
+      "domain": "water",
+      "delta": 1,
+      "text": "Watershed thinning and burning lower the odds that post-fire sediment chokes reservoirs."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to the domain that gains most when water utilities co-fund forest work. Explain who benefits."
+    },
+    "prompt": "Which water utility in your state should be your next forest partner?",
+    "source": {
+      "title": "How Colorado's biggest water utility is approaching wildfire and its drinking water impacts",
+      "publisher": "KSJD (Rocky Mountain Community Radio)",
+      "date": "2025-10-08",
+      "url": "https://www.ksjd.org/2025-10-08/how-colorados-biggest-water-utility-is-approaching-wildfire-and-its-drinking-water-impacts"
+    },
+    "tags": [
+      "source-water",
+      "utilities",
+      "partnership",
+      "fire"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-beaver-water-storage",
+    "title": "Leave it to beavers",
+    "signal": "A UC Berkeley-led study estimates restored Sierra Nevada beavers could store about 120 million cubic meters of water and create roughly 2,200 square kilometers of potential wildfire refuge.",
+    "horizon": "near",
+    "primary": {
+      "domain": "water",
+      "delta": 1,
+      "text": "Beaver complexes slow runoff, raise water tables and keep meadows green through drought."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "fire",
+      "delta": 1,
+      "text": "Wet, connected beaver habitat forms green refuges that resist burning in severe fires."
+    },
+    "prompt": "What would it take to welcome beavers back on your landscapes?",
+    "source": {
+      "title": "Beavers, an ecosystem engineer, can benefit California's Sierra Nevada",
+      "publisher": "UC Berkeley Rausser College of Natural Resources",
+      "date": "2025-10-31",
+      "url": "https://ourenvironment.berkeley.edu/news/beavers-ecosystem-engineer-can-benefit-california%E2%80%99s-sierra-nevada"
+    },
+    "tags": [
+      "beaver",
+      "nature-based",
+      "sierra",
+      "drought"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-thinning-water-yield",
+    "title": "Thin the trees, fill the creeks",
+    "signal": "Forest Service-funded modeling of four central Sierra basins found thinning could raise water yields 8-14% in drought years without much added flood risk, though understory regrowth absorbs some gains.",
+    "horizon": "near",
+    "primary": {
+      "domain": "water",
+      "delta": 1,
+      "text": "Targeted thinning in dense, wet watersheds delivers measurable extra water when it is scarcest."
+    },
+    "secondary": {
+      "type": "move",
+      "amount": 1,
+      "text": "Move 1 between domains to show how thinning trades value among water, wood, fire and habitat. Explain."
+    },
+    "prompt": "Could downstream water users help pay for thinning upstream?",
+    "source": {
+      "title": "University researchers predict improved water yields after forest thinning",
+      "publisher": "University of Nevada, Reno (Nevada Today)",
+      "date": "2025-05-07",
+      "url": "https://www.unr.edu/nevada-today/news/2025/adrian-harpold-research"
+    },
+    "tags": [
+      "thinning",
+      "water-yield",
+      "research",
+      "sierra"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-data-center-water",
+    "title": "Thirsty servers in dry country",
+    "signal": "A University of Illinois-led study finds data-center water use is rarely disclosed, even as facilities spread across Nevada, Arizona and the Mountain West; US data centers used an estimated 17 billion gallons in 2023.",
+    "horizon": "near",
+    "primary": {
+      "domain": "water",
+      "delta": -1,
+      "text": "Fast-growing, opaque industrial demand competes with towns, farms and streams for scarce supplies."
+    },
+    "secondary": {
+      "type": "remove",
+      "amount": 1,
+      "text": "Remove 1 from a domain squeezed when data centers compete for water and power. Explain."
+    },
+    "prompt": "Should water-hungry developments help fund the watersheds they draw on?",
+    "source": {
+      "title": "Data centers' water use is hard to track, raising concerns in the drought-prone West, study finds",
+      "publisher": "KUNC (KUNR / Mountain West News Bureau)",
+      "date": "2026-04-15",
+      "url": "https://www.kunc.org/2026-04-15/data-centers-water-hard-track-raising-concerns-drought-west"
+    },
+    "tags": [
+      "data-centers",
+      "water-demand",
+      "west"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-snow-sometimes",
+    "title": "Snow becomes a sometimes thing",
+    "signal": "Western April 1 snowpack fell about 18% from 1955 to 2023. Climate Central cites projections of another 25% decline by 2050 and more frequent back-to-back snow drought years.",
+    "horizon": "far",
+    "primary": {
+      "domain": "water",
+      "delta": -2,
+      "text": "Rain-dominated winters and early melt force water systems to store, recharge and ration differently."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "health",
+      "delta": -1,
+      "text": "Longer dry seasons stress trees and invite beetles and drought mortality."
+    },
+    "prompt": "What would your forest plans look like if designed for half the snow?",
+    "source": {
+      "title": "Record Snow Drought Limits Western Water Supplies",
+      "publisher": "Climate Central",
+      "date": "2026-04-01",
+      "url": "https://climatecentral.org/climate-matters/western-snowpack-drought-2026"
+    },
+    "tags": [
+      "snow-drought",
+      "climate",
+      "west",
+      "long-term"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-ionized-clouds",
+    "title": "Charged clouds, unproven payoff",
+    "signal": "Colorado and Utah permitted a company's ground-based systems that release charged aerosols to coax precipitation. Company-cited trials claim 15-18% more rain; the first US results are still to be evaluated.",
+    "horizon": "far",
+    "primary": {
+      "domain": "water",
+      "delta": 1,
+      "text": "If proven, cheap weather modification adds modest precipitation over headwater forests and reservoirs."
+    },
+    "secondary": {
+      "type": "protect",
+      "text": "Protect one domain from this era's signals while the evidence comes in. Explain why it needs a buffer."
+    },
+    "prompt": "How much evidence do you need before counting engineered rain in plans?",
+    "source": {
+      "title": "Ionization weather modification tech expands in Colorado and Utah",
+      "publisher": "Western Water",
+      "date": "2025-11-20",
+      "url": "https://www.western-water.com/2025/11/20/ionization-weather-modification-tech-expands-in-colorado-and-utah/"
+    },
+    "tags": [
+      "weather-modification",
+      "technology",
+      "wildcard"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-ocean-water-desert",
+    "title": "Ocean water for the desert",
+    "signal": "Arizona's water finance authority moved four import concepts into engineering and environmental study in November 2025, including Gulf of California desalination traded for part of Mexico's Colorado River share.",
+    "horizon": "far",
+    "primary": {
+      "domain": "water",
+      "delta": 1,
+      "text": "New supplies from the sea ease pressure on headwater rivers, at high energy and capital cost."
+    },
+    "secondary": {
+      "type": "remove",
+      "amount": 1,
+      "text": "Remove 1 from a domain that pays for imported water's energy, cost or ecological trade-offs. Explain."
+    },
+    "prompt": "If cities buy ocean water, will they still value forested headwaters?",
+    "source": {
+      "title": "Arizona advances four major water import projects",
+      "publisher": "Western Water",
+      "date": "2025-12-03",
+      "url": "https://www.western-water.com/2025/12/03/arizona-advances-four-major-water-import-projects/"
+    },
+    "tags": [
+      "desalination",
+      "infrastructure",
+      "arizona",
+      "wildcard"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-endangerment-repeal",
+    "title": "Pulling climate policy's legal root",
+    "signal": "EPA repealed its 2009 finding that greenhouse gases endanger public health, the legal basis for most Clean Air Act climate rules, plus vehicle standards. Health and environmental groups sued in February 2026.",
+    "horizon": "now",
+    "primary": {
+      "domain": "climate",
+      "delta": -2,
+      "text": "Federal climate regulation retreats, leaving emissions and forest-carbon policy to courts, states and markets."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "governance",
+      "delta": -1,
+      "text": "Years of litigation keep federal climate rules uncertain for agencies, states and investors."
+    },
+    "prompt": "If federal climate rules swing with administrations, what stays constant in your plans?",
+    "source": {
+      "title": "Groups sue Trump's EPA over repeal of rule that supported climate protections",
+      "publisher": "PBS News",
+      "date": "2026-02-18",
+      "url": "https://www.pbs.org/newshour/science/groups-sue-trumps-epa-over-repeal-of-rule-that-supported-climate-protections"
+    },
+    "tags": [
+      "federal",
+      "climate-policy",
+      "litigation"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-california-cap-and-invest",
+    "title": "Cap-and-trade gets a 2045 lease",
+    "signal": "California extended its carbon market through 2045 as cap-and-invest, raised the offset limit from 4% to 6% with at least half from in-state projects, and ordered all offset protocols updated by 2029.",
+    "horizon": "now",
+    "primary": {
+      "domain": "climate",
+      "delta": 2,
+      "text": "A durable compliance market keeps demand alive for high-quality forest offsets and climate investment."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "wood",
+      "delta": -1,
+      "text": "Forest offset projects pay owners to grow more and harvest later, trimming near-term log supply."
+    },
+    "prompt": "What protocol changes would make forest offsets trustworthy enough to scale?",
+    "source": {
+      "title": "California extends cap-and-trade to 2045, renames program cap-and-invest",
+      "publisher": "International Carbon Action Partnership (ICAP)",
+      "date": "2025-09-29",
+      "url": "https://icapcarbonaction.com/en/news/california-extends-cap-and-trade-2045-renames-program-cap-and-invest"
+    },
+    "tags": [
+      "carbon-markets",
+      "offsets",
+      "state",
+      "california"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-icvcm-forest-label",
+    "title": "A quality stamp for forest credits",
+    "signal": "In 2026 the Integrity Council for the Voluntary Carbon Market granted its Core Carbon Principles label to ACR improved forest management methods for US non-federal lands, covering over 9 million eligible credits.",
+    "horizon": "now",
+    "primary": {
+      "domain": "climate",
+      "delta": 1,
+      "text": "Integrity labels help buyers tell stronger forest credits from weaker ones, rewarding credible projects."
+    },
+    "secondary": {
+      "type": "move",
+      "amount": 1,
+      "text": "Move 1 between wood and another domain: who gains when owners are paid to grow more and harvest later? Explain."
+    },
+    "prompt": "Should public agencies help family forest owners reach credible carbon markets?",
+    "source": {
+      "title": "ACR Improved Forest Management Methodology Version 1.3 Earns Core Carbon Principle (CCP) Approval from the Integrity Council for the Voluntary Carbon Market (ICVCM)",
+      "publisher": "ACR",
+      "date": "2026-08-12",
+      "url": "https://acrcarbon.org/news/acr-improved-forest-management-methodology-version-1-3-earns-core-carbon-principle-ccp-approval-from-the-integrity-council-for-the-voluntary-carbon-market-icvcm/"
+    },
+    "tags": [
+      "carbon-markets",
+      "integrity",
+      "private-forests"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-big-buyer-pause",
+    "title": "Carbon's biggest buyer hits pause",
+    "signal": "Microsoft, about 90% of 2025 carbon-removal demand, reportedly paused new purchases in April 2026 while existing multi-year deals continue, exposing how concentrated buying for removal credits, including forest projects, had become.",
+    "horizon": "now",
+    "primary": {
+      "domain": "climate",
+      "delta": -1,
+      "text": "Forest carbon projects that leaned on one giant buyer face financing gaps and softer prices."
+    },
+    "secondary": {
+      "type": "remove",
+      "amount": 1,
+      "text": "Remove 1 from a domain that loses when carbon finance for forests dries up. Explain."
+    },
+    "prompt": "How would you diversify forest-carbon revenue so no single buyer holds the purse?",
+    "source": {
+      "title": "Microsoft Pauses Carbon Removal Purchases: Reports",
+      "publisher": "ESG Today",
+      "date": "2026-04-13",
+      "url": "https://www.esgtoday.com/microsoft-pauses-carbon-removal-purchases-reports"
+    },
+    "tags": [
+      "carbon-markets",
+      "corporate",
+      "risk"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-biochar-boom",
+    "title": "Slash to char to cash",
+    "signal": "Durable carbon-removal contracts hit a first-quarter record in 2026, 2.3 million tonnes or about 5.6 times Q1 2025, and biochar made up 93% of the volume, according to CDR.fyi data.",
+    "horizon": "near",
+    "primary": {
+      "domain": "climate",
+      "delta": 1,
+      "text": "Turning forest residues into biochar earns durable removal credits and stores carbon in soils."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "wood",
+      "delta": 1,
+      "text": "Low-value thinnings and slash gain a paying buyer, improving restoration economics."
+    },
+    "prompt": "Could biochar pay for fuels removal your budgets can't cover?",
+    "source": {
+      "title": "In 2026, Carbon Removal Marks The Largest Q1 On Record, New CDR.fyi Report Shows",
+      "publisher": "Carbon Herald",
+      "date": "2026-05-20",
+      "url": "https://carbonherald.com/in-2026-carbon-removal-marks-the-largest-q1-on-record-new-cdr-fyi-report-shows/"
+    },
+    "tags": [
+      "biochar",
+      "carbon-removal",
+      "residues",
+      "markets"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-utility-funds-forests",
+    "title": "A utility bankrolls new forests",
+    "signal": "UK energy supplier Octopus Energy committed $500 million in project financing to Living Carbon, a US startup selling removal credits from expanding forests and planting degraded land, just after Microsoft pulled back.",
+    "horizon": "near",
+    "primary": {
+      "domain": "climate",
+      "delta": 1,
+      "text": "New buyers and project finance pay for large-scale reforestation on degraded private land."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to a domain that gains when private capital replants degraded land. Explain."
+    },
+    "prompt": "What safeguards should come with private capital planting trees at scale?",
+    "source": {
+      "title": "British utility pumps $500M into US carbon removal company",
+      "publisher": "E&E News",
+      "date": "2026-05-01",
+      "url": "https://www.eenews.net/articles/british-utility-pumps-500m-into-us-carbon-removal-company/"
+    },
+    "tags": [
+      "reforestation",
+      "carbon-removal",
+      "finance"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-canopy-maps-v2",
+    "title": "Every canopy, measured from orbit",
+    "signal": "Meta and the World Resources Institute released open global canopy height maps and models in March 2026, raising accuracy (R-squared 0.53 to 0.86) for tracking restoration, degradation and carbon.",
+    "horizon": "near",
+    "primary": {
+      "domain": "climate",
+      "delta": 1,
+      "text": "Cheap, open forest measurement lowers the cost of verifying carbon and tracking change."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "workforce",
+      "delta": 1,
+      "text": "Small teams gain inventory-grade data without adding field crews."
+    },
+    "prompt": "What field measurements will you still need when satellites map every canopy?",
+    "source": {
+      "title": "Mapping the World's Forests with Greater Precision: Introducing Canopy Height Maps v2",
+      "publisher": "Meta AI",
+      "date": "2026-03-10",
+      "url": "https://ai.meta.com/blog/world-resources-institute-dino-canopy-height-maps-v2/"
+    },
+    "tags": [
+      "remote-sensing",
+      "ai",
+      "mrv",
+      "technology"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-sink-starts-leaking",
+    "title": "When the sink starts leaking",
+    "signal": "Two decades of data at New Hampshire's Bartlett Experimental Forest show net carbon uptake fell sharply from 2004 to 2023 as warmer winters boosted respiration; in some years the forest was a net source.",
+    "horizon": "far",
+    "primary": {
+      "domain": "climate",
+      "delta": -2,
+      "text": "Mature northern hardwood forests can no longer be counted on as reliable carbon sinks."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "health",
+      "delta": -1,
+      "text": "Rising respiration signals mounting climate stress on mature hardwood stands."
+    },
+    "prompt": "If forests absorb less carbon, how should carbon goals and credits adjust?",
+    "source": {
+      "title": "Can Northern Forests Continue To Be an Effective Carbon Sink?",
+      "publisher": "University of New Hampshire",
+      "date": "2026-08-17",
+      "url": "https://www.unh.edu/node/2718"
+    },
+    "tags": [
+      "carbon-sink",
+      "research",
+      "northeast"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-canada-sink-flipped",
+    "title": "Next door, the sink flipped",
+    "signal": "A Global Change Biology study modeling Canada's forests since 1750 finds disturbance outpaced regrowth from about 2009, and the country crossed from carbon sink to source around 2021, driven mainly by wildfire.",
+    "horizon": "far",
+    "primary": {
+      "domain": "climate",
+      "delta": -2,
+      "text": "Fire-driven losses push North American forests toward net emissions, undercutting national carbon goals."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "wood",
+      "delta": 1,
+      "text": "Shrinking Canadian supply lifts prices for U.S. mills and landowners, even as fire risk grows."
+    },
+    "prompt": "What would change in US forest policy if national forests became a net source?",
+    "source": {
+      "title": "Canada's forests are shifting from carbon sink to carbon source",
+      "publisher": "Corporate Knights",
+      "date": "2026-08-13",
+      "url": "https://corporateknights.com/climate/canadas-forests-are-shifting-from-carbon-sink-to-carbon-source/"
+    },
+    "tags": [
+      "carbon-sink",
+      "canada",
+      "fire",
+      "boreal"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-paid-to-stand",
+    "title": "Paid to keep trees standing",
+    "signal": "Brazil's Tropical Forest Forever Facility, launched at COP30, has $7.3 billion pledged toward a $10 billion goal. It would pay countries from investment returns for standing forest, 20% to Indigenous and local communities.",
+    "horizon": "far",
+    "primary": {
+      "domain": "climate",
+      "delta": 1,
+      "text": "Endowment-style payments for standing forest offer a model beyond offsets that states could adapt."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to a domain that gains if forests earn steady income for simply staying forests. Explain."
+    },
+    "prompt": "Could an endowment model fund conservation better than annual appropriations?",
+    "source": {
+      "title": "Brazil confident new rainforest fund will reach $10bn donor milestone",
+      "publisher": "Climate Home News",
+      "date": "2026-09-29",
+      "url": "https://climatechangenews.com/2026/09/29/brazil-confident-new-rainforest-fund-tfff-10bn-fund-finance/"
+    },
+    "tags": [
+      "international",
+      "finance",
+      "conservation",
+      "wildcard"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-lumber-tariff-wall",
+    "title": "Tariff wall, thinner lumber pile",
+    "signal": "With combined duties on most Canadian softwood near 35% plus a 10% Section 232 lumber tariff since October 2025, US softwood lumber imports fell 9% in 2025 to a 20-year low.",
+    "horizon": "now",
+    "primary": {
+      "domain": "wood",
+      "delta": -1,
+      "text": "Builders pay more and supply tightens, while domestic mills hesitate to invest amid policy swings."
+    },
+    "secondary": {
+      "type": "move",
+      "amount": 1,
+      "text": "Move 1 between domains to show who wins and who loses from protected lumber markets. Explain."
+    },
+    "prompt": "Do tariffs strengthen your state's mills or just raise local building costs?",
+    "source": {
+      "title": "US Softwood Imports Crash to 20-Year Lows as Tariffs Start to Bite",
+      "publisher": "Wood Central",
+      "date": "2026-02-23",
+      "url": "https://woodcentral.com.au/us-softwood-imports-crash-to-20-year-low-as-tariffs-hit-hard/"
+    },
+    "tags": [
+      "trade",
+      "tariffs",
+      "canada",
+      "lumber"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-sawmill-jobs-low",
+    "title": "Fewer mills, fewer hands",
+    "signal": "US sawmill capacity fell 6% year over year in early 2026 and sawmill and wood-preservation jobs dropped to about 82,800, the lowest since 2010, despite a 2025 order to expand federal timber harvests.",
+    "horizon": "now",
+    "primary": {
+      "domain": "wood",
+      "delta": -2,
+      "text": "Lost mill capacity leaves fewer buyers for restoration and salvage wood, raising treatment costs."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "communities",
+      "delta": -1,
+      "text": "Mill-town jobs and local tax bases erode."
+    },
+    "prompt": "Without nearby mills, how will you pay for the thinning your plans require?",
+    "source": {
+      "title": "US sawmill capacity continues to decline despite Federal efforts to expand timber harvesting",
+      "publisher": "Wood & Panel",
+      "date": "2026-06-25",
+      "url": "https://www.woodandpanel.us/news/article/us-sawmill-capacity-continues-to-decline-despite-federal-efforts-to-expand-timber-harvesting/"
+    },
+    "tags": [
+      "mills",
+      "jobs",
+      "federal",
+      "timber"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-mass-timber-data-centers",
+    "title": "Server farms built of wood",
+    "signal": "With data centers absorbing steel and concrete, Microsoft plans two more mass timber data centers in Virginia and Meta is building an $800 million one in South Carolina; mass timber is projected to grow 20-30% yearly.",
+    "horizon": "now",
+    "primary": {
+      "domain": "wood",
+      "delta": 2,
+      "text": "Big-tech demand gives mass timber plants steady orders and a durable market for domestic lumber."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "water",
+      "delta": -1,
+      "text": "The data centers inside these buildings draw heavily on local water and power."
+    },
+    "prompt": "Could your state's restoration wood feed a mass timber plant?",
+    "source": {
+      "title": "With Data Centers Devouring Construction Materials, Mass Timber May Finally Have Its Moment",
+      "publisher": "Bisnow",
+      "date": "2026-08-13",
+      "url": "https://www.bisnow.com/news/national/construction-development/construction-materials-shortage-data-centers-mass-timber"
+    },
+    "tags": [
+      "mass-timber",
+      "construction",
+      "data-centers",
+      "markets"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-south-keeps-sawing",
+    "title": "The South keeps sawing",
+    "signal": "Forisk tracks new, restarted and expanded sawmills across the US South that add about 2.1 billion board feet of capacity from 2026 to 2028, net of closures, even as Canadian mills curtail or close.",
+    "horizon": "now",
+    "primary": {
+      "domain": "wood",
+      "delta": 1,
+      "text": "Expanding Southern capacity firms up sawtimber demand and prices for private landowners."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to a domain that gains when Southern mills grow. Explain who benefits, and who does not."
+    },
+    "prompt": "What would draw a new mill to your region's wood supply?",
+    "source": {
+      "title": "Forest Market Bulletin: August 2026 Sawmill Update",
+      "publisher": "Forisk",
+      "date": "2026-08-14",
+      "url": "https://forisk.com/forest-market-bulletin-august-2026-sawmill-update/"
+    },
+    "tags": [
+      "mills",
+      "south",
+      "markets",
+      "private-forests"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-jet-fuel-woodpile",
+    "title": "Jet fuel from the woodpile",
+    "signal": "As oil and fat feedstocks for sustainable aviation fuel tighten, Fastmarkets sees woody biomass gaining ground, with Southern projects sited near timber. Gasification looks nearest to market; capital and logistics remain hurdles.",
+    "horizon": "near",
+    "primary": {
+      "domain": "wood",
+      "delta": 2,
+      "text": "Biorefineries create steady demand for forest residues and low-value wood that now goes unsold."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "fire",
+      "delta": 1,
+      "text": "A market for slash and thinnings helps pay for fuels reduction."
+    },
+    "prompt": "Should residues go to jet fuel, biochar, mills, or stay in the woods?",
+    "source": {
+      "title": "Can woody biomass solve sustainable aviation fuel's biggest feedstock problem?",
+      "publisher": "Fastmarkets",
+      "date": "2026-08-19",
+      "url": "https://www.fastmarkets.com/?p=134068"
+    },
+    "tags": [
+      "bioenergy",
+      "saf",
+      "residues",
+      "south"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-pulpwood-long-goodbye",
+    "title": "Pulpwood's long goodbye",
+    "signal": "A University of Georgia study finds that if pulp mills close and pulpwood prices halve, projected returns on pine plantations fall 13-34%; if pulpwood becomes worthless, losses reach 28-68%.",
+    "horizon": "near",
+    "primary": {
+      "domain": "wood",
+      "delta": -1,
+      "text": "Thinning markets vanish in pulp-dependent regions, so owners thin less and returns fall."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "climate",
+      "delta": 1,
+      "text": "Owners who stop thinning may hold trees longer, storing more carbon for now."
+    },
+    "prompt": "If pulp mills close, what new markets keep private forests as forests?",
+    "source": {
+      "title": "How Declining Pulpwood Markets Influence Timberland Investment Returns",
+      "publisher": "University of Georgia Center for Forest Business",
+      "date": "2026-06-16",
+      "url": "https://cfb.uga.edu/new-cfb-research-examines-the-financial-effects-of-declining-pulpwood-markets/"
+    },
+    "tags": [
+      "pulp-paper",
+      "private-forests",
+      "south",
+      "markets"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-pellet-power-fades",
+    "title": "Pellet power runs out of steam",
+    "signal": "Japan, poised to become the top wood pellet importer, has cut support for new large biomass plants and signals no new backing, the Financial Times reports, clouding Drax's hopes of supplying Asia.",
+    "horizon": "near",
+    "primary": {
+      "domain": "wood",
+      "delta": -1,
+      "text": "Export pellet demand plateaus, leaving Southern pellet mills and their pulpwood suppliers exposed."
+    },
+    "secondary": {
+      "type": "move",
+      "amount": 1,
+      "text": "Move 1 between domains: who gains or loses as wood stops being burned overseas? Explain."
+    },
+    "prompt": "What should low-grade wood become if export pellet markets fade?",
+    "source": {
+      "title": "Drax hit as Japan pivots away from burning wood pellets for energy",
+      "publisher": "Tree Frog Creative (from the Financial Times)",
+      "date": "2026-01-27",
+      "url": "https://treefrogcreative.ca/?p=360735"
+    },
+    "tags": [
+      "bioenergy",
+      "pellets",
+      "export",
+      "policy"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-wood-hits-the-gym",
+    "title": "Wood hits the gym",
+    "signal": "InventWood's Maryland plant, backed by a $20 million DOE grant, is making densified Superwood cladding and decking. The firm targets steel cost parity at 30 million square feet a year and seeks structural approval.",
+    "horizon": "far",
+    "primary": {
+      "domain": "wood",
+      "delta": 1,
+      "text": "Densified wood competes with steel in structures, raising the value of ordinary timber."
+    },
+    "secondary": {
+      "type": "fixed",
+      "domain": "climate",
+      "delta": 1,
+      "text": "Replacing steel lowers embodied emissions and keeps carbon stored in buildings."
+    },
+    "prompt": "Which local species could your mills upgrade into high-value materials?",
+    "source": {
+      "title": "Wood, reinvented, has steel in its competitive crosshairs",
+      "publisher": "Building Design+Construction",
+      "date": "2025-10-15",
+      "url": "https://www.bdcnetwork.com/home/news/55323539/wood-reinvented-has-steel-in-its-competitive-crosshairs"
+    },
+    "tags": [
+      "innovation",
+      "materials",
+      "construction"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  },
+  {
+    "id": "sig-magnolia-in-orbit",
+    "title": "Magnolia in low Earth orbit",
+    "signal": "Kyoto University's LignoSat, the first wooden satellite, deployed from the space station in December 2024 but lost contact. The team plans a larger successor, pitching wood as a craft that burns up cleanly.",
+    "horizon": "far",
+    "primary": {
+      "domain": "wood",
+      "delta": 1,
+      "text": "Aerospace and other high-tech niches open premium markets for engineered wood."
+    },
+    "secondary": {
+      "type": "add",
+      "amount": 1,
+      "text": "Add 1 to any domain that gains when wood earns a high-tech reputation. Explain the connection."
+    },
+    "prompt": "What surprising markets should your wood innovation grants be scouting?",
+    "source": {
+      "title": "From the forest to the stars",
+      "publisher": "Swedish Wood (Trä magazine)",
+      "date": "2025-10-03",
+      "url": "https://www.swedishwood.com/publications/wood-magazine/articles-tra-magazine/2025/10/from-the-forest-to-the-stars/"
+    },
+    "tags": [
+      "innovation",
+      "wildcard",
+      "materials"
+    ],
+    "status": "active",
+    "reviewed": "2026-11-14",
+    "origin": "new"
+  }
+]
